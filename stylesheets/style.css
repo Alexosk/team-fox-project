@@ -1,0 +1,36 @@
+body {
+  background-color: #E4F6F8;
+}
+header {
+
+}
+
+nav {
+
+}
+
+nav li {
+  list-style: none;
+  float: left;
+  margin: 20px;
+  padding: 10px;
+  border: 1px;
+  border-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 30px;
+  font-family: Helvetica;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFF;
+}
