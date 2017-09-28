@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    margin: auto;
+    font-family: "Helvetica";
+}
+.containerHeader{
+    width: 95%;
+    margin: 0 auto;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.header {
+    background: #FFF;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo{
+    float: left;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+li {
+    list-style: none;
+    float: right;
+    margin-left: 15px;
+    padding: 5px;
+}
+.nav {
+    float: right;
+    padding-top: 25px;
+}
+#foxy-logo{ 
+    width:100px;
+    padding-top: 5px;
+}
+
+#foxy-heading{
+    float:right;
+}
+#foxy-animal{
+    width:100px;
+    float: left;
+    margin: 10px;
+}
+.space {
+    margin-top: 300px;
+}
+#login{
+    font-weight: bold;
+    background:#3faecc;
+    border-radius: 10px;
+}
+#login a {
+    color: whitesmoke;    
+}
+.footer{
+    background: #e6e6e6;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+}
+footer h3 {
+    float: left;
+}
+#foxy-evil{
+    margin: 10px;
+    width:350px;
+    float: left;
+}
+#foxyMembers {
+    color: #759e2e;
+    font-size: 15px;
+    font-style: italic;
+    margin-left: 10px;
+}
+#megaHeading {
+    font-style: 'Geneva';
+    font-size: 80px;
+}
