@@ -26,10 +26,10 @@ body {
     margin: 1em;
 }
 #footer{
-    display: flex;
-    justify-content: center;    
-    background: #e6e6e6;
-    padding: 1em;    
+    bottom: 0;;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
 }
 #footer p{
     color: #759e2e;
