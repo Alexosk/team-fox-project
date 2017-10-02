@@ -93,6 +93,7 @@ h2{
     header, .columns{
         display: flex;
         flex-direction: column;
+        position: relative;
     }
     .columns img {
         width:100%;
