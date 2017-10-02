@@ -65,3 +65,9 @@ a{
     border-radius: 0.5em;
     color: #fff;    
 }
+.listBtn:hover{
+    background-color: #759e2e;
+    padding: 5px;
+    border-radius: 9px;
+    transition: 0.2s;
+}

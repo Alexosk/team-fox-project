@@ -74,6 +74,12 @@ h2{
     margin-bottom: 5px;
     text-align: center;
 }
+.listBtn:hover{
+    background-color: #759e2e;
+    padding: 5px;
+    border-radius: 9px;
+    transition: 0.2s;
+}
 /*Dessa används på why-us-html*/
 .line{
     float: left;
@@ -81,12 +87,6 @@ h2{
     height: 5px;
     width: 100%;
     border-radius: 15px;
-}
-.listBtn:hover{
-    background-color: #759e2e;
-    padding: 5px;
-    border-radius: 9px;
-    transition: 0.2s;
 }
 
 
