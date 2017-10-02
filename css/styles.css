@@ -4,7 +4,7 @@
 body {
     font-family: "Helvetica";
 }
-#header{
+header{
     background: #fff;
     padding: 0.2em;
     display: flex;
@@ -25,13 +25,13 @@ body {
 .column{
     margin: 1em;
 }
-#footer{
+footer{
     bottom: 0;;
     padding: 1rem;
     background-color: #efefef;
     text-align: center;
 }
-#footer p{
+footer p{
     color: #759e2e;
     font-style: italic;
     margin-left: 1em;
