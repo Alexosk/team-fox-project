@@ -16,7 +16,7 @@ body {
 }
 #content{
     width: 80%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 #columns {
     display: flex;
@@ -51,6 +51,7 @@ body {
     margin: 0 2em 1em 0;
     list-style: none;
     padding: 0.2em;
+    font-weight: bold;
 }
 a{
     text-decoration: none;
@@ -63,7 +64,7 @@ a{
     font-weight: bold;
     background:#3faecc;
     border-radius: 0.5em;
-    color: #fff;    
+    color: #fff;
 }
 .listBtn:hover{
     background-color: #759e2e;
