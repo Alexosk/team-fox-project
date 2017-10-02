@@ -89,6 +89,15 @@ h2{
     width: 100%;
     border-radius: 15px;
 }
+@media screen and (max-width: 1000px){
+    header, .columns{
+        display: flex;
+        flex-direction: column;
+    }
+    .columns img {
+        width:100%;
+    }
+}
 
 
 /*KANSKE KOMMER ANVÄNDA SENARE

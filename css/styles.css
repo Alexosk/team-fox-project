@@ -73,3 +73,12 @@ a{
     border-radius: 9px;
     transition: 0.2s;
 }
+@media screen and (max-width: 1000px){
+    header, #columns{
+        display: flex;
+        flex-direction: column;
+    }
+    #columns img {
+        width:100%;
+    }
+}
