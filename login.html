@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Foxy Learning</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <script src="./script/app.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id=logo>
+            <a href="index.html">
+                <img src="./images/foxy-logo.png" width="100px">
+            </a>
+            <a href="index.html">
+                <h1>Foxy Learning</h1>
+            </a>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="about.html">About Foxy</a></li>
+                <li><a href="price.html">Pricing</a></li>
+                <li><a href="why-us.html">Why us?</a></li>
+                <li id="login"><a href="login.html">Log in</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div id="columns">
+            <div class="login-page">
+                <div class="form">
+                  <form class="login-form">
+                    <input id="username" type="text" placeholder="username" autofocus/>
+                    <input id="password" type="password" placeholder="password"/>
+                    <button onclick="login( document.getElementById('username').value , document.getElementById('password').value )" type='button'>login</button>
+                  </form>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div id="footer">
+        <h4>Team Fox 2017</h4>
+        <p>Alex, Rikard, Paulina, Leo, Benjamin, Aram</p>
+    </div>
+</body>
+
+</html>
