@@ -3,6 +3,9 @@
 }
 body {
     font-family: "Helvetica";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header{
     background: #fff;
@@ -17,6 +20,7 @@ header{
 #content{
     width: 80%;
     margin: 15% auto 5% auto;
+    flex: 1;
 }
 .columns {
     display: flex;
