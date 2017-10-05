@@ -2,78 +2,131 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <title>Foxy Learning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/student.css">
   <link rel="shortcut icon" href="images/favicon.png">
 </head>
 
 <body>
   <header>
     <div id=logo>
-
       <a href="index.html">
-        <img src="./images/foxy-logo.png" width="100" alt="A picture of a fox"></a>
-
-      <a href="index.html"><h1>Foxy Learning</h1></a>
-
+        <img src="./images/foxy-logo.png" width="100" alt="A picture of a fox">
+      </a>
+      <a href="index.html">
+        <h1>Foxy Learning</h1>
+      </a>
     </div>
-
     <div id="nav">
-
       <ul>
-        <li class="listBtn"><a href="courses.html"> Courses </a></li>
+        <li class="listBtn"><a href="student.html">Home</a></li>
+        <li class="listBtn"><a href="courses.html">Courses</a></li>
+        <li class="listBtn"><a href="#">Assignments</a></li>
+        <li class="listBtn"><a href="#">Survey</a></li>
+        <li id="login"><a href="login.html">Log out</a></li>
       </ul>
-
     </div>
   </header>
 
-  <!-- Here the cards start -->
-  <div class=space> </div>
-  <div class=space> </div>
+  <div id="content">
 
-  <div class="card">
-    <h4 class="card-header">News</h4>
-    <div class="card-body">
-      <h4 class="card-title"><Strong>Special meating on Wednesday 4th of November </strong></h4>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Older News</a>
-    </div>
-  </div>
+    <div class="columns">
+      <div class="box">
+        <div class="boxes">
+          <div class="boxtext">
+            <div class="month">
+              <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>
+                  August<br>
+                  <span style="font-size:18px">2017</span>
+                </li>
+              </ul>
+            </div>
 
-  <div class=space> </div>
+            <ul class="weekdays">
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>Su</li>
+            </ul>
 
-  <input type="text" name="input1" value="default value" />
-  <div class="card text-center" style="width: 20rem;">
-    <div class="card-body">
-      <h4 class="card-title">Special title treatment</h4>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+            <ul class="days">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li><span class="active">10</span></li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+            </ul>
+          </div>
+        </div>
 
-  <div class=space> </div>
+        <div class="boxes">
+          <div class="boxtext">
+            <h3>Attendance</h3>
+            <div class="divider"></div>
+            <p>Suscipit uae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores eos qui ratione vlaboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderitqui in ea voluptate velit esse quam</p>
+            </div>
+          </div>
+        </div>
 
-  <div class="card text-right" style="width: 20rem;">
-    <div class="card-body">
-      <h4 class="card-title">Special title treatment</h4>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  <!-- Here the cards end-->
+        <div class="boxes">
+          <div class="boxtext">
+            <h3>News</h3>
+            <div class="divider"></div>
+            <h4>Scipit laboriosam</h4>
+            <p>Ipit laboriosam, nisi ut aliquid ex ea commodi consequat</p>
+            <div class="divider"></div>
+            <h4>Lipsa qua</h4>
+            <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+              sit amet, consectetur, adipisci</p>
+              <div class="divider"></div>
 
-  </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div class=space> </div>
-  <div class=space> </div>
-
-  <footer>
-    <h4>Team Fox 2017</h4>
-    <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
-  </footer>
-
-</body>
-
-</html>
+      <footer>
+        <h4>Team Fox 2017</h4>
+        <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
+      </footer>
+    </body>
+    </html>
