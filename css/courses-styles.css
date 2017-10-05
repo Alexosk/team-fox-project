@@ -20,7 +20,7 @@ header{
 }
 .columns {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
 }
 .column{
     margin: 1em;
