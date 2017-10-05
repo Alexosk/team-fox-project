@@ -23,7 +23,7 @@
     box-sizing: border-box;
     font-size: 14px;
   }
-  .form button {
+  input[type=submit] {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
@@ -36,9 +36,13 @@
     transition: all 0.3 ease;
     cursor: pointer;
   }
-  .form button:hover {
+  input[type=submit]:hover {
     background: #43A047;
   }
   body {
     font-family: "Roboto", sans-serif;
+  }
+  #errorMessageDiv {
+    font-family: "Roboto", sans-serif;
+    font-size: smaller;
   }

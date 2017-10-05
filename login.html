@@ -21,9 +21,9 @@
         </div>
         <div id="nav">
             <ul>
-              <li class="listBtn"><a href="about.html">About Foxy</a></li>
-              <li class="listBtn"><a href="price.html">Pricing</a></li>
-              <li class="listBtn"><a href="why-us.html">Why us?</a></li>
+                <li class="listBtn"><a href="about.html">About Foxy</a></li>
+                <li class="listBtn"><a href="price.html">Pricing</a></li>
+                <li class="listBtn"><a href="why-us.html">Why us?</a></li>
             </ul>
         </div>
     </header>
@@ -31,13 +31,14 @@
         <div id="columns">
             <div class="login-page">
                 <div class="form">
-                  <form class="login-form">
-                    <input id="username" type="text" placeholder="username" autofocus/>
-                    <input id="password" type="password" placeholder="password"/>
-                    <button onclick="login( document.getElementById('username').value , document.getElementById('password').value )" type='button'>login</button>
-                  </form>
+                    <form class="login-form" action="student.html" onsubmit="return login()" method="post" name="login-form">
+                        <input id="username" type="text" placeholder="username" name="username" autofocus/>
+                        <input id="password" type="password" placeholder="password" name="password" />
+                        <input type="submit" value="login" />
+                    </form>
+                    <div id="errorMessageDiv"></div>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
     <footer>
