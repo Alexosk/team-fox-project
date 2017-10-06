@@ -8,11 +8,16 @@ header{
     background: #fff;
     padding: 0.2em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*space-between unik för courses*/
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /*****TEST*****/
+    /*GRADINET HEADER 
+    background: linear-gradient(to bottom right, red, yellow);
+    */
 }
 #content{
     width: 80%;
@@ -30,6 +35,11 @@ footer{
     padding: 1rem;
     background-color: #efefef;
     text-align: center;
+
+    /*****TEST*****/
+    /*GRADIENT FOOTER
+    background: linear-gradient(to top left, #efefef, gray);
+    */
 }
 footer p{
     color: #759e2e;
@@ -108,8 +118,7 @@ a{
         border: 1px solid black;
         border-collapse: collapse;
         width: 100%;
-        margin-bottom: 20px;
-        margin-top: 15px;
+        margin: 15px 0 20px 0;
     }
     th, td{
         border: 1px solid #dddddd;
@@ -129,8 +138,7 @@ a{
     }
     #sidePara{
         width: 320px;
-        margin-left: 5px;
-        margin-top: 15px;
+        margin: 15px 0 0 5px;
         padding-bottom: 15px
     }
     table tr:nth-child(odd){
