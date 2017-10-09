@@ -25,7 +25,7 @@ header{
 }
 .columns {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /*space-around för innehållet*/
 }
 .column{
     margin: 1em;
@@ -75,6 +75,8 @@ a{
     font-weight: bold;
     background:#3faecc;
     border-radius: 0.5em;
+}
+#login a{
     color: #fff;
 }
 .listBtn:hover{
