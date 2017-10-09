@@ -15,7 +15,7 @@ header{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     /*****TEST*****/
-    /*GRADINET HEADER 
+    /*GRADINET HEADER
     background: linear-gradient(to bottom right, red, yellow);
     */
 }
@@ -101,7 +101,7 @@ a{
 
     /*COURSES CSS*/
     h2{
-      text-align:  center;  
+      text-align:  center;
       float: center;
       margin: -30px 0 20px 0;
     }
@@ -127,7 +127,7 @@ a{
     }
     .tables{
         width: 50%;
-        margin-left: -20px; 
+        margin-left: -20px;
     }
     .line{
         float: left;
@@ -136,7 +136,7 @@ a{
         width: 100%;
         border-radius: 15px;
     }
-    #sidePara{
+    .sidePara{
         width: 320px;
         margin: 15px 0 0 5px;
         padding-bottom: 15px

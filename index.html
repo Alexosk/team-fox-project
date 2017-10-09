@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
 </head>
 
 <body>
     <header>
         <div id=logo>
             <a href="index.html">
-                        <img src="./images/foxy-logo.png" width="100" alt="A picture of a fox">
-                    </a>
+                <img src="./images/foxy-logo.png" width="100" alt="A picture of a fox">
+            </a>
             <a href="index.html">
                 <h1>Foxy Learning</h1>
             </a>
@@ -23,7 +26,20 @@
               <li class="listBtn"><a href="about.html">About Foxy</a></li>
               <li class="listBtn"><a href="price.html">Pricing</a></li>
               <li class="listBtn"><a href="why-us.html">Why us?</a></li>
-                <li id="login"><a href="login.html">Log in</a></li>
+              <li><a href="#" id="login">Log in</a>
+                  <div class="triangle"></div>
+                    <div class="login-form">
+                          <form action="student.html" onsubmit="return login()" method="post" name="login-form">
+                              <div><input type="text" placeholder="username" name="username" autofocus /></div>
+                              <div><input type="password" placeholder="password" name="password"  /></div>
+                              <div><input type="submit" value="Log in"  /></div>
+                              <!--<div>
+                                  <a href="#" style="text-decoration:none;position:relative;top:20px;font-size:14px;color:#ddfcff;">Lost Your Password?</a>
+                              </div>-->
+                              <div id="errorMessageDiv"></div>
+                          </form>
+                      </div>
+                </li>
             </ul>
         </div>
     </header>
@@ -65,5 +81,6 @@
         <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
     </footer>
     <script src="./script/app.js"></script>
+    <script src="./script/drop.js"></script>
 </body>
 </html>
