@@ -72,6 +72,9 @@ a{
     color: #fff;
     padding: 3px;
 }
+#login a{
+  color: #fff;
+}
 
 h2{
     font-style: 'Geneva';
