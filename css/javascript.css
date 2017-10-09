@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-header{
+header {
     background: #fff;
     padding: 0.2em;
     display: flex;
@@ -16,8 +16,9 @@ header{
     top: 0;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index:9999;
 }
-#content{
+#content {
     width: 80%;
     margin: 10% auto 5% auto;
     flex: 1;
@@ -26,7 +27,7 @@ header{
     display: flex;
     justify-content: center;
 }
-.column{
+.column {
     margin: 1em;
 }
 .column-table {
@@ -34,57 +35,49 @@ header{
   justify-content: center;
   margin: 50px auto 15px auto;
 }
-footer{
+footer {
     bottom: 0;
     padding: 1rem;
     background-color: #efefef;
     text-align: center;
 }
-footer p{
+footer p {
     color: #759e2e;
     font-style: italic;
     margin-left: 1em;
 }
-#logo{
+#logo {
     align-items: center;
     display: flex;
 }
-#nav{
+#nav {
     align-items: flex-end;
     display: flex;
 }
 #nav ul {
     display: inline-flex;
 }
-#nav ul li{
+#nav ul li {
     margin: 0 2em 1em 0;
     list-style: none;
     padding: 0.2em;
     font-weight: bold;
 }
-a{
+a {
     text-decoration: none;
     color: #000;
 }
 .space {
     height: 2em;
 }
-
-#login {
-    font-weight: bold;
-    background: #3faecc;
-    border-radius: 9px;
-    color: #fff;
-    padding: 3px;
-}
-.listBtn:hover{
+.listBtn:hover {
     background-color: #759e2e;
     padding: 5px;
     border-radius: 9px;
     transition: 0.2s;
 }
 /*Dessa används på why-us-html*/
-.line{
+.line {
     float: left;
     background-color: green;
     height: 5px;
@@ -92,7 +85,7 @@ a{
     border-radius: 15px;
 }
 @media screen and (max-width: 1000px){
-    header, .columns{
+    header, .columns {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -104,82 +97,6 @@ a{
         flex-wrap: wrap;
     }
 }
-
-.triangle {
-  width: 0;
-  height: 0;
-  position: absolute;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 15px solid #54ecf7;
-  right: 45px;
-  top: 50px;
-  display: none;
-}
-
-.login-form {
-  position: absolute;
-  width: 280px;
-  height: auto;
-  background: #fff;
-  right: 30px;
-  top: 65px;
-  border-radius: 3px;
-  border-bottom: 4px solid #2b87a0;
-  display: none;
-  background-color: #54ecf7;
-}
-
-.login-form>form {
-  width: 200px;
-  margin: 25px auto;
-  font-size: 20px;
-  font-family: Helvetica, Arial;
-  color: gray;
-  letter-spacing: -0.05em;
-}
-
-input[type="text"], input[type="password"] {
-  width: 195px;
-  height: 30px;
-  padding-left: 5px;
-  border: 0px;
-  outline: none;
-  box-shadow: inset 0 0 10px #eee;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  font-family: Helvetica, Arial;
-  font-size: 14px;
-}
-
-input[type="password"] {
-  margin-top: 10px;
-}
-
-input[type="submit"] {
-  width: 100%;
-  height: 35px;
-  background: #09a56c;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: sans-serif, Arial;
-  color: white;
-  outline: none;
-  border: 0px;
-  border-radius: 3px;
-  letter-spacing: -0.05em;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background: #089361;
-}
-
-#errorMessageDiv {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  padding-top: 5px;
-}
 h2 {
   font-size: 20px;
   border: none;
@@ -189,6 +106,10 @@ h2 {
 }
 h5 {
   margin-top: 15px;
+}
+p {
+  margin-top: 25px;
+  margin-right: 100px;
 }
 form {
   width: 200px;
@@ -202,9 +123,8 @@ label {
 table, th, td {
 
 }
-table tr:nth-child(odd){
-    background-color: #72c3da
-;
+table tr:nth-child(odd) {
+    background-color: #72c3da;
   }
 td {
     height: 25px;
@@ -240,6 +160,8 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
 }
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
