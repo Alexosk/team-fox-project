@@ -134,7 +134,7 @@ h2{
   border-radius: 3px;
   border-bottom: 4px solid #2b87a0;
   display: none;
-  background-color: #3faecc;
+  border: 2px solid #3faecc;
 }
 
 .login-form>form {
@@ -184,7 +184,7 @@ input[type="submit"]:hover {
 
 #errorMessageDiv {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: smaller;
   padding-top: 5px;
 }
 
