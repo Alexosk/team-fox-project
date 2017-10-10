@@ -134,7 +134,7 @@ h2{
   border-radius: 3px;
   border-bottom: 4px solid #2b87a0;
   display: none;
-  border: 2px solid #3faecc;
+  box-shadow: 0 2px 8px #3faecc;
 }
 
 .login-form>form {
@@ -186,6 +186,7 @@ input[type="submit"]:hover {
   font-family: "Roboto", sans-serif;
   font-size: smaller;
   padding-top: 5px;
+  font-size: 14px;
 }
 
 
