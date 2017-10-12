@@ -97,3 +97,10 @@ ul {
     background: #759e2e;
     color: white !important;
 }
+
+#student {
+    background-color: purple;
+    color: white;
+    padding : 0.5em;
+    border-radius: 9px;
+}

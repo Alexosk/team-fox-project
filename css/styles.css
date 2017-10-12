@@ -50,11 +50,12 @@ footer p{
 }
 #nav ul {
     display: inline-flex;
+    align-items: center;
 }
 #nav ul li{
-    margin: 0 2em 1em 0;
+    margin: 0.5em 1em 0.5em 0;
     list-style: none;
-    padding: 0.2em;
+    padding: 0.5em;
     font-weight: bold;
 }
 a{
@@ -89,6 +90,13 @@ h2{
     padding: 5px;
     border-radius: 9px;
     transition: 0.2s;
+}
+.listBtn:hover a{
+    color: white;
+}
+.listBtn:hover #student{
+    color: white;
+    background-color: purple;
 }
 /*Dessa används på why-us-html*/
 .line{
