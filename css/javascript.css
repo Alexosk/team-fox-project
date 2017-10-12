@@ -40,6 +40,7 @@ footer {
     padding: 1rem;
     background-color: #efefef;
     text-align: center;
+
 }
 footer p {
     color: #759e2e;
@@ -107,7 +108,7 @@ h2 {
 h5 {
   margin-top: 15px;
 }
-p {
+.info {
   margin-top: 25px;
   margin-right: 100px;
 }
