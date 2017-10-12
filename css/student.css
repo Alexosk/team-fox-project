@@ -153,3 +153,9 @@ header h1{
 #nav ul li:last-child{
     margin-right: 1em;
 }
+#logo img {
+    margin-right: 0;
+}
+#logo{
+    margin-left: 1em;
+}
