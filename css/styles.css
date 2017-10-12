@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 body {
     font-family: "Helvetica";
@@ -117,6 +118,7 @@ h2{
     }
     #nav ul {
         flex-wrap: wrap;
+        margin-bottom:1em;
     }
 }
 
