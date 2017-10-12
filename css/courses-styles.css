@@ -124,7 +124,7 @@ a{
     }
     th, td{
         border: 1px solid #dddddd;
-        text-align: center;
+        text-align: left;
         padding: 5px;
     }
     .tables{
@@ -140,7 +140,7 @@ a{
     }
     .sidePara{
         width: 320px;
-        margin: 15px 0 0 5px;
+        margin: 15px 0 0 -5px;
         padding-bottom: 15px
     }
     table tr:nth-child(odd){
