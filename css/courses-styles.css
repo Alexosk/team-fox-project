@@ -4,21 +4,6 @@
 body {
     font-family: "Helvetica";
 }
-header{
-    background: #fff;
-    padding: 0.2em;
-    display: flex;
-    justify-content: space-between; /*space-between unik för courses*/
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    /*****TEST*****/
-    /*GRADINET HEADER
-    background: linear-gradient(to bottom right, red, yellow);
-    */
-}
 #content{
     width: 80%;
     margin: 15% auto 5% auto;
@@ -46,23 +31,6 @@ footer p{
     font-style: italic;
     margin-left: 1em;
 }
-#logo{
-    align-items: center;
-    display: flex;
-}
-#nav{
-    align-items: flex-end;
-    display: flex;
-}
-#nav ul {
-    display: inline-flex;
-}
-#nav ul li {
-    margin: 0 2em 1em 0;
-    list-style: none;
-    padding: 0.2em;
-    font-weight: bold;
-}
 
 a{
     text-decoration: none;
@@ -71,20 +39,7 @@ a{
 .space {
     height: 5em;
 }
-#login{
-    font-weight: bold;
-    background:#3faecc;
-    border-radius: 0.5em;
-}
-#login a{
-    color: #fff;
-}
-.listBtn:hover{
-    background-color: #759e2e;
-    padding: 5px;
-    border-radius: 9px;
-    transition: 0.2s;
-}
+
 
 @media screen and (max-width: 1000px){
     header, .columns{

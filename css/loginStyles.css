@@ -13,14 +13,6 @@ a{
 .space {
     height: 5em;
 }
-h2{
-    font-style: 'Geneva';
-    font-size: 70px;
-    border-bottom: solid #3faecc 1px;
-    border-bottom-width: 2px;
-    margin-bottom: 5px;
-    text-align: center;
-}
 
 
 /*HEADER*/
@@ -48,6 +40,7 @@ header h1{
 #nav ul {
     display: inline-flex;
     align-items: center;
+    list-style-type: none;
 }
 #nav ul li{
     margin-right: 1em;

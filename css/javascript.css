@@ -8,14 +8,6 @@ body {
     min-height: 100vh;
 }
 header {
-    background: #fff;
-    padding: 0.2em;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index:9999;
 }
 #content {
@@ -47,35 +39,12 @@ footer p {
     font-style: italic;
     margin-left: 1em;
 }
-#logo {
-    align-items: center;
-    display: flex;
-}
-#nav {
-    align-items: flex-end;
-    display: flex;
-}
-#nav ul {
-    display: inline-flex;
-}
-#nav ul li {
-    margin: 0 2em 1em 0;
-    list-style: none;
-    padding: 0.2em;
-    font-weight: bold;
-}
 a {
     text-decoration: none;
     color: #000;
 }
 .space {
     height: 2em;
-}
-.listBtn:hover {
-    background-color: #759e2e;
-    padding: 5px;
-    border-radius: 9px;
-    transition: 0.2s;
 }
 /*Dessa används på why-us-html*/
 .line {
