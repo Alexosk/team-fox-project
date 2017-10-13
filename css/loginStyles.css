@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: "Helvetica";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.space {
+    height: 5em;
+}
+h2{
+    font-style: 'Geneva';
+    font-size: 70px;
+    border-bottom: solid #3faecc 1px;
+    border-bottom-width: 2px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+/*HEADER*/
+header{
+    background-color: #562E84;
+    padding: 0.2em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header h1{
+    color: #FDB722;
+}
+#logo{
+    align-items: center;
+    display: flex;
+}
+#nav{
+    align-items: flex-end;
+    display: flex;
+}
+#nav ul {
+    display: inline-flex;
+    align-items: center;
+}
+#nav ul li{
+    margin-right: 1em;
+}
+#nav ul li a {
+    color: #FDB722;
+    list-style: none;
+}
+#nav ul li a:hover{
+    color: white;
+}
+#logOut {
+    border: 1px solid #FDB722;
+    margin-left: 5em;
+    padding: 0.5em;
+}
+#user a{
+    margin-right: 5em;
+}
+@media screen and (max-width: 1000px){
+    #logOut {
+        margin-left: 0;
+    }
+    #user a{
+        margin-right: 0;
+    }
+    header {
+        align-items: center;
+        padding: 1em 0 1em 0;
+    }
+}
+
+/*END HEADER*/
+
+
+
+
+#content{
+    width: 80%;
+    margin: 15% auto 5% auto;
+    flex: 1;
+}
+.columns {
+    display: flex;
+    justify-content: center;
+}
+.column{
+    margin: 1em;
+}
+footer{
+    bottom: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+footer p{
+    color: #759e2e;
+    font-style: italic;
+    margin-left: 1em;
+}
+
+
+/*Dessa används på why-us-html*/
+.line{
+    float: left;
+    background-color: green;
+    height: 5px;
+    width: 100%;
+    border-radius: 15px;
+}
+@media screen and (max-width: 1000px){
+    header, .columns{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .columns img {
+        width:100%;
+    }
+    #nav ul {
+        flex-wrap: wrap;
+    }
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid #3faecc;
+  right: 45px;
+  top: 50px;
+  display: none;
+}
+
+.login-form {
+  position: absolute;
+  width: 280px;
+  height: auto;
+  background: #fff;
+  right: 30px;
+  top: 65px;
+  border-radius: 3px;
+  border-bottom: 4px solid #2b87a0;
+  display: none;
+  box-shadow: 0 2px 8px #3faecc;
+}
+
+.login-form>form {
+  width: 200px;
+  margin: 25px auto;
+  font-size: 20px;
+  font-family: Helvetica, Arial;
+  color: gray;
+  letter-spacing: -0.05em;
+}
+
+input[type="text"], input[type="password"] {
+  width: 195px;
+  height: 30px;
+  padding-left: 5px;
+  border: 0px;
+  outline: none;
+  box-shadow: inset 0 0 10px #eee;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-family: Helvetica, Arial;
+  font-size: 14px;
+}
+
+input[type="password"] {
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 35px;
+  background: #759e2e;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif, Arial;
+  color: white;
+  outline: none;
+  border: 0px;
+  border-radius: 3px;
+  letter-spacing: -0.05em;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #668a28;
+}
+
+#errorMessageDiv {
+  font-family: "Roboto", sans-serif;
+  font-size: smaller;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+
+
+/*KANSKE KOMMER ANVÄNDA SENARE
+.readMore{
+    background-color: #72c3da;
+    float: right;
+    padding: 5px;
+    border-radius: 3px;
+}
+.readMore:hover{
+    background-color: #3faecc;
+}
+*/
