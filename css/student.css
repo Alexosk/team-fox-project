@@ -98,12 +98,9 @@ ul {
     color: white !important;
 }
 
-#student {
-    background-color: purple;
-    color: white;
-    padding : 0.5em;
-    border-radius: 9px;
-}
+
+
+
 header{
     background-color: #562E84;
 }
@@ -129,6 +126,7 @@ header h1{
 }
 #student {
     background-color: #562E84;
+    margin-right: 3em;
 }
 .listBtn{
     border: 1px solid #562E84;
@@ -152,10 +150,23 @@ header h1{
 }
 #nav ul li:last-child{
     margin-right: 1em;
+    margin-left: 3em;
 }
 #logo img {
     margin-right: 0;
 }
 #logo{
     margin-left: 1em;
+}
+@media screen and (max-width: 1000px){
+    #student {
+        margin-right: 0;
+    }
+    #nav ul li:last-child{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #nav {
+        margin: 0.1em;
+    }
 }
