@@ -19,7 +19,7 @@ header{
 }
 #content{
     width: 80%;
-    margin: 15% auto 5% auto;
+    margin: 20vh auto 5vh auto;
     flex: 1;
 }
 .columns {
@@ -54,7 +54,7 @@ footer p{
 #nav ul li{
     margin: 0 2em 1em 0;
     list-style: none;
-    padding: 0.2em;
+    padding: 0.5em;
     font-weight: bold;
 }
 a{
@@ -70,7 +70,7 @@ a{
     background: #3faecc;
     border-radius: 9px;
     color: #fff;
-    padding: 3px;
+    padding: 0.5em;
 }
 #login a{
   color: #fff;
@@ -89,6 +89,9 @@ h2{
     padding: 5px;
     border-radius: 9px;
     transition: 0.2s;
+}
+.listBtn:hover a{
+    color: white;
 }
 /*Dessa används på why-us-html*/
 .line{

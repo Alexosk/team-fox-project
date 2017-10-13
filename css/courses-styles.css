@@ -6,7 +6,8 @@ body {
 }
 #content{
     width: 80%;
-    margin: 15% auto 5% auto;
+    margin: 20vh auto 5vh auto;
+    flex: 1;
 }
 .columns {
     display: flex;

@@ -13,7 +13,9 @@ a{
 .space {
     height: 5em;
 }
-
+.listBtn:hover a{
+    color: white;
+}
 
 /*HEADER*/
 header{
