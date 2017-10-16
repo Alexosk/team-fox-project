@@ -10,9 +10,6 @@ body {
 }
 
 header {
-<<<<<<< Updated upstream
-    z-index:9999;
-=======
   background: #fff;
   padding: 0.2em;
   display: flex;
@@ -22,19 +19,10 @@ header {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 1;
->>>>>>> Stashed changes
 }
-
-#content {
-<<<<<<< Updated upstream
-    width: 80%;
-    margin: 20vh auto 10vh auto;
-    flex: 1;
-=======
   width: 80%;
   margin: 10% auto 5% auto;
   flex: 1;
->>>>>>> Stashed changes
 }
 
 .columns {
@@ -64,8 +52,6 @@ footer p {
   font-style: italic;
   margin-left: 1em;
 }
-<<<<<<< Updated upstream
-=======
 
 #logo {
   align-items: center;
@@ -88,7 +74,6 @@ footer p {
   font-weight: bold;
 }
 
->>>>>>> Stashed changes
 a {
   text-decoration: none;
   color: #000;
@@ -97,8 +82,6 @@ a {
 .space {
   height: 2em;
 }
-<<<<<<< Updated upstream
-=======
 
 .listBtn:hover {
   background-color: #759e2e;
@@ -107,7 +90,6 @@ a {
   transition: 0.2s;
 }
 
->>>>>>> Stashed changes
 /*Dessa används på why-us-html*/
 
 .line {
