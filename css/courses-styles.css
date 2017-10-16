@@ -1,7 +1,4 @@
 
-.columns {
-    /*space-around för innehållet*/
-}
     /*COURSES CSS*/
     h2{
       text-align:  center;
@@ -15,37 +12,18 @@
     }
     h5{
         font-size: 17px;
-        /* margin-bottom: -5pxs; */
     }
     table{
         border: 1px solid black;
         border-collapse: collapse;
         margin: 15px 0 20px 0;
-        table-layout: fixed; width: 100%;
+        table-layout: fixed; 
+        width: 100%;
     }
     th, td{
         border: 1px solid #dddddd;
         text-align: left;
         padding: 5px;
-    }
-    .tables{
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        flex-basis: 0;
-       /* margin-left: -20px; */
-    }
-/*     .line{
-        float: left;
-        background-color: #759e2e;
-        height: 5px;
-        width: 100%;
-        border-radius: 15px;
-    } */
-    .sidePara{
-/*         width: 320px;
-        margin: 15px 0 0 -5px;
-        padding-bottom: 15px */
     }
     table tr:nth-child(odd){
         background-color: lightblue;
@@ -57,16 +35,6 @@
         font-size: 14px;
     }
     @media screen and (max-width: 1000px){
-        #content {
-            margin-top: 1em;
-            padding: 0;
-            width: 100%;
-            justify-content: center;
-        }
-        .column{
-            margin: 1em;
-            padding: 0;
-        }
         table tr td {
             font-size: 75%;
         }

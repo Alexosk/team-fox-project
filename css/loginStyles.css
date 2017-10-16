@@ -126,6 +126,16 @@ footer p{
     #nav ul {
         flex-wrap: wrap;
     }
+    #content {
+        margin-top: 1em;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .column{
+        margin: 1em;
+        padding: 0;
+    }
 }
 
 .triangle {
@@ -204,17 +214,3 @@ input[type="submit"]:hover {
   padding-top: 5px;
   font-size: 14px;
 }
-
-
-
-/*KANSKE KOMMER ANVÄNDA SENARE
-.readMore{
-    background-color: #72c3da;
-    float: right;
-    padding: 5px;
-    border-radius: 3px;
-}
-.readMore:hover{
-    background-color: #3faecc;
-}
-*/
