@@ -1,71 +1,144 @@
 * {
-    margin: 0;
+  margin: 0;
 }
+
 body {
-    font-family: "Helvetica";
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: "Helvetica";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 header {
+<<<<<<< Updated upstream
     z-index:9999;
+=======
+  background: #fff;
+  padding: 0.2em;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+>>>>>>> Stashed changes
 }
+
 #content {
+<<<<<<< Updated upstream
     width: 80%;
     margin: 20vh auto 10vh auto;
     flex: 1;
+=======
+  width: 80%;
+  margin: 10% auto 5% auto;
+  flex: 1;
+>>>>>>> Stashed changes
 }
+
 .columns {
-    display: flex;
-    justify-content: center;
-}
-.column {
-    margin: 1em;
-}
-.column-table {
   display: flex;
   justify-content: center;
+}
+
+.column {
+  margin: 1em;
+}
+
+.column-table {
+  display: flex;
+  justify-content: left;
   margin: 50px auto 15px auto;
 }
-footer {
-    bottom: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
 
+footer {
+  bottom: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
+
 footer p {
-    color: #759e2e;
-    font-style: italic;
-    margin-left: 1em;
+  color: #759e2e;
+  font-style: italic;
+  margin-left: 1em;
 }
+<<<<<<< Updated upstream
+=======
+
+#logo {
+  align-items: center;
+  display: flex;
+}
+
+#nav {
+  align-items: flex-end;
+  display: flex;
+}
+
+#nav ul {
+  display: inline-flex;
+}
+
+#nav ul li {
+  margin: 0 2em 1em 0;
+  list-style: none;
+  padding: 0.2em;
+  font-weight: bold;
+}
+
+>>>>>>> Stashed changes
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
+
 .space {
-    height: 2em;
+  height: 2em;
 }
+<<<<<<< Updated upstream
+=======
+
+.listBtn:hover {
+  background-color: #759e2e;
+  padding: 5px;
+  border-radius: 9px;
+  transition: 0.2s;
+}
+
+>>>>>>> Stashed changes
 /*Dessa används på why-us-html*/
+
 .line {
-    float: left;
-    background-color: green;
-    height: 5px;
-    width: 100%;
-    border-radius: 15px;
+  float: left;
+  background-color: green;
+  height: 5px;
+  width: 100%;
+  border-radius: 15px;
 }
-@media screen and (max-width: 1000px){
-    header, .columns {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-    .columns img {
-        width:100%;
-    }
-    #nav ul {
-        flex-wrap: wrap;
-    }
+
+@media screen and (max-width: 1000px) {
+  header, .columns {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .columns img {
+    width: 100%;
+  }
+  #nav ul {
+    flex-wrap: wrap;
+  }
+}
+.kurs {
+  font-size: 30px;
+  font-weight: bold;
+}
+.kurs:hover {
+ font-size: 30px;
+ color: red;
+
 }
 h2 {
   font-size: 20px;
@@ -74,74 +147,83 @@ h2 {
   padding-bottom: 20px;
   color: black;
 }
+
 h5 {
+  font-weight: 400;
   margin-top: 15px;
 }
+
+.status {
+  color: red;
+  font-style: italic;
+}
+
 .info {
   margin-top: 25px;
   margin-right: 100px;
 }
+
 form {
   width: 200px;
   height: 510px;
   margin: auto;
   position: relative;
 }
+
 label {
   font-size: 13px;
 }
-table, th, td {
 
-}
 table tr:nth-child(odd) {
-    background-color: #72c3da;
-  }
+  background-color: #72c3da;
+}
+
 td {
-    height: 25px;
-    vertical-align: bottom;
+  height: 25px;
 }
+
 th, td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #759e2e;
-    border-radius: 2px;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #759e2e;
+  border-radius: 2px;
 }
+
 th {
-    background-color: #72c3da;
-    color: black;
-}
-input[type=text], select, textarea {
-    font-size: 13px;
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #759e2e;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    resize: both;
+  background-color: #72c3da;
+  color: black;
 }
 
-/* Style the submit button with a specific background color etc */
+/* input[type=text], select, textarea {
+  font-size: 13px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #759e2e;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  resize: both;
+}
+
 input[type=submit] {
-    background-color: #4CAF50;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 15px;
-}
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
+  background-color: #4CAF50;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-    margin-top: 80px;
-    border-radius: 5px;
-    background-color: #72c3da;
-    padding: 20px;
+input[type=submit]:hover {
+  background-color: #45a049;
 }
+
+.container {
+  margin-top: 80px;
+  border-radius: 5px;
+  background-color: #72c3da;
+  padding: 20px;
+} */
