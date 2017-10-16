@@ -1,67 +1,12 @@
-* {
-    margin: 0;
-}
-body {
-    font-family: "Helvetica";
-}
-#content{
-    width: 80%;
-    margin: 20vh auto 5vh auto;
-    flex: 1;
-}
+
 .columns {
-    display: flex;
-    justify-content: space-around; /*space-around för innehållet*/
+    /*space-around för innehållet*/
 }
-.column{
-    margin: 1em;
-}
-footer{
-    bottom: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
-
-    /*****TEST*****/
-    /*GRADIENT FOOTER
-    background: linear-gradient(to top left, #efefef, gray);
-    */
-}
-footer p{
-    color: #759e2e;
-    font-style: italic;
-    margin-left: 1em;
-}
-
-a{
-    text-decoration: none;
-    color: #000;
-}
-.space {
-    height: 5em;
-}
-
-
-@media screen and (max-width: 1000px){
-    header, .columns{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-    .columns img {
-        width:100%;
-    }
-    #nav ul {
-        flex-wrap: wrap;
-    }
-}
-
-
     /*COURSES CSS*/
     h2{
       text-align:  center;
       float: center;
-      margin: -30px 0 20px 0;
+      margin-bottom:1em;
     }
     h3{
       padding-bottom: 10px;
@@ -70,13 +15,13 @@ a{
     }
     h5{
         font-size: 17px;
-        margin-bottom: -5pxs;
+        /* margin-bottom: -5pxs; */
     }
     table{
         border: 1px solid black;
         border-collapse: collapse;
-        width: 100%;
         margin: 15px 0 20px 0;
+        table-layout: fixed; width: 100%;
     }
     th, td{
         border: 1px solid #dddddd;
@@ -84,20 +29,23 @@ a{
         padding: 5px;
     }
     .tables{
-        width: 50%;
-        margin-left: -20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+       /* margin-left: -20px; */
     }
-    .line{
+/*     .line{
         float: left;
         background-color: #759e2e;
         height: 5px;
         width: 100%;
         border-radius: 15px;
-    }
+    } */
     .sidePara{
-        width: 320px;
+/*         width: 320px;
         margin: 15px 0 0 -5px;
-        padding-bottom: 15px
+        padding-bottom: 15px */
     }
     table tr:nth-child(odd){
         background-color: lightblue;
@@ -107,4 +55,19 @@ a{
     }
     td{
         font-size: 14px;
+    }
+    @media screen and (max-width: 1000px){
+        #content {
+            margin-top: 1em;
+            padding: 0;
+            width: 100%;
+            justify-content: center;
+        }
+        .column{
+            margin: 1em;
+            padding: 0;
+        }
+        table tr td {
+            font-size: 75%;
+        }
     }

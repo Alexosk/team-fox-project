@@ -91,6 +91,8 @@ header h1{
 }
 .column{
     margin: 1em;
+    flex-basis: 0;
+    flex-grow: 1;
 }
 footer{
     bottom: 0;
@@ -107,7 +109,6 @@ footer p{
 
 /*Dessa används på why-us-html*/
 .line{
-    float: left;
     background-color: green;
     height: 5px;
     width: 100%;
