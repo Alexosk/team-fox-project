@@ -93,6 +93,58 @@ h2{
 .listBtn:hover a{
     color: white;
 }
+
+
+/*h3 is shaped for prices.html*/
+h3{
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+/*Alot of specific changes to price.html*/
+.priceBtn{
+  background-color: lightblue;
+  text-align: center;
+  margin-top: 5px;
+}
+.priceBtn:hover{
+  background-color: blue;
+  color: white;
+}
+.pricePara{
+  font-size: 14px;
+  margin-right: 15px;
+}
+.overPerk{
+  margin-top: 10px; 
+}
+.perk{
+  background: -webkit-linear-gradient(left, rgba(30,87,153,1) 6%,rgba(30,87,153,0.07) 93%,rgba(125,185,232,0) 100%);
+  margin-top: 3px;
+}
+.perk p{
+  margin-left: 10px;
+  color: lightgray;
+}
+.perkLeft{
+  background: -webkit-linear-gradient(left, rgba(30,87,153,1) 6%,rgba(30,87,153,0.07) 93%,rgba(125,185,232,0) 100%);
+  margin-top: 3px;
+}
+.perkLeft p{
+  margin-left: 10px;
+  color: lightgray;
+}
+.perkRight{
+  background: -webkit-linear-gradient(left, rgba(30,87,153,1) 6%,rgba(30,87,153,0.07) 93%,rgba(125,185,232,0) 100%);
+  margin-top: 3px;
+}
+.perkRight p{
+  margin-left: 10px;
+}
+
+
+
+
+
 /*Dessa används på why-us-html*/
 .line{
     float: left;
