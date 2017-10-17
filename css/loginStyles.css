@@ -240,9 +240,11 @@ input[type="submit"]:hover {
   align-items: flex-start;
   margin: 20px;
 }
+
 .kurs {
   font-size: 50px;
 }
+
 .course {
   font-size: 20px;
   font-weight: bold;
@@ -278,37 +280,53 @@ input[type="submit"]:hover {
 footer h4 {
   color: #FDB722;
 }
+
 /*JAVASCRIPT ENDS*/
 
-/*UTVERDERING.HTML*/
+/*EVALUATION.HTML*/
 
 .container {
   display: flex;
   flex-direction: column;
-  border: 3px solid mistyrose;
+  border: 3px solid purple;
   min-height: 100vh;
-  align-content: flex-start;
 }
+
+.container h1 {
+  margin-top: 1vh;
+  margin-left: 4vh;
+}
+
 .question {
-  border: 3px solid mistyrose;
+  border-top: 3px solid purple;
 }
+
 .question h3 {
+  margin-top: 2vh;
+  margin-left: 4vh;
   display: flex;
   align-content: flex-start;
 }
+
 .question textarea {
   display: inline-flex;
-  align-content: flex-start;
   font-size: 15px;
-  margin-top: 1vh;
-  margin-left: 3vh;
-  border: 3px solid purple;
+  height: 15vh;
+  width: 60vh;
+  margin-top: 2vh;
+  margin-left: 5vh;
+  margin-bottom: 5vh;
+  border: 1px solid purple;
+  resize: none;
 }
 
 input[type="radio"] {
   display: inline-flex;
-  margin: 2vh;
+  vertical-align: center;
+  margin-top: 4vh;
+  margin-right: 1vh;
+  margin-left: 5vh;
+  margin-bottom: 5vh;
 }
 
-
-/*UTVERDERING.HTML ENDS!*/
+/*EVALUATION.HTML ENDS!*/
