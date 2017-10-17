@@ -1,6 +1,6 @@
 .boxes{
     margin: 1em;
-    border: 2px solid #3faecc;
+    border: 2px solid #562e84;
     border-radius: 9px;
     flex: 1;
 }
@@ -12,8 +12,26 @@
 .boxtext{
   margin: 0.5em;
 }
+.hiddenbox{
+  display: flex;
+  flex-direction: row;
+}
+.attendancebox{
+  flex: 1;
+  margin: 0.5em;
+}
+#hidden{
+  margin: 0.5em;
+  display: none;
+}
+@media screen and (max-width: 1000px){
+  .hiddenbox{
+    display: flex;
+    flex-direction: column;
+  }
+}
 .divider{
-    background-color: #759e2e;
+    background-color: #562e84;
     height: 2px;
     width: 100%;
     margin-top: 5px;
@@ -31,7 +49,7 @@ ul {
 /* Month header */
 .month {
     width: 100%;
-    background: #759e2e;
+    background: #562e84;
     text-align: center;
 }
 
@@ -42,7 +60,7 @@ ul {
 }
 
 .month ul li {
-    color: white;
+    color: #fdb722;
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -89,11 +107,12 @@ ul {
     margin-bottom: 5px;
     font-size:12px;
     color:#777;
+    cursor: pointer;
 }
 
 /* Highlight the "current" day */
 .days li .active {
     padding: 5px;
-    background: #759e2e;
-    color: white !important;
+    background: #562e84;
+    color: #fdb722 !important;
 }

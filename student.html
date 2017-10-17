@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="./css/loginStyles.css">
   <link rel="stylesheet" type="text/css" href="./css/student.css">
   <link rel="shortcut icon" href="images/la.png">
+  <script type="text/javascript"></script>
 </head>
 
 <body>
@@ -84,7 +85,7 @@
               <li>8</li>
               <li>9</li>
               <li>
-                <span class="active">10</span>
+                <span class="active" onclick="hiddenFunction()">10</span>
               </li>
               <li>11</li>
               <li>12</li>
@@ -108,6 +109,21 @@
               <li>30</li>
               <li>31</li>
             </ul>
+            <div class="divider"></div>
+            <div id="hidden">
+            <div class="hiddenbox">
+              <div class="attendancebox">
+              <p>09.00-12.00<br>Sal 115<br>Javascript</p>
+            </div>
+            <div class="attendancebox">
+              <h5>Närvaro</h5>
+              <form class="attendace-form">
+                <input type="text" id="attendance" name="myAttendance" placeholder="Dagens kod" autofocus>
+                <input type="submit" value="submit">
+              </form>
+            </div>
+            </div>
+          </div>
           </div>
         </div>
 
@@ -142,6 +158,7 @@
     <h4>&#169;Team Fox 2017</h4>
     <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
   </footer>
+  <script src="./script/app.js"></script>
 </body>
 
 </html>

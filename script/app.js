@@ -25,3 +25,7 @@ function printMessageToDOM(color, message) {
 function redirectToStudent() {
     window.location = "student.html";
 }
+
+function hiddenFunction(){
+  document.getElementById("hidden").style.display="block";
+}
