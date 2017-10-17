@@ -6,9 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="./css/loginStyles.css">
-  <link rel="stylesheet" type="text/css" href="./css/javascript.css">
   <link rel="shortcut icon" href="images/la.png">
-  <meta charset="UTF-8">
 </head>
 
 <body>
@@ -24,8 +22,8 @@
       <ul>
         <li>
           <a href="student.html">
-            <img src="./images/studentson.png" width="40">
-          </a>
+                      <img src="./images/studentson.png" width="40">
+                  </a>
         </li>
         <li id="user">
           <a href="student.html">Stu Dentson</a>
@@ -47,115 +45,68 @@
   </header>
   <div id="content">
 
-    <div class="columns">
-
-      <div class="column">
-
-        <h1>Javascript</h1>
-        <h5>Lärare: Lord Vader</h5>
-        <h5 class="status"> <em>Avslutad 2017.03.09 - 2017.12.17</em> </h5>
-        <div class="space"></div>
-        <a class="kurs" href="#"> Kurs Utvärdering </a>
-
-        <p class="info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-          eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-          voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-          voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-          velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-
-        <div class="space"></div>
-        <div class="line"></div>
-        <div class="space"></div>
-
-        <div class="column-table">
-
-         <table>
-            <tr>
-              <th>Projekt</th>
-              <th>Betyg</th>
-              <th>Datum</th>
-            </tr>
-
-            <tr>
-              <td>Projekt 1</td>
-              <td>
-                <strong>VG</strong>
-              </td>
-              <td>
-                <em>2017.01.02 - 2017.03.30</em>
-              </td>
-            </tr>
-
-            <tr>
-              <td>Project 2</td>
-              <td>
-                <strong>VG</strong>
-              </td>
-              <td>
-                <em>2017.01.02 - 2017.02.30</em>
-              </td>
-            </tr>
-
-            <tr>
-              <td>Project 3</td>
-              <td>
-                <strong>VG</strong>
-              </td>
-              <td>
-                <em>2017.03.03 - 2017.04.02</em>
-              </td>
-            </tr>
-
-            <tr>
-              <th>Slut Betyg</th>
-              <td>
-                <strong>MVG</strong>
-              </td>
-            </tr>
-
-          </table>
-        </div>
+    <div class="box columns">
+      <h1 class="kurs"> Javascript 1B </h1>
+      <h3> Lärare: Lord Vader </h3>
+      </br>
+      <h4 class="finished"> Avslutad kurs </h4>
+      </br>
+      <p class="course-info">Suscipit uae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+      <p class="course-info"> Ipit laboriosam, nisi ut aliquid ex ea commodi consequat </p>
+      </br>
+      <a class="course" href="utverdering.html"> Kursutvärdering </a>
+      </br>
 
 
-        <p class="info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-          quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+      <div class="line-purple"></div>
+      </br>
+      </br>
 
-        <div class="space"></div>
-        <div class="column">
-          <h1> Kurs Utvärdering </h1>
-          <p> </p>
-        </div>
+      <h1> Kursbetyg </h1>
+      </br>
+      <div>
+        <table class="java-table">
+          <tr>
+            <th>Uppgifter</th>
+            <th>Betyg</th>
+            <th>Datum</th>
+          </tr>
+
+          <tr>
+            <td>Project 1</td>
+            <td>IG</td>
+            <td>---</td>
+          </tr>
+
+          <tr>
+            <td>Project 2</td>
+            <td>IG</td>
+            <td>---</td>
+          </tr>
+
+          <tr>
+            <td>Project 3</td>
+            <td>IG</td>
+            <td>---</td>
+          </tr>
+
+          <tr>
+            <th>Slutbetyg</th>
+            <th>MVG</th>
+            <th></th>
+          </tr>
+
+        </table>
       </div>
+      </br>
+      <a class="course" href="utverdering.html"> Kursutvärdering </a>
 
-
-      <!--  <div class="container">
-          <h2> Vad tyckte du om kursen? </h2>
-          <form>
-
-            <label for="fname">Förnamn</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Efternamn</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="femail">E-post adress</label>
-            <input type="text" id="femail" name="e-mail" placeholder="Your email adress..">
-
-            <label for="subject">Ämne</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" name="mysubmit" value="Submit">
-
-          </form>
-
-        </div> -->
-      </div>
     </div>
 
     <div class="space"></div>
-
   </div>
+
+
 
   <footer>
     <h4>&#169;Team Fox 2017</h4>
