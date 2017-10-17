@@ -234,10 +234,6 @@ input[type="submit"]:hover {
 
 /*JAVASCRIPT*/
 
-.boxer h3 {
-  margin-left: 3vh;
-}
-
 .boxer {
   display: flex;
   flex-direction: column;
@@ -259,9 +255,9 @@ input[type="submit"]:hover {
   color: red;
 }
 
-.line-purple {
+.line-black {
   background-color: #000;
-  height: 5px;
+  height: 1px;
   width: 100%;
   border-radius: 15px;
 }
@@ -272,14 +268,18 @@ input[type="submit"]:hover {
 }
 
 .java-table, th, td {
-  border: 2px solid black;
+  border: 1px solid #dddddd;
   border-collapse: collapse;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 15px;
 }
 
+.java-table th {
+  text-align: left;
+}
+
 .java-table tbody tr:nth-child(odd) {
-  background: #CB92E8;
+  background: lightblue;
 }
 
 footer h4 {
