@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="./css/loginStyles.css">
-  <link rel="stylesheet" type="text/css" href="./css/courses-styles.css">
   <link rel="shortcut icon" href="images/la.png">
 </head>
 
@@ -23,8 +22,8 @@
       <ul>
         <li>
           <a href="student.html">
-            <img src="./images/studentson.png" width="40">
-          </a>
+                      <img src="./images/studentson.png" width="40">
+                  </a>
         </li>
         <li id="user">
           <a href="student.html">Stu Dentson</a>
@@ -44,16 +43,72 @@
       </ul>
     </div>
   </header>
-    <div id="content">
-        <h2>Enkäter</h2>
-            <div class="line"></div>
-            <div class="space"></div>
+  <div id="content">
+    <div class="container">
+      <h1> Veckoreflektering </h1>
+      </br>
+
+      <div class="question question2">
+        <h3> 1. Hur upplever du tempot? </h3>
+        <input type="radio" name="x1" value="Shit" />Hinner inte med alls
+        <input type="radio" name="x1" value="Bad" />Hinner lite med
+        <input type="radio" name="x1" value="NoOpinion" />Ingen åsikt
+        <input type="radio" name="x1" value="Good" />Bra
+        <input type="radio" name="x1" value="VeryGood" />Mycket bra
+      </div>
+
+      <div class="question question3">
+        <h3> 2. Hur engagerad anser du själv att du är i dina studier? </h3>
+        <input type="radio" name="x2" value="Shit" />Jag gör ingen ting
+        <input type="radio" name="x2" value="Bad" />Inte mycket
+        <input type="radio" name="x2" value="NoOpinion" />Ingen åsikt
+        <input type="radio" name="x2" value="Good" />Bra
+        <input type="radio" name="x2" value="VeryGood" />Mycket bra
+      </div>
+
+      <div class="question question4">
+        <h3> 3. Hur upplever du stämningen i klassen? </h3>
+        <input type="radio" name="x3" value="Shit" />Skit dålig
+        <input type="radio" name="x3" value="Bad" />Dåligt
+        <input type="radio" name="x3" value="NoOpinion" />Ingen åsikt
+        <input type="radio" name="x3" value="Good" />Bra
+        <input type="radio" name="x3" value="VeryGood" />Mycket bra
+      </div>
+
+      <div class="question question5">
+        <h3> 4. Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i? </h3>
+        <textarea></textarea>
+      </div>
+
+      <div class="question question6">
+        <h3> 5. Vad har varit bra? </h3>
+        <textarea></textarea>
+      </div>
+
+      <div class="question question7">
+        <h3> 6. Förslag på förbättringar? </h3>
+        <textarea></textarea>
+      </div>
+
+      <input type="submit" name="Skicka in" value="Skicka in" onclick="evaluation()">
+
+
     </div>
-    <div class="space"></div>
-    <footer>
-        <h4>&#169;Team Fox 2017</h4>
-        <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
-    </footer>
+
+  </div>
+
+  <footer>
+    <h4>&#169;Team Fox 2017</h4>
+    <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
+  </footer>
+
+  <script>
+    function evaluation() {
+      alert("Tack för ditt inlägg");
+      window.location.reload();
+    }
+  </script>
+
 </body>
 
 </html>
