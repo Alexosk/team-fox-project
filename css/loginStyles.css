@@ -290,22 +290,24 @@ footer h4 {
   align-content: flex-start;
 }
 .question {
-border: 3px solid mistyrose;
-align-content: flex-start;
+  border: 3px solid mistyrose;
 }
-
+.question h3 {
+  display: flex;
+  align-content: flex-start;
+}
 .question textarea {
+  display: inline-flex;
+  align-content: flex-start;
   font-size: 15px;
-  height: 50px;
-  width: 300px;
-  margin-top: 10px;
-  margin-left: 20px;
-  min-width: 50vh;
+  margin-top: 1vh;
+  margin-left: 3vh;
   border: 3px solid purple;
 }
 
 input[type="radio"] {
   display: inline-flex;
+  margin: 2vh;
 }
 
 
