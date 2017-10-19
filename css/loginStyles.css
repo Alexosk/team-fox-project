@@ -3,10 +3,11 @@
 }
 
 body {
-  font-family: "Helvetica";
+  font-family: Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #eee;
 }
 
 a {
@@ -295,6 +296,10 @@ footer h4 {
   flex-direction: column;
   border: 3px solid purple;
   min-height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 4px #aaa;
+  border: 1px solid #fff;
+  padding: 1rem;
 }
 
 .container h1 {

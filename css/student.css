@@ -1,8 +1,16 @@
+body {
+  background-color: #eee;
+}
+
 .boxes{
+    background-color: #fff;
     margin: 1em;
-    border: 2px solid #562e84;
-    border-radius: 9px;
+    border: 0 solid #562e84;
+    border-radius: 0px;
     flex: 1;
+    box-shadow: 1px 1px 2px #aaa;
+    border-radius: 0;
+    padding: 0.75rem;
 }
 .box{
     display: flex;
@@ -38,7 +46,7 @@
     margin-bottom: 5px;
 }
 h3{
-  text-align: center;
+  text-align: left;
 }
 
 /* Calendar */
