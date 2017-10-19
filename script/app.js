@@ -26,6 +26,16 @@ function redirectToStudent() {
     window.location = "student.html";
 }
 
+/* Student.html */
+
 function hiddenFunction(){
   document.getElementById("hidden").style.display="block";
+}
+function attended() {
+    let code = document.forms["attendace-form"]["code"].value;
+    if (code == "1563") {
+    alert("Hoppas du hade en bra dag!");
+  } else {
+    alert("Fel kod!");
+  }
 }
