@@ -18,6 +18,11 @@ $(document).ready(function () {
       status = false;
     }
   })
+  $(window).resize(function(){
+    tri.fadeOut();
+    form.fadeOut();
+    status = false;
+  });
 })
 
 // Checks if window size is less than 1000px and in that case sets the login to login.html
