@@ -28,10 +28,14 @@
     table tr:nth-child(odd){
         background-color: lightblue;
     }
+    a{
+        color: black;
+    }
     td a:hover{
         color: red;
     }
     td{
+        color: black;
         font-size: 14px;
     }
     @media screen and (max-width: 1000px){
