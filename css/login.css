@@ -17,6 +17,7 @@ header{
     top: 0;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
 }
 #content{
     width: 80%;
@@ -45,9 +46,13 @@ footer p{
     align-items: center;
     display: flex;
 }
+#logo a img {
+  display: none;
+}
+
 #nav{
     align-items: flex-end;
-    display: flex;
+    display: none;
 }
 #nav ul {
     display: inline-flex;
@@ -92,7 +97,7 @@ h2{
     color: white;
 }
 @media screen and (max-width: 1000px){
-    header, .columns{
+    .columns{
         display: flex;
         flex-direction: column;
         position: relative;
@@ -113,8 +118,8 @@ h2{
   }
 
   .login-face>img {
-    width: 160px;
-    height: 100px;
+    width: 100px;
+
     overflow: hidden;
     margin-bottom: 20px;
   }
@@ -165,4 +170,3 @@ h2{
     font-family: "Roboto", sans-serif;
     font-size: smaller;
   }
-

@@ -328,9 +328,7 @@ footer h4 {
   width: 60%;
   border: 1px solid purple;
   resize: none;
-}
-.question h3 {
-  
+  font-size: 2vh;
 }
 
 input[type="radio"] {
@@ -342,7 +340,7 @@ input[type="radio"] {
     flex-direction: column;
   }
   .question textarea {
-   width: 100%;
+    width: 100%;
   }
 }
 
