@@ -28,6 +28,12 @@
     table tr:nth-child(odd){
         background-color: lightblue;
     }
+    .rattade tr:nth-child(odd){
+        background-color: #999999;
+    }
+    .comming tr:nth-child(odd){
+        background-color: #a8d260;
+    }
     a{
         color: black;
     }

@@ -40,8 +40,15 @@
                       <div>
                         <input class="cardNumber" type="text" placeholder="Cardnumber" name="cardnumber" />
                       </div>
+
+                      <div class="cvcAndExpDate">
+                          <input type="text" name="cvc" placeholder="CVC">
+                          <input type="text" name="expYear" placeholder="Year">
+                          <input type="text" name="expDate" placeholder="Date">
+                      </div>
+
                       <div>
-                        <input type="submit" value="Checkout" />
+                            <input type="submit" value="Checkout" onclick="checkoutAlert()">
                       </div>
                     </form>
                 </section>
