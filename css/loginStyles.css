@@ -154,6 +154,13 @@ footer p {
     margin: 1em;
     padding: 0;
   }
+
+  .java-table th:nth-child(2) {
+    display: none;
+  }
+  .java-table td:nth-child(2) {
+    display: none;
+  }
 }
 
 .triangle {
@@ -304,6 +311,7 @@ footer h4 {
 .container h1 {
   margin-left: 2vh;
   margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 .question {
