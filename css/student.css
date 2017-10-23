@@ -2,72 +2,84 @@ body {
   background-color: #eee;
 }
 
-.boxes{
-    background-color: #fff;
-    margin: 1em;
-    border: 0 solid #562e84;
-    border-radius: 0px;
-    flex: 1;
-    box-shadow: 1px 1px 2px #aaa;
-    border-radius: 0;
-    padding: 0.75rem;
+.boxes {
+  background-color: #fff;
+  margin: 1em;
+  border: 0 solid #562e84;
+  border-radius: 0px;
+  flex: 1;
+  box-shadow: 1px 1px 2px #aaa;
+  border-radius: 0;
+  padding: 0.75rem;
 }
-.box{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
-.boxtext{
+
+.boxtext {
   margin: 0.5em;
 }
-.hiddenbox{
+
+.hiddenbox {
   display: flex;
   flex-direction: row;
 }
-.attendancebox{
+
+.attendancebox {
   flex: 1;
   margin: 0.5em;
 }
-#hidden{
+
+#hidden {
   margin: 0.5em;
   display: none;
 }
-@media screen and (max-width: 1000px){
-  .hiddenbox{
+
+@media screen and (max-width: 1000px) {
+  .hiddenbox {
     display: flex;
     flex-direction: column;
   }
 }
-.divider{
-    background-color: #562e84;
-    height: 2px;
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+
+.divider {
+  background-color: #562e84;
+  height: 2px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
 /*Alex code*/
+
 .assignments ul {
   display: flex;
   flex-direction: column;
   padding: 0;
-
 }
+
 .assignments ul li {
   border: 1px solid black;
   margin: 1vh;
   padding: 1vh;
 }
+
 .assignments a {
   color: black;
   text-decoration: underline;
   margin: 1vh;
 }
+
 .assignments a:hover {
   color: blue;
 }
+
 /* Alex code ends */
 
-h3{
+h3 {
   text-align: left;
 }
 
@@ -76,73 +88,81 @@ h3{
 ul {
   list-style-type: none;
 }
+
 /* Month header */
+
 .month {
-    width: 100%;
-    background: #562e84;
-    text-align: center;
+  width: 100%;
+  background: #562e84;
+  text-align: center;
 }
 
 /* Month list */
+
 .month ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .month ul li {
-    color: #fdb722;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+  color: #fdb722;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 /* Previous button inside month header */
+
 .month .prev {
-    float: left;
-    padding-top: 10px;
+  float: left;
+  padding-top: 10px;
 }
 
 /* Next button */
+
 .month .next {
-    float: right;
-    padding-top: 10px;
+  float: right;
+  padding-top: 10px;
 }
 
 /* Weekdays (Mon-Sun) */
+
 .weekdays {
-    margin: 0;
-    padding: 10px 0;
-    background-color:#ddd;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
 }
 
 .weekdays li {
-    display: inline-block;
-    width: 12%;
-    color: #666;
-    text-align: center;
+  display: inline-block;
+  width: 12%;
+  color: #666;
+  text-align: center;
 }
 
 /* Days (1-31) */
+
 .days {
-    padding: 10px 0;
-    background: #eee;
-    margin: 0;
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
 }
 
 .days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 12%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size:12px;
-    color:#777;
-    cursor: pointer;
+  list-style-type: none;
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
 }
 
 /* Highlight the "current" day */
+
 .days li .active {
-    padding: 5px;
-    background: #562e84;
-    color: #fdb722 !important;
+  padding: 5px;
+  background: #562e84;
+  color: #fdb722 !important;
 }

@@ -33,6 +33,7 @@ header {
   top: 0;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 9999;
 }
 
 header h1 {
@@ -154,6 +155,9 @@ footer p {
     margin: 1em;
     padding: 0;
   }
+  .java-table {
+    font-size: 80%;
+  }
   .java-table th:nth-child(2) {
     display: none;
   }
@@ -245,11 +249,15 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 20px;
+  margin: 1vh;
+  padding: 2vh;
+  background-color: #fff;
+  box-shadow: 0 0 4px #aaa;
+  border: 1px solid #fff;
 }
 
 .kurs {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .course {
@@ -259,7 +267,8 @@ input[type="submit"]:hover {
 }
 
 .course:hover {
-  color: red;
+  color: blue;
+  text-decoration: underline;
 }
 
 .line-black {
