@@ -102,12 +102,12 @@ h3{
 }
 /*Alot of specific changes to price.html*/
 .priceBtn{
-  background-color: lightblue;
+  background-color: #a8d260;
   text-align: center;
   margin-top: 5px;
 }
 .priceBtn:hover{
-  background-color: blue;
+  background-color: #587722;
   color: white;
 }
 .pricePara{
@@ -148,7 +148,7 @@ h3{
 /*Dessa används på why-us-html*/
 .line{
     float: left;
-    background-color: green;
+    background-color: #759e2e;
     height: 5px;
     width: 100%;
     border-radius: 15px;
