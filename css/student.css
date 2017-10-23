@@ -45,9 +45,27 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.boxes ul {
-padding: 0;
+/*Alex code*/
+.assignments ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
 }
+.assignments ul li {
+  border: 1px solid black;
+  margin: 1vh;
+  padding: 1vh;
+}
+.assignments a {
+  color: black;
+  text-decoration: underline;
+  margin: 1vh;
+}
+.assignments a:hover {
+  color: blue;
+}
+/* Alex code ends */
 
 h3{
   text-align: left;
