@@ -50,6 +50,7 @@
 
     <div class="columns">
       <div class="box">
+
         <div class="boxes">
           <div class="boxtext">
             <div class="month">
@@ -113,7 +114,9 @@
             <div id="hidden">
               <div class="hiddenbox">
                 <div class="attendancebox">
-                  <p>09.00-12.00<br>Sal 115<br>Javascript</p>
+                  <p>09.00-12.00
+                    <br>Sal 115
+                    <br>Javascript</p>
                 </div>
                 <div class="attendancebox">
                   <h5>Närvaro</h5>
@@ -133,9 +136,15 @@
             <div class="divider"></div>
             <div class="assignments">
               <ul>
-                <li><strong>HTML:</strong> </br>Project 1 </br>Inlämning </br>2017-10-27</li>
-                <li><strong>CSS:</strong> </br>Project 2 </br>Inlämning </br>2017-10-27 </li>
-                <li><strong> Back-End:</strong> </br> Project 2 </br> Inlämning </br>2017-10-25</li>
+                <li>
+                  <strong>HTML:</strong>
+                  </br>Project 1 </br>Inlämning </br>2017-10-27</li>
+                <li>
+                  <strong>CSS:</strong>
+                  </br>Project 2 </br>Inlämning </br>2017-10-27 </li>
+                <li>
+                  <strong> Back-End:</strong>
+                  </br> Project 2 </br> Inlämning </br>2017-10-25</li>
                 <a href="assignments.html"> Se alla uppgifter </a>
               </ul>
             </div>
@@ -143,22 +152,43 @@
         </div>
       </div>
 
-      <div class="boxes">
-        <div class="boxtext">
-          <h3>Nyheter</h3>
-          <div class="divider"></div>
-          <marquee width="auto" height="200" behavior="scroll" scrolldelay="200" loop="infinite" direction="up">
-            <div class="news" <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
-              <br />
-              <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
-            </div>
-          </marquee>
+      <div class="box">
+        <div id="smileySurvey">
+          <div class="boxes">
+            <h3>Hur är läget idag?</h3>
+            <a href ="#" onclick="hideSmileySurvey()">
+              <ul>
+                <li>&#128553;</li>
+                <li>&#128529;</li>
+                <li>&#128528;</li>
+                <li>&#128512;</li>
+                <li>&#128513;</li>
+                <li>&#128514;</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="boxtext">
+            <h3>Nyheter</h3>
+            <div class="divider"></div>
+            <marquee width="auto" height="200" behavior="scroll" scrolldelay="200" loop="infinite" direction="up">
+              <div class="news" <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                eaque
+                </p>
+                <br />
+                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                  eaque
+                </p>
+              </div>
+            </marquee>
 
-          <div class="divider"></div>
-          <h4>Dagens lunch</h4>
-          </br>
-          <p>Onsdag: Pyttipanna med stekt ägg och rödbetor. </br>
-            Vegetariskt: vårrullar</p>
+            <div class="divider"></div>
+            <h4>Dagens lunch</h4>
+            </br>
+            <p>Onsdag: Pyttipanna med stekt ägg och rödbetor. </br>
+              Vegetariskt: vårrullar</p>
+          </div>
         </div>
       </div>
     </div>
@@ -169,6 +199,7 @@
     <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
   </footer>
   <script src="./script/app.js"></script>
+  <script src="./script/smileySurvey.js"></script>
 </body>
 
 </html>

@@ -172,3 +172,20 @@ ul {
   background: #562e84;
   color: #fdb722 !important;
 }
+
+/* Smiley-survey */
+
+#smileySurvey ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 1em;
+}
+
+#smileySurvey li {
+  font-size: 250%;
+}
+
+#smileySurvey h3 {
+  text-align: center;
+}
