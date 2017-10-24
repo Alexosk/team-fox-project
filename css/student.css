@@ -68,6 +68,7 @@ body {
   background-color: #fff;
   box-shadow: 0 0 4px #562E84;
   border: 1px solid #FDB722;
+  line-height: 3vh;
 }
 
 .assignments a {
@@ -76,13 +77,29 @@ body {
   text-decoration: underline;
   margin: 1vh;
   justify-content: flex-end;
-
 }
 
 .assignments a:hover {
   color: blue;
 }
-
+.week-food ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.week-food ul li{
+  border: 1px solid black;
+  margin: 1vh;
+  padding: 1vh;
+  background-color: #fff;
+  box-shadow: 0 0 4px #562E84;
+  border: 1px solid #FDB722;
+  line-height: 3vh;
+}
+.boxes h4 {
+  margin-top: 2vh;
+  font-size: 3vh;
+}
 /* Alex code ends */
 
 h3 {
