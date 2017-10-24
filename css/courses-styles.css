@@ -42,12 +42,15 @@
     }
     td{
         color: black;
-        font-size: 14px;
+        font-size: 13px;
+    }
+    th{
+        font-size: 15px;
     }
     @media screen and (max-width: 1000px){
         table tr td {
             font-size: 75%;
-        }
+        }/*
         table th:nth-child(2),
         table th:nth-child(4){
             display: none;
@@ -55,5 +58,5 @@
         table td:nth-child(2),
         table td:nth-child(4){
             display: none;
-        }
+        }*/
     }
