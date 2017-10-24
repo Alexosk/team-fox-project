@@ -7,7 +7,7 @@ body {
   margin: 1em;
   border: 0 solid #562e84;
   border-radius: 0px;
-  flex: 1;
+  /*flex: 1;*/
   box-shadow: 1px 1px 2px #aaa;
   border-radius: 0;
   padding: 0.75rem;
