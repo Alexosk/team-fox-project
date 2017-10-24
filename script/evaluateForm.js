@@ -1,11 +1,11 @@
-function evaluation() {
+function evaluation(mandatoryQuestionsArray) {
 
-    let elements = document.getElementById("weekly-form").elements
+    let elements = document.getElementById("myForm").elements
     let numberOfQuestions = 0;
     let allQuestions = [];
     let validatedQuestions = [];
     let unansweredQuestions = [];
-    let mandatoryQuestions = ["x1","x4","x5"];
+    let mandatoryQuestions = mandatoryQuestionsArray;
 
     // Get all the questions
     for (var index = 0; index < elements.length; index++) {
@@ -22,7 +22,7 @@ function evaluation() {
         if (elements[index].type === "radio" && (!validatedQuestions.includes(elements[index].name)) && elements[index].checked) {
             validatedQuestions.push(elements[index].name);
             let removeIndex = unansweredQuestions.indexOf(elements[index].name);
-            if(removeIndex > -1){
+            if (removeIndex > -1) {
                 unansweredQuestions.splice(removeIndex, 1);
             }
         }
@@ -33,7 +33,7 @@ function evaluation() {
         if (elements[index].type === "textarea" && elements[index].value != "") {
             validatedQuestions.push(elements[index].name);
             let removeIndex = unansweredQuestions.indexOf(elements[index].name);
-            if(removeIndex > -1){
+            if (removeIndex > -1) {
                 unansweredQuestions.splice(removeIndex, 1);
             }
         }
@@ -59,6 +59,19 @@ function evaluation() {
         }
         return false;
     }
+    return true;
+}
 
-    window.location.reload();
+function evaluateWeeklyForm(){
+    if (evaluation(["x1","x2","x3","x4","x5"])){
+        return true;
+    };
+    return false;
+}
+
+function evaluateJavaScriptForm(){
+    if (evaluation(["x1","x2","x3","x10","x12","x15","x16","x17"])){
+        return true;
+    };    
+    return false;
 }
