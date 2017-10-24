@@ -4,6 +4,7 @@
       text-align:  center;
       float: center;
       margin-bottom:1em;
+      margin-top:1em;
     }
     h3{
       padding-bottom: 10px;
@@ -60,3 +61,11 @@
             display: none;
         }*/
     }
+    
+    .container {
+        align-items: center;
+      }
+
+      .line {
+          width: 98%;
+      }
