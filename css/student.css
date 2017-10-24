@@ -71,9 +71,12 @@ body {
 }
 
 .assignments a {
+  display: flex;
   color: black;
   text-decoration: underline;
   margin: 1vh;
+  justify-content: flex-end;
+
 }
 
 .assignments a:hover {
