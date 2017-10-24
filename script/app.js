@@ -29,13 +29,23 @@ function redirectToStudent() {
 /* Student.html */
 
 function hiddenFunction(){
-  document.getElementById("hidden").style.display="block";
+  let hide = document.getElementById("hidden");
+  let attend = document.getElementById("activeday");
+    if (hide.style.display === "block") {
+      hide.style.display = "none";
+      attend.style.background="#eee";
+      attend.style.color="#000";
+    }else {
+      hide.style.display="block";
+      attend.style.background="#562e84";
+      attend.style.color="#fdb722";
+    }
 }
 function attended() {
-    let code = document.forms["attendace-form"]["code"].value;
-    if (code == "1563") {
+  let code = document.forms["attendace-form"]["code"].value;
+  if (code == "1563") {
     alert("Hoppas du hade en bra dag!");
   } else {
-    alert("Fel kod!");
+    alert("Dagens kod får du av din lärare!");
   }
 }

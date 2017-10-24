@@ -58,9 +58,7 @@
                 <li class="prev">&#10094;</li>
                 <li class="next">&#10095;</li>
                 <li>
-                  Oktober
-                  <br>
-                  <span style="font-size:18px">2017</span>
+                  <span style="font-size:18px">October<br>2017</span>
                 </li>
               </ul>
             </div>
@@ -76,18 +74,24 @@
             </ul>
 
             <ul class="days">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
               <li>1</li>
               <li>2</li>
               <li>3</li>
-              <li>4</li>
+              <li id="activeday">
+                <span class="active" onclick="hiddenFunction()">4</span>
+              </li>
               <li>5</li>
               <li>6</li>
               <li>7</li>
               <li>8</li>
               <li>9</li>
-              <li>
-                <span class="active" onclick="hiddenFunction()">10</span>
-              </li>
+              <li>10</li>
               <li>11</li>
               <li>12</li>
               <li>13</li>
@@ -114,15 +118,21 @@
             <div id="hidden">
               <div class="hiddenbox">
                 <div class="attendancebox">
-                  <p>09.00-12.00
-                    <br>Sal 115
-                    <br>Javascript</p>
+                  <ul>
+                    <li>
+                      <p>09.00-12.00<br>Sal 115<br>Javascript</p>
+                    </li>
+                    <li><br></li>
+                    <li>
+                      <p>13.00-16.00<br>Sal 115<br>Javascript</p>
+                    </li>
+              </ul>
                 </div>
                 <div class="attendancebox">
-                  <h5>Närvaro</h5>
+                  <h5>Dagens närvaro</h5>
                   <form name="attendace-form">
                     <input type="text" name="code" placeholder="Dagens kod" autofocus>
-                    <input type="submit" value="submit" onclick="attended()">
+                    <input type="submit" value="Anmäl närvaro" onclick="attended()">
                   </form>
                 </div>
               </div>
