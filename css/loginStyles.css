@@ -298,6 +298,10 @@ input[type="submit"]:hover {
   background: #999999;
 }
 
+div .slut {
+  text-align: right;
+}
+
 footer h4 {
   color: #FDB722;
 }
