@@ -295,7 +295,7 @@ input[type="submit"]:hover {
 }
 
 .java-table tbody tr:nth-child(odd) {
-  background: lightblue;
+  background: #999999;
 }
 
 footer h4 {

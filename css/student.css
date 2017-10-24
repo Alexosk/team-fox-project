@@ -65,6 +65,9 @@ body {
   border: 1px solid black;
   margin: 1vh;
   padding: 1vh;
+  background-color: #fff;
+  box-shadow: 0 0 4px #562E84;
+  border: 1px solid #FDB722;
 }
 
 .assignments a {
