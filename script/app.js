@@ -46,6 +46,6 @@ function attended() {
   if (code == "1563") {
     alert("Hoppas du hade en bra dag!");
   } else {
-    alert("Dagens kod får du av din lärare!");
+    alert("Lektionens kod får du av din lärare!");
   }
 }
