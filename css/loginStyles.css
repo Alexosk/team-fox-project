@@ -366,3 +366,16 @@ input[type="radio"] {
 }
 
 /*EVALUATION.HTML ENDS!*/
+
+/* Teacher.html */
+main-news {
+  height: 50vh;
+  flex: 1;
+  display: flex;
+}
+article {
+  overflow-y: scroll;
+  padding: 2em;
+  flex: 2;
+  display: flex;
+}
