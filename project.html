@@ -16,20 +16,12 @@
     <a href="student.html">
       <div id=logo>
         <h1>YH</h1>
-        <img src="./images/la.png" width="50" alt="A picture of a fox">
+        <img src="./images/la.png" width="30" alt="YHLA">
         <h1>A</h1>
       </div>
     </a>
-    <div id="nav">
+    <div id="navContainer1">
       <ul>
-        <li>
-          <a href="student.html">
-            <img src="./images/studentson.png" width="40">
-          </a>
-        </li>
-        <li id="user">
-          <a href="#">Stu Dentson</a>
-        </li>
         <li>
           <a href="courses.html">Kurser</a>
         </li>
@@ -39,11 +31,23 @@
         <li>
           <a href="survey.html">Enkäter</a>
         </li>
+    </div>
+    <div id="navContainer2">
+      <ul>
+        <li>
+          <a href="student.html">
+            <img src="./images/studentson.png" width="40">
+          </a>
+        </li>
+        <li id="user">
+          <a href="student.html">Stu Dentson</a>
+        </li>
         <li id="logOut">
           <a href="index.html">Logga ut</a>
         </li>
       </ul>
     </div>
+    </ul>
   </header>
 
   <div id="content">
@@ -63,12 +67,16 @@
 
 
         <div class="news">
-          <h5><em> Måndag 2017.10.22 </em></h5>
+          <h5>
+            <em> Måndag 2017.10.22 </em>
+          </h5>
           </br>
           <h3> Om Projectet </h3>
           </br>
           <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-            <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+            <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+              eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam, eaque
             </p>
 
             </br>
@@ -78,8 +86,11 @@
 
             <h3> Inlämning </h3>
             </br>
-            <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-              <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+            <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+              eaque
+              <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque
               </p>
 
 
@@ -88,22 +99,26 @@
 
         <div class="divider"></div>
 
-      </br>
-      <div class="hand-in">
-        <h3> Här sker inlämningen </h3>
-      </br>
+        </br>
+        <div class="hand-in">
+          <h3> Här sker inlämningen </h3>
+          </br>
 
-        <form class="upload" method="post" action="" enctype="multipart/form-data">
-          <div class="upload__input">
-            <input class="upload__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
-            <label for="file"><strong>Choose a file</strong><span class="upload__dragndrop"> or drag it here</span>.</label>
-            <button class="upload__button" type="submit">Upload</button>
-          </div>
-          <div class="upload__uploading">Uploading&hellip;</div>
-          <div class="upload__success">Done!</div>
-          <div class="upload__error">Error! <span></span>.</div>
-        </form>
-      </div>
+          <form class="upload" method="post" action="" enctype="multipart/form-data">
+            <div class="upload__input">
+              <input class="upload__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple
+              />
+              <label for="file">
+                <strong>Choose a file</strong>
+                <span class="upload__dragndrop"> or drag it here</span>.</label>
+              <button class="upload__button" type="submit">Upload</button>
+            </div>
+            <div class="upload__uploading">Uploading&hellip;</div>
+            <div class="upload__success">Done!</div>
+            <div class="upload__error">Error!
+              <span></span>.</div>
+          </form>
+        </div>
 
 
 
