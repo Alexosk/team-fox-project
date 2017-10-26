@@ -379,3 +379,19 @@ article {
   flex: 2;
   display: flex;
 }
+.hand-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgrey;
+}
+.upload {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.upload__dragndrop,
+.upload__uploading,
+.upload__success,
+.upload__error {
+  display: none;
+}
