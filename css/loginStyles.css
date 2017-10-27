@@ -64,6 +64,9 @@ header ul {
   font-size: smaller;
   margin-right: 2em;
 }
+#navContainer1 strong {
+  color: red;
+}
 
 @media screen and (max-width: 1000px) {
   header {
