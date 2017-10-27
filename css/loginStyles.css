@@ -413,3 +413,22 @@ article {
 .upload__error {
   display: none;
 }
+
+/* HTML CLASS */
+.teacher-courses {
+  font-size: 5vh;
+  padding: 5vh;
+}
+
+.teacher-courses ul {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.teacher-courses ul li {
+  padding: 2vh;
+  border: 1px solid black;
+  box-shadow: 2px 2px 8px #000;
+}
