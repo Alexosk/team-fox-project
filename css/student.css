@@ -204,18 +204,18 @@ ul {
 
 #smileySurvey {
   display: flex;
-  justify-content: flex-end;
+  width: 40%;
 }
 
 #smileySurvey .boxes{
   border: 2px solid red;
-  padding: 0.5em 0 0 0;
-  width: 40%;
+  padding: 0.5em 1em 0 1em;
+  width: 100%;
 }
 
 #smileySurvey ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0;
   margin-top: 0.5em;
 }
@@ -226,4 +226,17 @@ ul {
 
 #smileySurvey h5 {
   text-align: center;
+}
+
+#surveys {
+  display: flex; 
+  justify-content: space-between;
+}
+
+#weeklyAlert .boxes {
+  border: 2px solid red;
+}
+
+#weeklyAlert a:visited{
+  color: black;
 }
