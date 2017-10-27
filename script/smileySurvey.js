@@ -1,5 +1,7 @@
 function hideSmileySurvey(feeling, liNumber) {
     document.getElementById("smileyHeading").innerHTML = feeling;
+    document.getElementById("smileySurvey").children[0].style.border = "2px solid green";
+    
 
     switch (liNumber) {
         case 1:
