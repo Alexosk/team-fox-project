@@ -43,6 +43,9 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .box:first-child {
+    order: 1;
+  }
 }
 
 .divider {
@@ -199,17 +202,28 @@ ul {
 
 /* Smiley-survey */
 
+#smileySurvey {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#smileySurvey .boxes{
+  border: 2px solid red;
+  padding: 0.5em 0 0 0;
+  width: 40%;
+}
+
 #smileySurvey ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 #smileySurvey li {
-  font-size: 250%;
+  font-size: 150%;
 }
 
-#smileySurvey h3 {
+#smileySurvey h5 {
   text-align: center;
 }
