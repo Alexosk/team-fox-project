@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
+  <link rel="stylesheet" type="text/css" href="../css/student.css">
   <link rel="shortcut icon" href="images/la.png">
   <script type="text/javascript"></script>
 </head>
@@ -49,7 +50,183 @@
     </ul>
   </header>
   <div id="content">
-    <h1>Content to come</h1>
+
+    <div class="columns">
+      <div class="box">
+
+        <div class="boxes">
+          <div class="boxtext">
+            <div class="month">
+              <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>
+                  <span style="font-size:18px">October
+                    <br>2017</span>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="weekdays">
+              <li>Må</li>
+              <li>Ti</li>
+              <li>On</li>
+              <li>To</li>
+              <li>Fr</li>
+              <li>Lö</li>
+              <li>Sö</li>
+            </ul>
+
+            <ul class="days">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li id="activeday">
+                <span class="active" onclick="hiddenFunction()">4</span>
+              </li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+            </ul>
+            <div class="divider"></div>
+            <div id="hidden">
+              <div class="hiddenbox">
+                <div class="attendancebox">
+                  <ul>
+                    <li>
+                      <p>09.00-12.00
+                        <br>Sal 115
+                        <br>Javascript</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="attendancebox">
+                  <h5>Närvaro</h5>
+                  <form name="attendace-form">
+                    <input type="text" name="code" placeholder="Lektionens kod" autofocus>
+                    <input type="submit" value="Anmäl närvaro" onclick="attended()">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxes">
+          <div class="boxtext">
+            <h3>Dina Inlämningar vecka 43</h3>
+            <div class="divider"></div>
+            <div class="assignments">
+              <ul>
+                <li>
+                  <strong>HTML:</strong>
+                  </br>Project 1 </br>Inlämning </br>2017-10-27</li>
+                <li>
+                  <strong>CSS:</strong>
+                  </br>Project 2 </br>Inlämning </br>2017-10-27 </li>
+                <li>
+                  <strong> Back-End:</strong>
+                  </br> Project 2 </br> Inlämning </br>2017-10-25</li>
+                <a href="assignments.html"> Se alla uppgifter </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="boxes">
+          <div class="boxtext">
+            <h3>Nyheter</h3>
+            <div class="divider"></div>
+            <!--<marquee width="auto" height="200" behavior="scroll" scrolldelay="200" loop="infinite" direction="up">-->
+            <main-news>
+              <article>
+                <div class="news">
+                  <h5>
+                    <em> Måndag 2017.10.22 </em>
+                  </h5>
+                  <h3> Skolan är stängd första veckan i November </h3>
+                  </br>
+                  <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                    eaque
+                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque
+                    </p>
+
+                    </br>
+                    </br>
+                    </br>
+
+                    <h5>
+                      <em> Måndag 2017.10.20 </em>
+                    </h5>
+                    <h3> Öppen dag på Torsdag </h3>
+                    </br>
+                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque
+                      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque
+                      </p>
+
+                      </br>
+                      </br>
+                      </br>
+
+                      <h5>
+                        <em> Måndag 2017.10.17 </em>
+                      </h5>
+                      <h3> Ta med lunch på Onsdag </h3>
+                      </br>
+                      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque
+                        <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                          rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                          laudantium, totam rem aperiam, eaque </p>
+
+                </div>
+              </article>
+            </main-news>
+            <!--</marquee>-->
+
+            <div class="divider"></div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <footer>
     <h4>&#169;Team Fox 2017</h4>
