@@ -43,6 +43,9 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .box:first-child {
+    order: 1;
+  }
 }
 
 .divider {
@@ -201,7 +204,7 @@ ul {
 
 #smileySurvey ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
   margin-top: 1em;
 }

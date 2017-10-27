@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="./css/student.css">
   <link rel="shortcut icon" href="images/la.png">
   <script type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -167,15 +168,11 @@
       <div class="box">
         <div id="smileySurvey">
           <div class="boxes">
-            <h3>Hur är läget idag?</h3>
-            <a href="#" onclick="hideSmileySurvey()">
-              <ul>
-                <li>&#128553;</li>
-                <li>&#128529;</li>
-                <li>&#128528;</li>
-                <li>&#128512;</li>
-                <li>&#128513;</li>
-                <li>&#128514;</li>
+            <h3 id="smileyHeading">Hur är läget idag?</h3>
+              <ul id="smileyList">
+                <li><a href="#" onclick="hideSmileySurvey('Så kan det va ibland..',1)">&#128553;</a></li>
+                <li><a href="#" onclick="hideSmileySurvey('Ok, tack!',2)">&#128528;</a></li>
+                <li><a href="#" onclick="hideSmileySurvey('Va kul!',3)">&#128512;</a></li>
               </ul>
             </a>
           </div>
