@@ -49,8 +49,8 @@ body {
 }
 
 .divider {
-  background-color: #000;
-  height: 2px;
+  background-color: #ccc;
+  height: 1px;
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -229,7 +229,7 @@ ul {
 }
 
 #surveys {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
 }
 

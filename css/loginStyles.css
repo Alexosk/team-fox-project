@@ -145,8 +145,8 @@ footer p {
 /*Dessa används på why-us-html*/
 
 .line {
-  background-color: #000;
-  height: 5px;
+  background-color: #aaa;
+  height: 2px;
   width: 100%;
   border-radius: 15px;
 }
@@ -290,7 +290,7 @@ input[type="submit"]:hover {
 }
 
 .line-black {
-  background-color: #000;
+  background-color: #ccc;
   height: 1px;
   width: 100%;
   border-radius: 15px;
@@ -314,7 +314,7 @@ input[type="submit"]:hover {
 }
 
 .java-table tbody tr:nth-child(odd) {
-  background: #999;
+  background: #ddd;
 }
 
 div .slut {
@@ -346,8 +346,9 @@ footer h4 {
 }
 
 .question {
-  border-top: 3px solid #000;
+  border-top: 1px solid #ccc;
   padding: 3vh;
+  margin: 0 25px;
 }
 
 .question ul {
@@ -402,6 +403,7 @@ article {
   flex-direction: column;
   align-items: center;
   background-color: lightgrey;
+  padding-top: 5px;
 }
 .upload {
   margin-top: 1vh;

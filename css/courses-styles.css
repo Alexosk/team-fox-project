@@ -8,8 +8,7 @@
     }
     h3{
       padding-bottom: 10px;
-      border-bottom: 1px solid #000;
-      border-bottom-width: 2px;
+      border-bottom: 1px solid #ccc;
     }
     h5{
         font-size: 17px;
@@ -27,13 +26,13 @@
         padding: 5px;
     }
     table tr:nth-child(odd){
-        background-color: #999;
+        background-color: #ddd;
     }
     .rattade tr:nth-child(odd){
-        background-color: #999;
+        background-color: #ddd;
     }
     .comming tr:nth-child(odd){
-        background-color: ##999;
+        background-color: #ddd;
     }
     a{
         color: black;
