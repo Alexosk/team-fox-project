@@ -119,7 +119,7 @@ h2{
     margin-bottom: 20px;
   }
 
-  .form {
+  form {
     position: relative;
     background: #fff;
     max-width: 360px;
@@ -129,7 +129,7 @@ h2{
     border-bottom: 3px solid skyblue;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
-  .form input {
+  form input {
     font-family: sans-serif, Arial;
     outline: 0;
     background: #f2f2f2;
@@ -174,8 +174,3 @@ h2{
   body {
     font-family: "Roboto", sans-serif;
   }
-
-
-
-
-
