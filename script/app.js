@@ -48,13 +48,31 @@ function hiddenFunction(){
       hide.style.display="block";
       attend.style.background="#562e84";
       attend.style.color="#fdb722";
+      attendancebox3.style.display = "none";
+      attendancebox2.style.display = "block";
+      document.getElementById("codeId").value ="";
     }
 }
 function attended() {
   let code = document.forms["attendace-form"]["code"].value;
+  let attendanceFormText = document.getElementById("attendancebox2");
+  let hiddenText = document.getElementById("attendancebox3");
   if (code == "1563") {
-    alert("Hoppas du hade en bra dag!");
+    attendanceText("green", "Närvaro noterad!");
+    setTimeout(hiddenFunction, 3000);
+    hiddenText.style.display = "block";
+    attendanceFormText.style.display = "none";
+    return false;
   } else {
-    alert("Lektionens kod får du av din lärare!");
+    attendanceText("red", "Lektionens kod får du av din lärare!");
+    setTimeout(hiddenFunction, 3000);
+    attendanceFormText.style.display = "none";
+    hiddenText.style.display = "block";
+    return false;
   }
+}
+
+function attendanceText(color, message) {
+    document.getElementById('attendancebox3').style.color = color;
+    document.getElementById('attendancebox3').innerHTML = message;
 }
