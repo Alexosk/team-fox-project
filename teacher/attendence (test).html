@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
   <link rel="stylesheet" type="text/css" href="../css/attendence.css">
-  <link rel="shortcut icon" href="images/la.png">
+  <link rel="shortcut icon" href="../images/la.png">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
     <div class="container">
       <h2>Närvaro</h2>
       <div class="line"></div>
-      <div class="space"></div>
+      <br>
       <div class="columns">
         <div class="column">
           <!--DATE DROPDOWN-->
@@ -132,7 +132,7 @@
 
           <div class="tables">
             <h3>Veckans inlämningar</h3>
-            <table class="week">
+            <table id="table">
               <tr>
                 <th>Efternamn</th>
                 <th>Förnamn</th>
@@ -142,54 +142,45 @@
               <tr>
                 <td>Simpsons</td>
                 <td>Homer</td>
-                <td>
-                  <input type="checkbox" name="name1" />&nbsp;</td>
+                <td><input type="checkbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Simpsons</td>
                 <td>Bart</td>
-                <td>
-                  <input type="checkbox" name="name1" />&nbsp;</td>
+                <td><input type="checkbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Scorpio</td>
                 <td>Hank</td>
-                <td>
-                  <input type="checkbox" name="name1" />&nbsp;</td>
+                <td><input type="checkbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Szyslak</td>
                 <td>Moe</td>
-                <td>
-                  <input type="checkbox" name="name1" />&nbsp;</td>
+                <td><input type="checkbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Austin</td>
                 <td>Steve</td>
-                <td>
-                  <input type="checkbox" name="name1" />&nbsp;</td>
+                <td><input type="checkbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Savage</td>
                 <td>Randy</td>
-                <td>
-                  <input type="checkbox" name="name1" />&nbsp;</td>
+                <td><input type="checkbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Hayabusa</td>
                 <td>Ryu</td>
-                <td>
-                  <input type="checkbox" name="name1" />&nbsp;</td>
+                <td><input type="checkbox"/>&nbsp;</td>
               </tr>
               <tr>
-                <td></td>
-                <td></td>
-                <td>
-                  <input type="checkbox" name="name1" />&nbsp;</td>
+                <td>Ebenezer</td>
+                <td>Leo</td>
+                <td><input type="checkbox"/>&nbsp;</td>
               </tr>
             </table>
-          </div>
-          <!--Tables end-->
+          </div><!--Tables end-->
 
           <div class="columns">
             <button id="submitBtn" onclick="submitFunction('qwe')">Button</button>
@@ -211,6 +202,8 @@
     <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
   </footer>
   <script src="../script/randomNumber.js"></script>
+  <script src="../script/checkboxColor.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>YHLA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
+  <link rel="stylesheet" type="text/css" href="../css/prevAttendence.css">
+  <link rel="shortcut icon" href="../images/la.png">
+</head>
+
+<body>
+  <header>
+    <a href="student.html">
+      <div id=logo>
+        <h1>YH</h1>
+        <img src="../images/la.png" width="30" alt="YHLA">
+        <h1>A</h1>
+      </div>
+    </a>
+    <div id="navContainer1">
+      <ul>
+        <li>
+          <a href="courses.html">Kurser</a>
+        </li>
+        <li>
+          <a href="assignments.html">Inlämning</a>
+        </li>
+        <li>
+          <a href="survey.html">Enkäter</a>
+        </li>
+    </div>
+    <div id="navContainer2">
+      <ul>
+        <li>
+          <a href="student.html">
+            <img src="../images/studentson.png" width="40">
+          </a>
+        </li>
+        <li id="user">
+          <a href="student.html">Stu Dentson</a>
+        </li>
+        <li id="logOut">
+          <a href="index.html">Logga ut</a>
+        </li>
+      </ul>
+    </div>
+    </ul>
+  </header>
+  <div id="content">
+    <div class="container">
+      <h2>Närvaro</h2>
+      <div class="line"></div>
+      <br>
+      <div class="columns">
+        <div class="column">
+        <!--DATE DROPDOWN-->
+        <fieldset class="date"> 
+          <legend>Välj datum och kurs</legend> 
+          <label for="day_start">Dag</label> 
+          <select id="day_start" name="day_start" /> 
+            <option>1</option>       
+            <option>2</option>       
+            <option>3</option>       
+            <option>4</option>       
+            <option>5</option>       
+            <option>6</option>       
+            <option>7</option>       
+            <option>8</option>       
+            <option>9</option>       
+            <option>10</option>       
+            <option>11</option>       
+            <option>12</option>       
+            <option>13</option>       
+            <option>14</option>       
+            <option>15</option>       
+            <option>16</option>       
+            <option>17</option>       
+            <option>18</option>       
+            <option>19</option>       
+            <option>20</option>       
+            <option>21</option>       
+            <option>22</option>       
+            <option>23</option>       
+            <option>24</option>       
+            <option>25</option>       
+            <option>26</option>       
+            <option>27</option>       
+            <option>28</option>       
+            <option>29</option>       
+            <option>30</option>       
+            <option>31</option>       
+          </select> - 
+
+          <label for="month_start">Månad</label> 
+          <select id="month_start" name="month_start" /> 
+            <option>January</option>       
+            <option>February</option>       
+            <option>March</option>       
+            <option>April</option>       
+            <option>May</option>       
+            <option>June</option>       
+            <option>July</option>       
+            <option>August</option>       
+            <option>September</option>       
+            <option>October</option>       
+            <option>November</option>       
+            <option>December</option>       
+          </select> - 
+          
+          <label for="year_start">År</label> 
+          <select id="year_start" name="year_start"/> 
+            <option>2017</option>       
+            <option>2018</option>       
+            <option>2019</option>       
+            <option>2020</option>       
+            <option>2021</option>       
+            <option>2022</option>       
+            <option>2023</option>       
+            <option>2024</option>       
+            <option>2025</option>       
+            <option>2026</option>       
+          </select> -
+
+          <label for="generateNumb">Kurs</label>
+            <select>
+              <option>Front-End</option>
+              <option>Back-End</option>
+              <option>Python</option>
+              <option>MatLab</option>
+            </select> -
+
+           <button id="submitBtn" onclick="show()">Submit</button>
+
+          </fieldset><!--DATE DROPDOWN END-->
+          <br>
+
+          <div class="tables">
+            <h3>Klasslista</h3>
+            <table id="table">
+              <tr>
+                <th>Efternamn</th>
+                <th>Förnamn</th>
+                <th>Närvaro</th>
+              </tr>
+
+              <tr>
+                <td>Simpsons</td>
+                <td>Homer</td>
+                <td  class="absent"></td>
+              </tr>
+              <tr>
+                <td>Simpsons</td>
+                <td>Bart</td>
+                <td  class="absent"></td>
+              </tr>
+              <tr>
+                <td>Scorpio</td>
+                <td>Hank</td>
+                <td class="notAbsent"></td>
+              </tr>
+              <tr>
+                <td>Szyslak</td>
+                <td>Moe</td>
+                <td class="notAbsent"></td>
+              </tr>
+              <tr>
+                <td>Austin</td>
+                <td>Steve</td>
+                <td  class="absent"></td>
+              </tr>
+              <tr>
+                <td>Savage</td>
+                <td>Randy</td>
+                <td class="notAbsent"></td>
+              </tr>
+              <tr>
+                <td>Hayabusa</td>
+                <td>Ryu</td>
+                <td  class="notAbsent"></td>
+              </tr>
+              <tr>
+                <td>Ebenezer</td>
+                <td>Leo</td>
+                <td class="notAbsent"></td>
+              </tr>
+            </table>
+          </div><!--Tables end-->
+        </div><!--Column end-->
+      </div><!--ColumnS end-->
+    </div>
+  </div>
+  <div class="space"></div>
+  <footer>
+    <h4>&#169;Team Fox 2017</h4>
+    <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
+  </footer>
+  <script src="../script/randomNumber.js"></script>
+  <script src="../script/checkboxColor.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</body>
+
+</html>

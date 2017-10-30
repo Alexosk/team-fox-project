@@ -75,10 +75,20 @@
         background: gray;
         text-align: center;
       }
-      /*Måste finnas för att checkBoxColor.js ska funka*/
-    td.checked {
-        background: green;
-    }
+
+td.checked {
+    background: green;
+}
+#table{
+    display:;
+}
+.absent{
+    background: red;
+}
+.notAbsent{
+    background: green;
+}
+
 
 
 
