@@ -83,6 +83,11 @@ header ul {
   color: red;
 }
 
+#htmlHeading a{
+  color: white;
+  font-size: 150%;
+}
+
 @media screen and (max-width: 1000px) {
   header {
     position: static;
