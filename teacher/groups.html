@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>YHLA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
+    <link rel="stylesheet" type="text/css" href="../css/student.css">
+    <link rel="stylesheet" type="text/css" href="../css/groups.css">    
+    <link rel="shortcut icon" href="images/la.png">
+    <script type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="teacher.html">
+            <div id=logo>
+                <h1>YH</h1>
+                <img src="../images/la.png" width="30" alt="YHLA">
+                <h1>A</h1>
+            </div>
+        </a>
+        <div id="navContainer1">
+            <ul>
+                <li id="htmlHeading">
+                    <a href="../teacher/html-class.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../teacher/teacher-courses.html">Kurser</a>
+                </li>
+                <li>
+                    <a href="../teacher/groups.html">Grupper</a>
+                </li>
+                <li>
+                    <a href="#">Come</a>
+                </li>
+        </div>
+        <div id="navContainer2">
+            <ul>
+                <li>
+                    <a href="teacher.html">
+                        <img src="../images/kobe.png" width="55">
+                    </a>
+                </li>
+                <li id="user">
+                    <a href="teacher.html">Tea&nbspChairson</a>
+                </li>
+                <li id="logOut">
+                    <a href="../index.html">Logga&nbsput</a>
+                </li>
+            </ul>
+        </div>
+        </ul>
+    </header>
+
+    <div id="content">
+
+        <div class="columns">
+            <div class="box">
+                <div class="boxes">
+                    <h2>HTML-Grupper</h2>
+                    <div id="allStudents"></div>
+                    <button onclick="getAllStudents()">Get All Students</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <h4>&#169;Team Fox 2017</h4>
+        <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
+    </footer>
+    <script src="../script/groups.js"></script>
+</body>
+
+</html>
