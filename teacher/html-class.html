@@ -13,13 +13,15 @@
 
 <body>
   <header>
-    <a href="teacher.html">
+<a href="teacher.html">
       <div id=logo>
+
         <h1>YH</h1>
         <img src="../images/la.png" width="30" alt="YHLA">
         <h1>A</h1>
       </div>
-    </a>
+</a>
+  <h2> HTML </h2>
     <div id="navContainer1">
       <ul>
         <li>
@@ -40,25 +42,66 @@
           </a>
         </li>
         <li id="user">
-          <a href="teacher.html">Tea Chairson</a>
+          <a href="teacher.html">Tea&nbspChairson</a>
         </li>
         <li id="logOut">
-          <a href="../index.html">Logga ut</a>
+          <a href="../index.html">Logga&nbsput</a>
         </li>
       </ul>
     </div>
     </ul>
   </header>
 
-<div id="content">
-</div>
+  <div id="content">
 
+    <div class="columns">
+
+      <div class="dividers">
+        <div class="divide">
+            <h3>Dina Inlämningar vecka 43</h3>
+            <div class="divider"></div>
+            <div class="assignments">
+              <ul>
+                <li>
+                  <strong>HTML:</strong>
+                  </br>Project 1 </br>Inlämning </br>2017-10-27</li>
+                <li>
+                  <strong>CSS:</strong>
+                  </br>Project 2 </br>Inlämning </br>2017-10-27 </li>
+                <li>
+                  <strong> Back-End:</strong>
+                  </br> Project 2 </br> Inlämning </br>2017-10-25</li>
+                <a href="assignments.html"> Se alla uppgifter </a>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+
+
+    <div class="box">
+      <div class="boxes">
+        <div class="teach-news">
+          <form id="newsForm" onsubmit="return newsForm()" method="post" action="">
+
+            <h2>Lägg till nyhet</h2>
+            <textarea name="news"></textarea>
+
+            <div class="news-input">
+              <input type="submit" name="submit-news" value="Skicka in" id="submit-news">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
   <footer>
     <h4>&#169;Team Fox 2017</h4>
     <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
   </footer>
   <script src="./script/app.js"></script>
-  <script src="./script/smileySurvey.js"></script>
 </body>
 
 </html>
