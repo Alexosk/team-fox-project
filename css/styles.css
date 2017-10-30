@@ -171,6 +171,12 @@ h3{
     color: #fff;
 }
 
+@media screen and (max-width: 400px){
+
+    header h1 {
+      display: none;
+    }
+  }
 
 @media screen and (max-width: 1000px){
     header, .columns{
