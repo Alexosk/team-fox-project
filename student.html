@@ -132,11 +132,14 @@
                     </li>
                   </ul>
                 </div>
-                <div class="attendancebox">
+                <div id="attendancebox2">
                   <h5>Närvaro</h5>
-                  <form name="attendace-form">
-                    <input type="text" name="code" placeholder="Lektionens kod" autofocus>
-                    <input type="submit" value="Anmäl närvaro" onclick="attended()">
+                  <form name="attendace-form" onsubmit="return attended()">
+                    <input id="codeId" type="text" name="code" placeholder="Lektionens kod" autofocus>
+                    <input type="submit" value="Anmäl närvaro" >
+                  </form>
+                </div>
+                <div id="attendancebox3">
                 </div>
               </div>
             </div>

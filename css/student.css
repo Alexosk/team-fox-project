@@ -33,6 +33,18 @@ body {
   margin: 0.5em;
 }
 
+#attendancebox2 {
+  flex: 1;
+  margin: 0.5em;
+  display: block;
+}
+
+#attendancebox3 {
+  flex: 1;
+  margin: 0.5em;
+  display: none;
+}
+
 #hidden {
   margin: 0.5em;
   display: none;
