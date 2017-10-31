@@ -1,0 +1,32 @@
+#allStudents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#groupsForm {
+    margin: 1em;
+    width: 50%;
+}
+
+#groupsForm ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.groupDiv { 
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    padding: 1em;
+}
+
+#groupDivContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
