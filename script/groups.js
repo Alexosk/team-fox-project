@@ -1,3 +1,4 @@
+// Global variables
 let students = [
     'Abbe',
     'Abbott',
@@ -71,8 +72,16 @@ let students = [
     'Leila',
     'Lemon',
     'Kobe',
-    'Roland'
+    'Roland',
+    'Homer'
 ];
+let calculatedGroupsDiv = document.getElementById("calculatedGroups");
+let groupDivContainer = document.getElementById("groupDivContainer");
+let numberOfGroups = 0;
+let numberOfStudentsWithGroup = 0;
+let numberOfStudentsWithoutGroup = 0;
+let noOfStudentsInEachGroup = 0;
+let groupsArray = []
 
 function showStudents() {
     let allStudents = document.getElementById("allStudents");
@@ -114,39 +123,58 @@ function createGroups() {
     // Get the select element
     let noOfStudentsOptions = document.getElementById("groupsForm").elements[1];
     // Get the selected number of students in each group
-    let noOfStudentsInEachGroup = noOfStudentsOptions.options[noOfStudentsOptions.selectedIndex].value;
+    noOfStudentsInEachGroup = noOfStudentsOptions.options[noOfStudentsOptions.selectedIndex].value;
+    // let calculatedGroupsDiv = document.getElementById("calculatedGroups");
+    // let groupDivContainer = document.getElementById("groupDivContainer");
+    numberOfStudentsWithoutGroup = countStudents() % noOfStudentsInEachGroup;
+    numberOfStudentsWithGroup = countStudents() - numberOfStudentsWithoutGroup;
+    numberOfGroups = numberOfStudentsWithGroup / noOfStudentsInEachGroup;
 
-    let calculatedGroupsDiv = document.getElementById("calculatedGroups");
+    clearGroups();
 
-    let numberOfStudentsWithoutGroup = countStudents() % noOfStudentsInEachGroup;
+    calculatedGroupsDiv.innerHTML =
+        "Antal studenter: " + countStudents()
+        + "<br> Antal studenter i varje grupp: " + noOfStudentsInEachGroup
+        + "<br> Antal möjliga grupper: " + numberOfGroups
+        + "<br> Antal studenter utan grupp: " + numberOfStudentsWithoutGroup;
 
-    let numberOfStudentsWithGroup = countStudents() - numberOfStudentsWithoutGroup;
+    for (var i = 1; i <= numberOfGroups; i++) {
+        let group = document.createElement('div');
+        group.innerHTML = "Grupp " + i + "<br>";
+        group.className = "groupDiv";
+        populateGroup(group, i);
+        groupDivContainer.appendChild(group);
+        if (i === numberOfGroups && numberOfStudentsWithoutGroup > 0) {
+            let group = document.createElement('div');
+            group.innerHTML = "Ingen Grupp <br>";
+            group.className = "groupDiv";
+            populateNoGroup(group, i);
+            groupDivContainer.appendChild(group);
+        }
+    }
+    console.log(groupsArray);
+}
 
-    let numberOfGroups = numberOfStudentsWithGroup / noOfStudentsInEachGroup;
+function clearGroups() {
+    calculatedGroupsDiv.innerHTML = "";
+    groupDivContainer.innerHTML = "";
+}
 
-    calculatedGroupsDiv.innerHTML = 
-    "Antal studenter: " + countStudents()
-    + "<br> Antal studenter i varje grupp: " + noOfStudentsInEachGroup
-    + "<br> Antal möjliga grupper: " + numberOfGroups
-    + "<br> Antal studenter utan grupp: " + numberOfStudentsWithoutGroup;
-    
-// let noOfStudentsWithoutGroup = countStudents() % noOfGroups;
+function populateGroup(group, groupNumber) {
+    groupsArray.push([]);
+    for (let j = 1; j <= noOfStudentsInEachGroup; j++) {
+        let student = students.shift();
+        groupsArray[groupNumber-1][j-1] = student;
+        group.innerHTML += "<br>" + student;
+    }
+}
 
-/*     // Number of students without a group
-
-    let noOfStudentsWithGroup = countStudents() - noOfStudentsWithoutGroup;
-
-    let noOfStudentsInEachGroup = noOfStudentsWithGroup / noOfGroups;
-
-    calculatedGroupsDiv.innerHTML = 
-    " Number of Students: " + countStudents();
-    + "<br> Students with a group: " + noOfStudentsWithGroup 
-    + "<br> Students in each group: " + noOfStudentsInEachGroup 
-    + "<br> Students without a group: " + noOfStudentsWithoutGroup; 
-    
-    nubmerOfStudentsInEachGroup * numberOfGroups = numberOfStudents
-
-
-    */
+function populateNoGroup(group, groupNumber) {
+    groupsArray.push([]);
+    for (let j = 1; j <= numberOfStudentsWithoutGroup; j++) {
+        let student = students.shift();
+        groupsArray[groupNumber][j-1] = student;
+        group.innerHTML += "<br>" + student;
+    }
 }
 
