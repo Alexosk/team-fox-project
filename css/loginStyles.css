@@ -39,11 +39,11 @@ header {
 header h1 {
   color: #FDB722;
 }
+
 header h2 {
   color: #fff;
   font-family: serif;
   font-size: 3vh;
-
 }
 
 header ul {
@@ -83,7 +83,7 @@ header ul {
   color: red;
 }
 
-#htmlHeading a{
+#htmlHeading a {
   color: white;
   font-size: 150%;
 }
@@ -459,46 +459,45 @@ article {
 /* TEACHER COURSES ENDS */
 
 /* HTML CLASS */
-
+.class-info, .teach-news, .class-student, article {
+  background-color: #fff;
+  box-shadow: 0 0 4px #aaa;
+  border: 1px solid #fff;
+  padding: 3vh;
+}
+.class-info {
+  display: flex;
+  flex-direction: column;
+}
+.class-info ul {
+  border: 1px solid black;
+}
+.class-info li {
+  border: 1px solid black;
+  list-style-type: none;
+}
 .teach-news {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
+  align-items: center;
 }
-
+.teach-news h2, #date {
+  margin-top: 2vh;
+}
 .teach-news textarea {
   resize: none;
   font-size: 2vh;
-  width: 100%;
   height: 20vh;
-}
-
-.teach-news h2 {
-  margin-bottom: 1vh;
-}
-
-.news-input {
-  display: flex;
   width: 100%;
-  justify-content: flex-end;
+}
+.input-news {
+  margin-bottom: 2vh;
 }
 #submit-news {
-  background-color: #000;
-  width: 20vh;
+  background-color: black;
+  width: 30%;
 }
-.dividers {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+#submit-news:hover {
+  opacity: 0.6;
 }
-.divide {
-  background-color: #fff;
-  margin: 1em;
-  border: 0 solid #562e84;
-  border-radius: 0px;
-  /*flex: 1;*/
-  box-shadow: 1px 1px 2px #aaa;
-  border-radius: 0;
-  padding: 0.75rem;
-}
+/* HTML CLASS ENDS */

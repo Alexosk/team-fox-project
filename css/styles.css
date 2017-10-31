@@ -171,22 +171,13 @@ h3{
     color: #fff;
 }
 
-@media screen and (max-width: 400px){
-
-    header h1 {
-      display: none;
-    }
-  }
-
 @media screen and (max-width: 1000px){
     header, .columns{
         display: flex;
         flex-direction: column;
         position: relative;
     }
-    .columns img {
-        width:100%;
-    }
+
     #nav {
       display: flex;
     }
@@ -225,7 +216,7 @@ h3{
         text-align: center;
 
     }
-
+    
     #nav a.icon {
         float: right;
         display: block;
