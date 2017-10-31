@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
     <link rel="stylesheet" type="text/css" href="../css/student.css">
-    <link rel="stylesheet" type="text/css" href="../css/groups.css">    
+    <link rel="stylesheet" type="text/css" href="../css/groups.css">
     <link rel="shortcut icon" href="images/la.png">
     <script type="text/javascript"></script>
 </head>
@@ -55,13 +55,52 @@
     </header>
 
     <div id="content">
-
         <div class="columns">
             <div class="box">
                 <div class="boxes">
-                    <h2>HTML-Grupper</h2>
+                    <h2>Alla Studenter</h2>
                     <div id="allStudents"></div>
-                    <button onclick="getAllStudents()">Get All Students</button>
+                    <input type="button" id="studentsButton" onclick="showStudents()" value="Visa Studenter">
+                </div>
+                <div class="boxes">
+                    <h2>Skapa Grupper</h2>
+                    <form action="#" id="groupsForm" onsubmit="return createGroups()">
+                        <fieldset>
+                            <ul>
+                                <li>
+                                    Antal elever i varje grupp: 
+                                </li>
+                                <li>
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="submit" value="Submit">
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <div id="calculatedGroups"></div>
                 </div>
             </div>
         </div>
