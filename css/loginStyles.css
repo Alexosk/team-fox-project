@@ -403,20 +403,7 @@ input[type="radio"] {
 
 /*EVALUATION.HTML ENDS!*/
 
-/* Teacher.html */
-
-main-news {
-  height: 50vh;
-  flex: 1;
-  display: flex;
-}
-
-article {
-  overflow-y: scroll;
-  padding: 2em;
-  flex: 2;
-  display: flex;
-}
+/* PROJECT.HTML */
 
 .hand-in {
   display: flex;
@@ -435,11 +422,33 @@ article {
   display: none;
 }
 
+#drop_zone {
+  border: 5px solid blue;
+  width:  200px;
+  height: 100px;
+}
+/* Teacher.html */
+
+main-news {
+  height: 50vh;
+  flex: 1;
+  display: flex;
+}
+
+article {
+  overflow-y: scroll;
+  padding: 2em;
+  flex: 2;
+  display: flex;
+}
+
+
 /* TEACHER COURSES */
 
 .teacher-courses {
   font-size: 5vh;
   padding: 5vh;
+  justify-content: flex-start;
 }
 
 .teacher-courses ul {
@@ -452,8 +461,9 @@ article {
 
 .teacher-courses ul li {
   padding: 2vh;
-  border: 1px solid black;
-  box-shadow: 2px 2px 8px #000;
+  background-color: #fff;
+  box-shadow: 0 0 4px #aaa;
+  border: 1px solid #fff;
 }
 
 /* TEACHER COURSES ENDS */
@@ -475,14 +485,19 @@ article {
 .class-info li {
   border: 1px solid black;
   list-style-type: none;
+  align-items: center;
 }
 .teach-news {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.teach-news h2, #date {
+.teach-news h2, #date, h4 {
   margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+.teach-news h4 {
+  align-self: flex-start;
 }
 .teach-news textarea {
   resize: none;
@@ -495,7 +510,8 @@ article {
 }
 #submit-news {
   background-color: black;
-  width: 30%;
+  height: 3vh;
+  width: 10vh;
 }
 #submit-news:hover {
   opacity: 0.6;

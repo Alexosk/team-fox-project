@@ -76,3 +76,41 @@ function attendanceText(color, message) {
     document.getElementById('attendancebox3').style.color = color;
     document.getElementById('attendancebox3').innerHTML = message;
 }
+
+var options = {iframe: {url: 'upload.php'}};
+var zone = new FileDrop('zprogress', options);
+
+zone.event('send', function (files) {
+  files.each(function (file) {
+    file.event('done', function (xhr) {
+      alert('Done uploading ' + this.name);
+    });
+
+    file.event('progress', function (sent, total) {
+      var p = document.createElement('p');
+      p.textContent = 'Uploaded ' + Math.round(sent / total * 100) + '%...';
+      zone.el.appendChild(p);
+    })
+
+    file.sendTo('upload.php');
+  });
+});
+
+zone.event('iframeDone', function (xhr) {
+  alert('Done uploading via <iframe>');
+});
+
+
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
