@@ -136,18 +136,23 @@ function createGroups() {
         + "<br> Antal möjliga grupper: " + numberOfGroups
         + "<br> Antal studenter utan grupp: " + numberOfStudentsWithoutGroup;
 
-    for (var i = 1; i <= numberOfGroups; i++) {
+    for (var i = 0; i <= numberOfGroups; i++) {
         let group = document.createElement('div');
+        // If it's the last iteration and there are student without a groups
         if (i === numberOfGroups && numberOfStudentsWithoutGroup > 0) {
             group.innerHTML = "<h3>Ingen grupp </h3><br>";            
             populateGroup(group, true);
+            group.className = "groupDiv";
+            groupDivContainer.appendChild(group);
         }
-        else {
-            group.innerHTML = "<h3>Grupp " + i + "</h3><br>";
+        // If it's NOT the last iteration 
+        else if (i !== numberOfGroups){
+            let j = i+1;
+            group.innerHTML = "<h3>Grupp " + j + "</h3><br>";
             populateGroup(group, false);
+            group.className = "groupDiv";
+            groupDivContainer.appendChild(group);
         }
-        group.className = "groupDiv";
-        groupDivContainer.appendChild(group);
     }
 }
 
