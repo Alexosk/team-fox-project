@@ -129,9 +129,10 @@
           </fieldset>
           <!--DATE DROPDOWN END-->
 
-
+          <br>
           <div class="tables">
-            <h3>Veckans inlämningar</h3>
+            <table id="notTable"><th></th></table>
+            <h3>Närvarande Elever</h3>
             <table id="table">
               <tr>
                 <th>Efternamn</th>
@@ -142,52 +143,54 @@
               <tr>
                 <td>Simpsons</td>
                 <td>Homer</td>
-                <td><input type="checkbox"/>&nbsp;</td>
+                <td><input type="checkbox" id="attnCheckbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Simpsons</td>
                 <td>Bart</td>
-                <td><input type="checkbox"/>&nbsp;</td>
+                <td><input type="checkbox" id="attnCheckbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Scorpio</td>
                 <td>Hank</td>
-                <td><input type="checkbox"/>&nbsp;</td>
+                <td><input type="checkbox" id="attnCheckbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Szyslak</td>
                 <td>Moe</td>
-                <td><input type="checkbox"/>&nbsp;</td>
+                <td><input type="checkbox" id="attnCheckbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Austin</td>
                 <td>Steve</td>
-                <td><input type="checkbox"/>&nbsp;</td>
+                <td><input type="checkbox" id="attnCheckbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Savage</td>
                 <td>Randy</td>
-                <td><input type="checkbox"/>&nbsp;</td>
+                <td><input type="checkbox" id="attnCheckbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Hayabusa</td>
                 <td>Ryu</td>
-                <td><input type="checkbox"/>&nbsp;</td>
+                <td><input type="checkbox" id="attnCheckbox"/>&nbsp;</td>
               </tr>
               <tr>
                 <td>Ebenezer</td>
                 <td>Leo</td>
-                <td><input type="checkbox"/>&nbsp;</td>
+                <td><input type="checkbox" id="attnCheckbox"/>&nbsp;</td>
               </tr>
             </table>
           </div><!--Tables end-->
 
           <div class="columns">
-            <button id="submitBtn" onclick="submitFunction('qwe')">Button</button>
+            <!--submitFunction finns i randomNumber.js-->
+            <button id="submitBtn" onclick="submitFunction('attendenceTaken')">Button</button>
           </div>
           <!--Columns END-->
           <div id="columns">
-            <div id="qwe">Närvaro tagen!</div>
+            <br>
+            <div id="attendenceTaken">Närvaro tagen!</div>
           </div>
           <!--Columns END-->
         </div>

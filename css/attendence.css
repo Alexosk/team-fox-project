@@ -70,14 +70,31 @@
           width: 98%;
       }
 
-      #qwe{
-        display: none;
-        background: gray;
-        text-align: center;
-      }
+      
       /*Måste finnas för att checkBoxColor.js ska funka*/
     td.checked {
-        background: green;
+        background: #759e2e;
+        transition: 0.3s;
+    }
+
+    #attendenceTaken{
+        display: none;
+        color: white;
+        background: #759e2e;
+        text-align: center;
+        -webkit-animation: fadeIn 0.5s;
+        padding: 5px 0 5px 0;
+      }
+     
+    /*Här skapas själva fade funktionen. Sedan måste man kalla -webkit- i parent classen som
+    man vill ha den i. Alltså "-webit-animation:<time>;*/
+    @-webkit-keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }  
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
     }
 
 

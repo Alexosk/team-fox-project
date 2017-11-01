@@ -3,10 +3,35 @@ function randomNumber(){
   document.getElementById("generateNum").innerHTML = randNum;
 }
 
-function submitFunction(qwe){
-    var e = document.getElementById(qwe);
-    if(e.style.display == "none")
-      e.style.display = "block";
-    else
+/*Visar "närvaro tagen" rutan*/
+function submitFunction(attendenceTaken){
+    var e = document.getElementById(attendenceTaken);
+    if(e.style.display == "block")
       e.style.display = "none";
+    else
+      e.style.display = "block";
+}
+/****Dessa funktioner används inte än ****/
+/**** WORK IN PROGRESS****/
+$(function(){
+	$('#submitBtn').click(function(){
+		var status = $('#attnCheckbox').prop(':checked');
+		alert(status);
+	});
+});
+
+$(function () {
+    $("ul li input:checkbox").on("change", function () {
+        var lenghtOfUnchecked = $('tr td input:checkbox:not(:checked)').length;
+        alert(lenghtOfUnchecked);
+    });
+});
+
+/*Visar tabellen i prevAttendence*/
+function showAttnTable(table){
+    var f = document.getElementById(table);
+    if(f.style.display == "table")
+      f.style.display = "none";
+    else
+      f.style.display = "table";
 }

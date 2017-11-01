@@ -80,7 +80,7 @@ td.checked {
     background: green;
 }
 #table{
-    display:;
+    display: none;
 }
 .absent{
     background: red;
