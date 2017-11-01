@@ -399,6 +399,15 @@ input[type="radio"] {
   .question textarea {
     width: 100%;
   }
+  .class-info table tr td {
+    font-size: 80%;
+  }
+  .class-info table th:nth-child(2) {
+    display: none;
+  }
+  .class-info table td:nth-child(2) {
+    display: none;
+  }
 }
 
 /*EVALUATION.HTML ENDS!*/
@@ -475,6 +484,13 @@ article {
   border: 1px solid #fff;
   padding: 3vh;
 }
+.class-info h1, h2 {
+  margin-bottom: 1vh;
+}
+.class-info table {
+  width: 100%;
+  border: 1px solid black;
+}
 .class-info {
   display: flex;
   flex-direction: column;
@@ -503,7 +519,7 @@ article {
   resize: none;
   font-size: 2vh;
   height: 20vh;
-  width: 100%;
+  width: 40vh;
 }
 .input-news {
   margin-bottom: 2vh;

@@ -21,6 +21,9 @@
     </a>
     <div id="navContainer1">
       <ul>
+        <li id="htmlHeading">
+          <a href="../teacher/html-class.html">HTML</a>
+        </li>
         <li>
           <a href="../teacher/teacher-courses.html">Kurser</a>
         </li>
@@ -54,7 +57,36 @@
     <div class="column">
       <div class="class-info">
         <h1> HTML </h1>
-        <h4> Dina project </h4>
+
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Poäng</th>
+                <th>Project Start</th>
+                <th>Inlämning</th>
+            </tr>
+
+            <tr>
+                <td><a href="#">Project 1</a></td>
+                <td>10</td>
+                <td>2017-01-03</td>
+                <td>2017-01-10</td>
+            </tr>
+
+            <tr>
+                <td><a href="#">Project 2 </a></td>
+                <td>25</td>
+                <td>1984-09-09</td>
+                <td>2020-03-14</td>
+            </tr>
+
+            <tr>
+                <td><a href="#"> Project 3 </a></td>
+                <td>65</td>
+                <td>1984-09-09</td>
+                <td>2020-03-14</td>
+            </tr>
+        </table>
 
       </div>
     </div>
@@ -108,7 +140,10 @@
             <h2> Lägg till kurs nyheter: </h2>
             <h5> Publisera på: <input id="date" type="date"></h5>
 
-            <textarea></textarea>
+            <textarea>
+       Skriv ditt inlägg här
+     </textarea>
+
             <div class="input-news">
               <input type="submit" name="submit" value="Lägg till" id="submit-news">
             </div>
@@ -134,7 +169,7 @@
                   <h5>
                   <em> Tisdag 2017.10.17 </em>
                 </h5>
-                  <h3> Öppen dag på Torsdag </h3>
+                  <h3> Svar på Gruppindelning kommer på måndag </h3>
                   </br>
                   <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                     <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
@@ -147,7 +182,7 @@
                     <h5>
                     <em> Måndag 2017.10.16 </em>
                   </h5>
-                    <h3> Ta med lunch på Onsdag </h3>
+                    <h3> Information gällande Project 1 och 2 </h3>
                     </br>
                     <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                       <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
@@ -167,7 +202,14 @@
     <h4>&#169;Team Fox 2017</h4>
     <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
   </footer>
-  <script src="./script/app.js"></script>
+  <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
+  <script type="text/javascript">
+    //<![CDATA[
+    bkLib.onDomLoaded(function() {
+      nicEditors.allTextAreas()
+    });
+    //]]>
+  </script>
 </body>
 
 </html>
