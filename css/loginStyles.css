@@ -433,9 +433,10 @@ input[type="radio"] {
 
 #drop_zone {
   border: 5px solid blue;
-  width:  200px;
+  width: 200px;
   height: 100px;
 }
+
 /* Teacher.html */
 
 main-news {
@@ -450,7 +451,6 @@ article {
   flex: 2;
   display: flex;
 }
-
 
 /* TEACHER COURSES */
 
@@ -478,58 +478,88 @@ article {
 /* TEACHER COURSES ENDS */
 
 /* HTML CLASS */
+
 .class-info, .teach-news, .class-student, article {
   background-color: #fff;
   box-shadow: 0 0 4px #aaa;
   border: 1px solid #fff;
   padding: 3vh;
 }
+
 .class-info h1, h2 {
   margin-bottom: 1vh;
 }
+
 .class-info table {
   width: 100%;
   border: 1px solid black;
 }
+
 .class-info {
   display: flex;
   flex-direction: column;
 }
+
 .class-info ul {
   border: 1px solid black;
 }
+
 .class-info li {
   border: 1px solid black;
   list-style-type: none;
   align-items: center;
 }
+
+.class-student h1 {
+  margin: 1vh;
+}
+
+.class-student li {
+  list-style-type: none;
+}
+
 .teach-news {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.teach-news h2, #date, h4 {
+
+.teach-news h2 {
   margin-top: 2vh;
   margin-bottom: 1vh;
 }
+
+#date {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
 .teach-news h4 {
   align-self: flex-start;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
 }
+
 .teach-news textarea {
   resize: none;
   font-size: 2vh;
   height: 20vh;
   width: 40vh;
 }
+
 .input-news {
   margin-bottom: 2vh;
 }
+
 #submit-news {
   background-color: black;
   height: 3vh;
   width: 10vh;
+  margin-top: 1vh;
 }
+
 #submit-news:hover {
   opacity: 0.6;
 }
+
 /* HTML CLASS ENDS */
