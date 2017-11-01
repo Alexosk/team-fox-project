@@ -81,8 +81,9 @@ let numberOfGroups = 0;
 let numberOfStudentsWithGroup = 0;
 let numberOfStudentsWithoutGroup = 0;
 let noOfStudentsInEachGroup = 0;
-let groupsArray = []
+let studentsCopy = [];
 
+// Shows and hides the students
 function showStudents() {
     let allStudents = document.getElementById("allStudents");
     let noOfStudents = allStudents.childElementCount;
@@ -90,28 +91,23 @@ function showStudents() {
     // Get the H2 heading without setting an id, ultra tedious
     let allStudentsHeading = document.getElementsByClassName("box")[0].firstElementChild.firstElementChild;
 
-    if (noOfStudents < 1) {
+    // If there are no students showing at the moment
+    if (noOfStudents === 0) {
+        studentsButton.value = "Göm Studenter";
         allStudentsHeading.innerHTML = "Alla Studenter";
         allStudentsHeading.innerHTML += ` ( ${countStudents()} )`;
         for (var index = 0; index < students.length; index++) {
             let studentDiv = document.createElement('div');
             studentDiv.innerHTML = students[index];
-            studentDiv.style.border = "1px solid black";
-            studentDiv.style.padding = "0.5em";
-            studentDiv.style.margin = "0.5em";
+            studentDiv.className = "studentDiv";
             allStudents.appendChild(studentDiv);
         }
     }
-    else {
-        allStudentsHeading.innerHTML = "Alla Studenter";
-        allStudents.innerHTML = "";
-    }
-
-    if (studentsButton.value == "Visa Studenter") {
-        studentsButton.value = "Göm Studenter";
-    }
+    // There are students showing, so remove them
     else {
         studentsButton.value = "Visa Studenter";
+        allStudentsHeading.innerHTML = "Alla Studenter";
+        allStudents.innerHTML = "";
     }
 }
 
@@ -119,18 +115,20 @@ function countStudents() {
     return students.length;
 }
 
-function createGroups() {
-    // Get the select element
+function createGroups() {   
+    // Makes a copy of the students array
+    studentsCopy = students.slice(0);
+    // Get the select element from DOM
     let noOfStudentsOptions = document.getElementById("groupsForm").elements[1];
-    // Get the selected number of students in each group
+    // Get the selected number of students from the DOM select element
     noOfStudentsInEachGroup = noOfStudentsOptions.options[noOfStudentsOptions.selectedIndex].value;
-    // let calculatedGroupsDiv = document.getElementById("calculatedGroups");
-    // let groupDivContainer = document.getElementById("groupDivContainer");
     numberOfStudentsWithoutGroup = countStudents() % noOfStudentsInEachGroup;
     numberOfStudentsWithGroup = countStudents() - numberOfStudentsWithoutGroup;
     numberOfGroups = numberOfStudentsWithGroup / noOfStudentsInEachGroup;
 
     clearGroups();
+
+    shuffleArray(studentsCopy);
 
     calculatedGroupsDiv.innerHTML =
         "Antal studenter: " + countStudents()
@@ -140,19 +138,17 @@ function createGroups() {
 
     for (var i = 1; i <= numberOfGroups; i++) {
         let group = document.createElement('div');
-        group.innerHTML = "Grupp " + i + "<br>";
-        group.className = "groupDiv";
-        populateGroup(group, i);
-        groupDivContainer.appendChild(group);
         if (i === numberOfGroups && numberOfStudentsWithoutGroup > 0) {
-            let group = document.createElement('div');
-            group.innerHTML = "Ingen Grupp <br>";
-            group.className = "groupDiv";
-            populateNoGroup(group, i);
-            groupDivContainer.appendChild(group);
+            group.innerHTML = "<h3>Ingen grupp </h3><br>";            
+            populateGroup(group, true);
         }
+        else {
+            group.innerHTML = "<h3>Grupp " + i + "</h3><br>";
+            populateGroup(group, false);
+        }
+        group.className = "groupDiv";
+        groupDivContainer.appendChild(group);
     }
-    console.log(groupsArray);
 }
 
 function clearGroups() {
@@ -160,21 +156,30 @@ function clearGroups() {
     groupDivContainer.innerHTML = "";
 }
 
-function populateGroup(group, groupNumber) {
-    groupsArray.push([]);
-    for (let j = 1; j <= noOfStudentsInEachGroup; j++) {
-        let student = students.shift();
-        groupsArray[groupNumber-1][j-1] = student;
-        group.innerHTML += "<br>" + student;
+function populateGroup(group, noGroupBoolean) {
+
+    let numberOfStudents = 0;
+
+    if (noGroupBoolean){
+        numberOfStudents = numberOfStudentsWithoutGroup;
+    }
+    else{
+        numberOfStudents = noOfStudentsInEachGroup
+    }
+
+    for (let j = 1; j <= numberOfStudents; j++) {
+        let student = studentsCopy.shift();
+        let studentDiv = document.createElement('div');
+        studentDiv.innerHTML = student;
+        studentDiv.className = "studentDiv";
+        group.appendChild(studentDiv);
     }
 }
 
-function populateNoGroup(group, groupNumber) {
-    groupsArray.push([]);
-    for (let j = 1; j <= numberOfStudentsWithoutGroup; j++) {
-        let student = students.shift();
-        groupsArray[groupNumber][j-1] = student;
-        group.innerHTML += "<br>" + student;
+function shuffleArray(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
     }
 }
 

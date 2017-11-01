@@ -6,22 +6,25 @@
 }
 
 #groupsForm {
-    margin: 1em;
-    width: 50%;
+    margin: 1em 0 1em 0;
 }
 
 #groupsForm ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 1em;
+}
+
+#groupsForm li {
+    padding: 0.5em;
 }
 
 .groupDiv { 
     border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
     margin: 1em;
     padding: 1em;
+    font-size: smaller;
 }
 
 #groupDivContainer {
@@ -29,4 +32,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1em;
+}
+
+.studentDiv {
+    border: 1px solid black;
+    margin: 0.5em;
+    padding: 0.5em;
 }
