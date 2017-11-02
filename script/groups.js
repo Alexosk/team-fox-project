@@ -56,7 +56,10 @@ function showStudents() {
         allStudentsHeading.innerHTML += ` ( ${countStudents()} )`;
         for (var index = 0; index < students.length; index++) {
             let studentDiv = document.createElement('div');
+            studentDiv.draggable = "true";
+            studentDiv.ondragstart = function () {drag(event)};
             studentDiv.innerHTML = students[index];
+            studentDiv.id = index;
             studentDiv.className = "studentDiv";
             allStudents.appendChild(studentDiv);
         }
@@ -104,8 +107,8 @@ function createGroups() {
             groupDivContainer.appendChild(group);
         }
         // If it's NOT the last iteration
-        else if (i !== numberOfGroups){
-            let j = i+1;
+        else if (i !== numberOfGroups) {
+            let j = i + 1;
             group.innerHTML = "<h3>Grupp " + j + "</h3><br>";
             populateGroup(group, false);
             group.className = "groupDiv";
@@ -123,10 +126,10 @@ function populateGroup(group, noGroupBoolean) {
 
     let numberOfStudents = 0;
 
-    if (noGroupBoolean){
+    if (noGroupBoolean) {
         numberOfStudents = numberOfStudentsWithoutGroup;
     }
-    else{
+    else {
         numberOfStudents = noOfStudentsInEachGroup
     }
 
@@ -134,7 +137,9 @@ function populateGroup(group, noGroupBoolean) {
         let student = studentsCopy.shift();
         let studentDiv = document.createElement('div');
         studentDiv.innerHTML = student;
+        studentDiv.draggable = "true";
         studentDiv.className = "studentDiv";
+        studentDiv.ondragstart = function () {drag(event)};
         group.appendChild(studentDiv);
     }
 }
@@ -144,4 +149,19 @@ function shuffleArray(a) {
         const j = Math.floor(Math.random() * (i + 1));
         [a[i], a[j]] = [a[j], a[i]];
     }
+}
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+    console.log(ev.target.id);
 }

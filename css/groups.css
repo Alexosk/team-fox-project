@@ -5,6 +5,16 @@
     padding: 1em;
 }
 
+#allStudentsDropZone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+    border: 1px solid black;
+    width: 500px;
+    height: 50px;
+}
+
 #groupsForm {
     margin: 1em 0 1em 0;
 }
