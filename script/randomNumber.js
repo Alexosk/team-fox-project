@@ -35,3 +35,11 @@ function showAttnTable(table){
     else
       f.style.display = "table";
 }
+/* Visar "Nyhet inlagd" på teacher nyhets rutan */
+function newsFunction(newsPlaced){
+    var e = document.getElementById(newsPlaced);
+    if(e.style.display == "block")
+      e.style.display = "none";
+    else
+      e.style.display = "block";
+}

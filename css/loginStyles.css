@@ -558,12 +558,18 @@ align-self: flex-end;
 #date {
   margin-top: 2vh;
   margin-bottom: 1vh;
+  height: 4vh;
+  text-align: center;
+  font-size: 1.8vh;
 }
 
 .teach-news h4 {
   align-self: flex-start;
   margin-top: 2vh;
   margin-bottom: 1vh;
+}
+.teach-news h5 {
+  font-size: 2vh;
 }
 
 .teach-news textarea {
@@ -587,13 +593,17 @@ align-self: flex-end;
 #submit-news:hover {
   opacity: 0.6;
 }
-#attendenceTaken{
+#newsPlaced{
     display: none;
-    color: white;
-    background: #759e2e;
+    border: 2px solid red;
+    color: black;
     text-align: center;
     -webkit-animation: fadeIn 0.5s;
-    padding: 5px 0 5px 0;
+    padding: 1.5vh;
+  }
+  .teach-news .heading {
+    border: 1px solid black;
+    border-radius: 0;
   }
 
 /* HTML CLASS ENDS */
@@ -618,9 +628,20 @@ align-self: flex-end;
   text-align: left;
 }
 .submission a {
-  color: red;
+  color: black;
   font-weight: bold;
 }
+
 .submission a:hover {
   color:
+}
+/*ARMIDA SUBMISSION */
+
+.armida-project, .teacher-feedback {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 4px #aaa;
+  border: 1px solid #fff;
+  padding: 3vh;
 }
