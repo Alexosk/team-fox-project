@@ -5,7 +5,7 @@ function hideSmileySurvey(feeling, liNumber) {
 
     switch (liNumber) {
         case 1:
-            document.getElementById("smileyList").children[0].style.fontSize = "200%";
+            document.getElementById("smileyList").children[0].style.fontSize = "250%";
             document.getElementById("smileyList").children[1].style.fontSize = "100%";
             document.getElementById("smileyList").children[2].style.fontSize = "100%";
             document.getElementById("smileyList").children[1].innerHTML = "&#128553";
@@ -13,7 +13,7 @@ function hideSmileySurvey(feeling, liNumber) {
             break;
         case 2:
             document.getElementById("smileyList").children[0].style.fontSize = "100%";
-            document.getElementById("smileyList").children[1].style.fontSize = "200%";
+            document.getElementById("smileyList").children[1].style.fontSize = "250%";
             document.getElementById("smileyList").children[2].style.fontSize = "100%";
             document.getElementById("smileyList").children[0].innerHTML = "&#128528";
             document.getElementById("smileyList").children[2].innerHTML = "&#128528";
@@ -21,7 +21,7 @@ function hideSmileySurvey(feeling, liNumber) {
         case 3:
             document.getElementById("smileyList").children[0].style.fontSize = "100%";
             document.getElementById("smileyList").children[1].style.fontSize = "100%";
-            document.getElementById("smileyList").children[2].style.fontSize = "200%";
+            document.getElementById("smileyList").children[2].style.fontSize = "250%";
             document.getElementById("smileyList").children[0].innerHTML = "&#128512";
             document.getElementById("smileyList").children[1].innerHTML = "&#128512";
             break;
