@@ -96,6 +96,7 @@ header ul {
   header {
     position: static;
     flex-wrap: wrap;
+    padding-bottom: 1em;
   }
   #logo {
     flex: 1 0 50%;
@@ -111,9 +112,11 @@ header ul {
   #navContainer1 ul {
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-top: -1em;
   }
   #navContainer1 li {
     margin-left: 1em;
+    margin-top: 1em;
   }
   #navContainer2 ul {
     justify-content: flex-end;
