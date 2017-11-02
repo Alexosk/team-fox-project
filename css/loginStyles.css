@@ -544,7 +544,6 @@ align-self: flex-end;
 .class-student table {
   flex-wrap: wrap;
 }
-
 .teach-news {
   display: flex;
   flex-direction: column;
@@ -598,3 +597,30 @@ align-self: flex-end;
   }
 
 /* HTML CLASS ENDS */
+
+/*SUBMISSION.HTML*/
+.submission {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 4px #aaa;
+  border: 1px solid #fff;
+  padding: 3vh;
+  justify-content: center;
+}
+.submission h1 {
+  margin-bottom: 1vh;
+}
+.submission h2 {
+  margin-bottom: 1vh;
+}
+.submission table {
+  border: 1px solid black;
+  text-align: left;
+}
+.submission a {
+  color: red;
+  font-weight: bold;
+}
+.submission a:hover {
+  color:
+}
