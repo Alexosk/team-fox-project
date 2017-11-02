@@ -520,6 +520,15 @@ article {
   list-style-type: none;
   align-items: center;
 }
+.class-info button {
+  margin-top: 1vh;
+  height: 4vh;
+  align-self: flex-end;
+  font-size: 2vh;
+}
+.assignment-btn {
+align-self: flex-end;
+}
 
 .class-student h1 {
   margin: 1vh;
@@ -527,6 +536,9 @@ article {
 
 .class-student li {
   list-style-type: none;
+}
+.class-student table {
+  flex-wrap: wrap;
 }
 
 .teach-news {
@@ -572,5 +584,13 @@ article {
 #submit-news:hover {
   opacity: 0.6;
 }
+#attendenceTaken{
+    display: none;
+    color: white;
+    background: #759e2e;
+    text-align: center;
+    -webkit-animation: fadeIn 0.5s;
+    padding: 5px 0 5px 0;
+  }
 
 /* HTML CLASS ENDS */

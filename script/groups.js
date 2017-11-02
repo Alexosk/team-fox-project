@@ -73,7 +73,8 @@ let students = [
     'Lemon',
     'Kobe',
     'Roland',
-    'Homer'
+    'Homer',
+    'Alex'
 ];
 let calculatedGroupsDiv = document.getElementById("calculatedGroups");
 let groupDivContainer = document.getElementById("groupDivContainer");
@@ -115,7 +116,7 @@ function countStudents() {
     return students.length;
 }
 
-function createGroups() {   
+function createGroups() {
     // Makes a copy of the students array
     studentsCopy = students.slice(0);
     // Get the select element from DOM
@@ -140,12 +141,12 @@ function createGroups() {
         let group = document.createElement('div');
         // If it's the last iteration and there are student without a groups
         if (i === numberOfGroups && numberOfStudentsWithoutGroup > 0) {
-            group.innerHTML = "<h3>Ingen grupp </h3><br>";            
+            group.innerHTML = "<h3>Ingen grupp </h3><br>";
             populateGroup(group, true);
             group.className = "groupDiv";
             groupDivContainer.appendChild(group);
         }
-        // If it's NOT the last iteration 
+        // If it's NOT the last iteration
         else if (i !== numberOfGroups){
             let j = i+1;
             group.innerHTML = "<h3>Grupp " + j + "</h3><br>";
@@ -187,4 +188,3 @@ function shuffleArray(a) {
         [a[i], a[j]] = [a[j], a[i]];
     }
 }
-

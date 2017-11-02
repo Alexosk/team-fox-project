@@ -66,35 +66,38 @@
         <h1> Mina skapade uppgifter </h1>
 
         <table>
-            <tr>
-                <th>Uppgifter</th>
-                <th>Poäng</th>
-                <th>Startdatum</th>
-                <th>Deadline</th>
-            </tr>
+          <tr>
+            <th>Uppgifter</th>
+            <th>Poäng</th>
+            <th>Startdatum</th>
+            <th>Deadline</th>
+          </tr>
 
-            <tr>
-                <td><a href="#">Uppgift 1</a></td>
-                <td>10</td>
-                <td>2017-01-03</td>
-                <td>2017-01-10</td>
-            </tr>
+          <tr>
+            <td><a href="submission.html">Uppgift 1</a></td>
+            <td>10</td>
+            <td>2017-01-03</td>
+            <td>2017-01-10</td>
+          </tr>
 
-            <tr>
-                <td><a href="#">Uppgift 2 </a></td>
-                <td>25</td>
-                <td>1984-09-09</td>
-                <td>2020-03-14</td>
-            </tr>
+          <tr>
+            <td><a href="#">Uppgift 2 </a></td>
+            <td>25</td>
+            <td>1984-09-09</td>
+            <td>2020-03-14</td>
+          </tr>
 
-            <tr>
-                <td><a href="#"> Uppgift 3 </a></td>
-                <td>65</td>
-                <td>1984-09-09</td>
-                <td>2020-03-14</td>
-            </tr>
+          <tr>
+            <td><a href="#"> Uppgift 3 </a></td>
+            <td>65</td>
+            <td>1984-09-09</td>
+            <td>2020-03-14</td>
+          </tr>
         </table>
-        <a href="#">Skapa ny uppgift</a>
+
+        <div class="assignment-btn">
+          <button><a href="assignments-teacher.html">Skapa ny uppgift</a></button>
+        </div>
 
       </div>
     </div>
@@ -105,28 +108,7 @@
         <div class="class-student">
           <h1> Studenter </h1>
 
-          <table>
-          <tr>
-              <th>Stefan</th>
-              <th>Mikael</th>
-              <th>Johan</th>
-              <th>Stella</th>
-              <th>Stefan</th>
-              <th>Mikael</th>
-              <th>Johan</th>
-              <th>Stella</th>
-          </tr>
-          <tr>
-              <th>Elin</th>
-              <th>Alex</th>
-              <th>Johan</th>
-              <th>Johanna</th>
-              <th>Margret</th>
-              <th>Alex</th>
-              <th>Johan</th>
-              <th>Johanna</th>
-          </tr>
-        </table>
+
 
 
         </div>
@@ -136,18 +118,19 @@
       <div class="column">
         <div class="teach-news">
 
-          <form>
-            <h2> Lägg till kursnyheter: </h2>
-            <h5> Publisera på: <input id="date" type="date"></h5>
 
-            <textarea>
+          <h2> Lägg till kursnyheter: </h2>
+          <h5> Publisera på: <input id="date" type="date"></h5>
+
+          <textarea>
        Skriv ditt inlägg här
      </textarea>
 
-            <div class="input-news">
-              <input type="submit" name="submit" value="Lägg till" id="submit-news">
-            </div>
-          </form>
+          <div class="input-news">
+            <input type="submit" name="submit" value="Lägg till" onclick="submitFunction('attendenceTaken')" id="submit-news">
+          </div>
+          <div id="attendenceTaken">Nyhet tillagd i nyhetsflödet!</div>
+
 
           <h4>Alla kurs nyheter: </h4>
           <main-news>
@@ -202,7 +185,7 @@
     <h4>&#169;Team Fox 2017</h4>
     <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
   </footer>
-  <script src="./script/app.js"></script>
+  <script src="../script/randomNumber.js"></script>
   <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
   <script type="text/javascript">
     //<![CDATA[
