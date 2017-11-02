@@ -31,7 +31,8 @@ let students = [
     'Öivind Österberg',
     'Örjan Östling',
     'Örn Ärlig',
-    'Östen Åberg'
+    'Östen Åberg',
+    'Stu Dentson'
 ];
 let calculatedGroupsDiv = document.getElementById("calculatedGroups");
 let groupDivContainer = document.getElementById("groupDivContainer");
