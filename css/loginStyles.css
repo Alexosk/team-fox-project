@@ -494,6 +494,9 @@ article {
   width: 100%;
   border: 1px solid black;
 }
+.class-info table tr {
+  text-align: left;
+}
 
 .class-info {
   display: flex;
