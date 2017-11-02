@@ -87,6 +87,10 @@ header ul {
   color: white;
   font-size: 150%;
 }
+#highLightHeading a
+{
+  color: white;
+}
 
 @media screen and (max-width: 1000px) {
   header {
@@ -105,7 +109,11 @@ header ul {
     flex: 1 0 50%;
   }
   #navContainer1 ul {
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  #navContainer1 li {
+    margin-left: 1em;
   }
   #navContainer2 ul {
     justify-content: flex-end;
