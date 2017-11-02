@@ -40,6 +40,8 @@ let numberOfStudentsWithGroup = 0;
 let numberOfStudentsWithoutGroup = 0;
 let noOfStudentsInEachGroup = 0;
 let studentsCopy = [];
+// Id to identify the dragable students
+let studentId = 1;
 
 // Shows and hides the students
 function showStudents() {
@@ -56,10 +58,7 @@ function showStudents() {
         allStudentsHeading.innerHTML += ` ( ${countStudents()} )`;
         for (var index = 0; index < students.length; index++) {
             let studentDiv = document.createElement('div');
-            studentDiv.draggable = "true";
-            studentDiv.ondragstart = function () {drag(event)};
             studentDiv.innerHTML = students[index];
-            studentDiv.id = index;
             studentDiv.className = "studentDiv";
             allStudents.appendChild(studentDiv);
         }
@@ -99,19 +98,26 @@ function createGroups() {
 
     for (var i = 0; i <= numberOfGroups; i++) {
         let group = document.createElement('div');
-        // If it's the last iteration and there are student without a groups
+        let groupHeading = document.createElement('div');
+        // Start make group dragable
+        group.ondragover = function () { allowDrop(event) };
+        group.ondrop = function () { drop(event) };
+        // End make group dragable
+        groupHeading.className = "groupHeading";
+        group.className = "groupDiv";
+        
         if (i === numberOfGroups && numberOfStudentsWithoutGroup > 0) {
-            group.innerHTML = "<h3>Ingen grupp </h3><br>";
+            groupHeading.innerHTML = "Ingen grupp";
+            group.appendChild(groupHeading);
             populateGroup(group, true);
-            group.className = "groupDiv";
             groupDivContainer.appendChild(group);
         }
         // If it's NOT the last iteration
         else if (i !== numberOfGroups) {
             let j = i + 1;
-            group.innerHTML = "<h3>Grupp " + j + "</h3><br>";
+            groupHeading.innerHTML = "Grupp " + j + "";
+            group.appendChild(groupHeading);
             populateGroup(group, false);
-            group.className = "groupDiv";
             groupDivContainer.appendChild(group);
         }
     }
@@ -137,9 +143,13 @@ function populateGroup(group, noGroupBoolean) {
         let student = studentsCopy.shift();
         let studentDiv = document.createElement('div');
         studentDiv.innerHTML = student;
+        // Start make student dragable
         studentDiv.draggable = "true";
         studentDiv.className = "studentDiv";
-        studentDiv.ondragstart = function () {drag(event)};
+        studentDiv.ondragstart = function () { drag(event) };
+        studentDiv.id = studentId;
+        // End make student dragable
+        studentId++;
         group.appendChild(studentDiv);
     }
 }
@@ -151,8 +161,16 @@ function shuffleArray(a) {
     }
 }
 
+// Start dragable functions
 function allowDrop(event) {
     event.preventDefault();
+    // If the element is dragable or it is the heading of the group, dropping is not allowed
+    if (event.target.getAttribute("draggable") == "true" || event.target.className == "groupHeading") {
+        event.dataTransfer.dropEffect = "none"; // dropping is not allowed
+    }
+    else{
+        event.dataTransfer.dropEffect = "all"; // drop it like it's hot
+    }
 }
 
 function drop(ev) {
@@ -163,5 +181,5 @@ function drop(ev) {
 
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
-    console.log(ev.target.id);
 }
+// End dragable functions
