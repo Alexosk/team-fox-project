@@ -467,8 +467,7 @@ article {
 /* TEACHER COURSES */
 
 .teacher-courses {
-  font-size: 5vh;
-  padding: 5vh;
+  padding: 1vh;
   justify-content: flex-start;
 }
 
@@ -481,10 +480,14 @@ article {
 }
 
 .teacher-courses ul li {
-  padding: 2vh;
+  padding: 1vh;
   background-color: #fff;
   box-shadow: 0 0 4px #aaa;
   border: 1px solid #fff;
+}
+
+.teacher-courses a:visited {
+  color: black;
 }
 
 /* TEACHER COURSES ENDS */
