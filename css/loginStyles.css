@@ -87,8 +87,8 @@ header ul {
   color: white;
   font-size: 150%;
 }
-#highLightHeading a
-{
+
+#highLightHeading a {
   color: white;
 }
 
@@ -506,6 +506,7 @@ article {
   width: 100%;
   border: 1px solid black;
 }
+
 .class-info table tr {
   text-align: left;
 }
@@ -524,14 +525,19 @@ article {
   list-style-type: none;
   align-items: center;
 }
+
 .class-info button {
   margin-top: 1vh;
   height: 4vh;
   align-self: flex-end;
   font-size: 2vh;
 }
+.class-info button:hover {
+  background-color: lightgrey;
+}
+
 .assignment-btn {
-align-self: flex-end;
+  align-self: flex-end;
 }
 
 .class-student h1 {
@@ -541,9 +547,11 @@ align-self: flex-end;
 .class-student li {
   list-style-type: none;
 }
+
 .class-student table {
   flex-wrap: wrap;
 }
+
 .teach-news {
   display: flex;
   flex-direction: column;
@@ -568,6 +576,7 @@ align-self: flex-end;
   margin-top: 2vh;
   margin-bottom: 1vh;
 }
+
 .teach-news h5 {
   font-size: 2vh;
 }
@@ -593,22 +602,25 @@ align-self: flex-end;
 #submit-news:hover {
   opacity: 0.6;
 }
-#newsPlaced{
-    display: none;
-    border: 2px solid red;
-    color: black;
-    text-align: center;
-    -webkit-animation: fadeIn 0.5s;
-    padding: 1.5vh;
-  }
-  .teach-news .heading {
-    border: 1px solid black;
-    border-radius: 0;
-  }
+
+#newsPlaced {
+  display: none;
+  border: 2px solid red;
+  color: black;
+  text-align: center;
+  -webkit-animation: fadeIn 0.5s;
+  padding: 1.5vh;
+}
+
+.teach-news .heading {
+  border: 1px solid black;
+  border-radius: 0;
+}
 
 /* HTML CLASS ENDS */
 
 /*SUBMISSION.HTML*/
+
 .submission {
   display: flex;
   background-color: #fff;
@@ -617,24 +629,33 @@ align-self: flex-end;
   padding: 3vh;
   justify-content: center;
 }
+
 .submission h1 {
   margin-bottom: 1vh;
 }
+
 .submission h2 {
   margin-bottom: 1vh;
 }
+
 .submission table {
   border: 1px solid black;
   text-align: left;
 }
+
 .submission a {
   color: black;
   font-weight: bold;
 }
 
-.submission a:hover {
-  color:
+.submission .in {
+  color: green;
 }
+
+.submission .not-in {
+  color: red;
+}
+
 /*ARMIDA SUBMISSION */
 
 .armida-project, .teacher-feedback {
