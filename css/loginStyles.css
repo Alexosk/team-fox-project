@@ -569,7 +569,7 @@ article {
 #date {
   margin-top: 2vh;
   margin-bottom: 1vh;
-  height: 4vh;
+  height: 30px;
   text-align: center;
   font-size: 1.8vh;
 }
@@ -587,8 +587,8 @@ article {
 .teach-news textarea {
   resize: none;
   font-size: 2vh;
-  height: 20vh;
-  width: 40vh;
+  height: 250px;
+  width: 300px;
 }
 
 .input-news {
@@ -597,8 +597,8 @@ article {
 
 #submit-news {
   background-color: black;
-  height: 3vh;
-  width: 10vh;
+  height: 30px;
+  width: 100px;
   margin-top: 1vh;
 }
 
@@ -668,4 +668,31 @@ article {
   box-shadow: 0 0 4px #aaa;
   border: 1px solid #fff;
   padding: 3vh;
+}
+.teacher-feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+}
+.feedback h2, .feedback textarea, .feedback input {
+  align-self: flex-start;
+}
+.feedback textarea, .feedback input{
+  border: 1px solid black;
+  width: 270px;
+  font-size: 1.8vh;
+
+}
+.feedback textarea {
+  resize: none;
+  height: 250px;
+}
+
+.box-grade {
+  margin: 1.5vh;
 }
