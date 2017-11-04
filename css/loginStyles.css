@@ -171,6 +171,11 @@ footer p {
   margin-left: 1em;
 }
 
+footer span {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
 /*Dessa används på why-us-html*/
 
 .line {
@@ -695,4 +700,17 @@ article {
 
 .box-grade {
   margin: 1.5vh;
+}
+
+#smileySurveyTeacher{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#smileySurveyTeacher ul{
+}
+
+#smileySurveyTeacher li{
+  font-size: 200%;
+  padding: 0.5em;
 }
