@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
+  <link rel="stylesheet" type="text/css" href="../css/student.css">
   <link rel="shortcut icon" href="images/la.png">
   <script type="text/javascript"></script>
 </head>
@@ -20,16 +21,21 @@
       </div>
     </a>
     <div id="navContainer1">
-      <ul>
-        <li>
-          <a href="teacher-courses.html">Mina kurser</a>
-        </li>
-        <li id="highLightHeading">
-          <a href="survey-teacher.html">Veckoreflekteringar</a>
-        </li>
-
-      </ul>
-    </div>
+        <ul>
+          <li>
+            <a href="teacher-courses.html">Mina kurser</a>
+          </li>
+          <li>
+            <a href="attendance.html">Ta närvaro</a>
+          </li>
+          <li id="highLightHeading">
+            <a href="survey-teacher.html">Veckoreflektioner</a>
+          </li>
+          <li>
+            <a href="evaluation-teacher.html">Kursutvärderingar</a>
+          </li>
+        </ul>
+      </div>
     <div id="navContainer2">
       <ul>
         <li>
@@ -49,8 +55,21 @@
   </header>
 
   <div id="content">
-    <h1> VECKOREFLEKTERINGAR </h1>
-
+    <div class="box">
+      <div class="boxes">
+        <h1>Sammanställning av veckoreflekteringar</h1>
+        <br>
+        <ul>
+          <li>
+            <a href="evaluations/Evaluation1.pdf">Veckoreflektion vecka 41</a>
+          </li>
+          <br>
+          <li>
+            <a href="evaluations/Evaluation2.pdf">Veckoreflektion vecka 40</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 
 
@@ -62,7 +81,7 @@
   <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
   <script type="text/javascript">
     //<![CDATA[
-    bkLib.onDomLoaded(function() {
+    bkLib.onDomLoaded(function () {
       nicEditors.allTextAreas()
     });
     //]]>
