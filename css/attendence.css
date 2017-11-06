@@ -111,7 +111,11 @@
 }
 
 .attnColor{
-    background: red;
+    background: #cc0000;
+}
+
+.green{
+    background-color: green;
 }
 
 
