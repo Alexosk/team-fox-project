@@ -461,7 +461,7 @@ input[type="radio"] {
 /* Teacher.html */
 
 main-news {
-  height: 50vh;
+  height: 70vh;
   flex: 1;
   display: flex;
 }
@@ -605,28 +605,34 @@ article {
 }
 
 #submit-news {
-  background-color: black;
+  background-color: #333333;
   height: 30px;
   width: 100px;
   margin-top: 1vh;
 }
 
 #submit-news:hover {
-  opacity: 0.6;
+  background: #595959;
 }
 
 #newsPlaced {
   display: none;
-  border: 2px solid red;
-  color: black;
+  background: #759e2e;
+  color: white;
   text-align: center;
   -webkit-animation: fadeIn 0.5s;
   padding: 1.5vh;
 }
 
 .teach-news .heading {
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 0;
+}
+input.heading{
+  width: 298px;
+}
+.publishDate{
+  width: 278px;
 }
 
 /* HTML CLASS ENDS */
@@ -718,3 +724,30 @@ article {
   font-size: 200%;
   padding: 0.5em;
 }
+
+
+
+
+
+
+
+
+.attnColor{
+  background: #cc0000;
+}
+#attendenceSaved{
+        display: none;
+        color: white;
+        background: #759e2e;
+        text-align: center;
+        -webkit-animation: fadeIn 0.5s;
+        padding: 5px 0 5px 0;
+      }
+@-webkit-keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }  
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }

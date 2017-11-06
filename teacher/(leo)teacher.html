@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>YHLA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
+  <link rel="stylesheet" type="text/css" href="../css/student.css">
+  <link rel="shortcut icon" href="images/la.png">
+  <script type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+    <a href="teacher.html">
+      <div id=logo>
+        <h1>YH</h1>
+        <img src="../images/la.png" width="30" alt="YHLA">
+        <h1>A</h1>
+      </div>
+    </a>
+    <div id="navContainer1">
+      <ul>
+        <li>
+          <a href="teacher-courses.html">Mina kurser</a>
+        </li>
+        <li>
+          <a href="attendance.html">Ta närvaro</a>
+        </li>
+        <li>
+          <a href="survey-teacher.html">Veckoreflektioner</a>
+        </li>
+        <li>
+          <a href="evaluation-teacher.html">Kursutvärderingar</a>
+        </li>
+        <li>
+          <a href="dailySurvey-teacher.html">Dagsutvärderingar</a>
+        </li>
+      </ul>
+    </div>
+    <div id="navContainer2">
+      <ul>
+        <li>
+          <a href="teacher.html">
+            <img src="../images/kobe.png" width="55">
+          </a>
+        </li>
+        <li id="user">
+          <a href="teacher.html">Tea Chairson</a>
+        </li>
+        <li id="logOut">
+          <a href="../index.html">Logga ut</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div id="content">
+
+    <div class="columns">
+      <div class="box">
+
+        <div class="boxes">
+          <div class="boxtext">
+            <div class="month">
+              <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>
+                  <span style="font-size:18px">October
+                    <br>2017</span>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="weekdays">
+              <li>Må</li>
+              <li>Ti</li>
+              <li>On</li>
+              <li>To</li>
+              <li>Fr</li>
+              <li>Lö</li>
+              <li>Sö</li>
+            </ul>
+
+            <ul class="days">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li id="activeday">
+                <span class="active" onclick="hiddenFunction()">4</span>
+              </li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+            </ul>
+            <div class="divider"></div>
+            <div id="hidden">
+              <div class="hiddenbox">
+                <div class="attendancebox">
+                  <ul>
+                    <li>
+                      <p>09.00-12.00
+                        <br>Sal 115
+                        <br>Javascript</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="attendancebox">
+                  <h5>Närvaro</h5>
+                  <form name="attendace-form">
+                    <input type="text" name="code" placeholder="Lektionens kod" autofocus>
+                    <input type="submit" value="Anmäl närvaro" onclick="attended()">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="boxes">
+        <h6>
+          Dagsutvärderingar summering
+        </h6>
+        <ul id="smileySurveyTeacher">
+          <li>
+            &#128553;&nbsp;<span>(344)</span>
+          </li>
+          <li>
+            &#128528;&nbsp;<span>(364)</span>
+          </li>
+          <li>
+            &#128512;&nbsp;<span>(44)</span>
+          </li>
+        </ul>
+      </div>
+
+
+        <div class="boxes">
+          <div class="boxtext">
+            <h3></h3>
+            <div class="divider"></div>
+            <div class="assignments">
+              <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                eaque
+                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                  eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                  rem aperiam, eaque
+                </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="boxes">
+          <div class="boxtext">
+            <h3>Nyheter</h3>
+            <div class="divider"></div>
+            <!--<marquee width="auto" height="200" behavior="scroll" scrolldelay="200" loop="infinite" direction="up">-->
+            <main-news>
+              <article>
+                <div class="news">
+                  <h5>
+                    <em> Torsdag 2017.10.19 </em>
+                  </h5>
+                  <h3> Skolan är stängd första veckan i November </h3>
+                  </br>
+                  <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                    eaque
+                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque
+                    </p>
+
+                    </br>
+                    </br>
+                    </br>
+
+                    <h5>
+                      <em> Tisdag 2017.10.17 </em>
+                    </h5>
+                    <h3> Öppen dag på Torsdag </h3>
+                    </br>
+                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque
+                      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque
+                      </p>
+
+                      </br>
+                      </br>
+                      </br>
+
+                      <h5>
+                        <em> Måndag 2017.10.16 </em>
+                      </h5>
+                      <h3> Ta med lunch på Onsdag </h3>
+                      </br>
+                      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque
+                        <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                          rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                          laudantium, totam rem aperiam, eaque </p>
+
+                </div>
+              </article>
+            </main-news>
+            <!--</marquee>-->
+
+            <div class="divider"></div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+      <h4>&#169;Team Fox 2017</h4>
+      <p>Alexandra, Rikard, Paulina, Leo, Benjamin,
+        <span>Aram</span>
+      </p>
+    </footer>
+  <script src="./script/app.js"></script>
+  <script src="./script/smileySurvey.js"></script>
+</body>
+
+</html>
