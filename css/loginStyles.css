@@ -59,6 +59,10 @@ header ul {
 #navContainer1 a, #navContainer2 a {
   color: #FDB722;
 }
+#navContainer1 a:hover, #navContainer2 a:hover{
+  transition: 0.3s;
+  color: #fdd681;
+}
 
 #navContainer1 ul, #navContainer2 ul {
   display: flex;
