@@ -623,6 +623,14 @@ article {
   -webkit-animation: fadeIn 0.5s;
   padding: 1.5vh;
 }
+#provPlaced {
+  display: none;
+  background: #759e2e;
+  color: white;
+  text-align: center;
+  -webkit-animation: fadeIn 0.5s;
+  padding: 1.5vh;
+}
 
 .teach-news .heading {
   border: 1px solid gray;

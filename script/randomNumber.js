@@ -43,3 +43,10 @@ function newsFunction(newsPlaced){
     else
       e.style.display = "block";
 }
+function provFunction(provPlaced){
+    var e = document.getElementById(provPlaced);
+    if(e.style.display == "block")
+      e.style.display = "none";
+    else
+      e.style.display = "block";
+}
