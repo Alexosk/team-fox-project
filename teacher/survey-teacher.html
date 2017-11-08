@@ -22,8 +22,16 @@
     </a>
     <div id="navContainer1">
       <ul>
-        <li>
-          <a href="teacher-courses.html">Mina kurser</a>
+        <li class="dropdown">
+          <!--<a href="teacher-courses.html">Mina kurser</a>-->
+          <button onclick="myDropdown()" class="dropBtn"><a href="#">Mina Kurser</a></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="html-class.html">HTML (fe17)</a>
+            <a href="#">HTML (fe16)</a>
+            <a href="#">Java (fe16)</a>
+            <a href="#">Front-End (fe16)</a>
+            <a href="#">Back-End (fe17)</a>
+          </div>
         </li>
         <li>
           <a href="attendance.html">Ta närvaro</a>
@@ -82,7 +90,7 @@
         <span>Aram</span>
       </p>
     </footer>
-  <script src="./script/app.js"></script>
+  <script src="../script/app.js"></script>
   <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
   <script type="text/javascript">
     //<![CDATA[
