@@ -742,9 +742,14 @@ input.heading{
 
 .attnColor{
   background: #cc0000;
+  color: white;
+  text-align: center;
 }
 .attnColor2{
   background: #759e2e;
+  color: white;
+  text-align: center;
+  
 }
 #attendenceSaved{
         display: none;
