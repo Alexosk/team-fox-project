@@ -735,6 +735,9 @@ input.heading{
 .attnColor{
   background: #cc0000;
 }
+.attnColor2{
+  background: #759e2e;
+}
 #attendenceSaved{
         display: none;
         color: white;
@@ -746,7 +749,7 @@ input.heading{
 @-webkit-keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
-    }  
+    }
     @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
@@ -800,4 +803,3 @@ input.heading{
 .dropdown a:hover {background-color: #f1f1f1}
 
 .show {display:block;}
-    
