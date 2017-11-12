@@ -59,7 +59,8 @@ header ul {
 #navContainer1 a, #navContainer2 a {
   color: #FDB722;
 }
-#navContainer1 a:hover, #navContainer2 a:hover{
+
+#navContainer1 a:hover, #navContainer2 a:hover {
   transition: 0.3s;
   color: #fdd681;
 }
@@ -544,6 +545,7 @@ article {
   align-self: flex-end;
   font-size: 2vh;
 }
+
 .class-info button:hover {
   background-color: lightgrey;
 }
@@ -623,6 +625,7 @@ article {
   -webkit-animation: fadeIn 0.5s;
   padding: 1.5vh;
 }
+
 #provPlaced {
   display: none;
   background: #759e2e;
@@ -636,10 +639,12 @@ article {
   border: 1px solid gray;
   border-radius: 0;
 }
-input.heading{
+
+input.heading {
   width: 298px;
 }
-.publishDate{
+
+.publishDate {
   width: 278px;
 }
 
@@ -692,25 +697,29 @@ input.heading{
   border: 1px solid #fff;
   padding: 3vh;
 }
+
 .teacher-feedback {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .feedback {
   display: flex;
   flex-direction: column;
 }
+
 .feedback h2, .feedback textarea, .feedback input {
   align-self: flex-start;
 }
-.feedback textarea, .feedback input{
+
+.feedback textarea, .feedback input {
   border: 1px solid black;
   width: 270px;
   font-size: 1.8vh;
-
 }
+
 .feedback textarea {
   resize: none;
   height: 250px;
@@ -722,84 +731,98 @@ input.heading{
 
 /* Stu Dentson SUBMISSION ENDS */
 
-#smileySurveyTeacher{
+#smileySurveyTeacher {
   display: flex;
   flex-wrap: wrap;
 }
 
-#smileySurveyTeacher ul{
-}
+#smileySurveyTeacher ul {}
 
-#smileySurveyTeacher li{
+#smileySurveyTeacher li {
   font-size: 200%;
   padding: 0.5em;
 }
 
-.attnColor{
+.attnColor {
   background: #cc0000;
   color: white;
   text-align: center;
 }
-.attnColor2{
+
+.attnColor2 {
   background: #759e2e;
   color: white;
   text-align: center;
-
 }
-#attendenceSaved{
-        display: none;
-        color: white;
-        background: #759e2e;
-        text-align: center;
-        -webkit-animation: fadeIn 0.5s;
-        padding: 5px 0 5px 0;
-      }
-@-webkit-keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
 
-    }
+#attendenceSaved {
+  display: none;
+  color: white;
+  background: #759e2e;
+  text-align: center;
+  -webkit-animation: fadeIn 0.5s;
+  padding: 5px 0 5px 0;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /*****DROPDOWN STUFF*****/
+
 .dropbtn {
-    background-color: #562E84;
-    color: #FDB722;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+  background-color: #562E84;
+  color: #FDB722;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+  background-color: #3e8e41;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.dropdown a:hover {background-color: #f1f1f1}
+.dropdown a:hover {
+  background-color: #f1f1f1
+}
 
-.show {display:block;}
+.show {
+  display: block;
+}
