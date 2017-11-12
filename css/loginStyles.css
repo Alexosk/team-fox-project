@@ -524,7 +524,7 @@ article {
   display: flex;
 }
 
-/* TEACHER COURSES */
+/* TEACHER COURSES
 
 .teacher-courses {
   padding: 1vh;
@@ -550,7 +550,7 @@ article {
   color: black;
 }
 
-/* TEACHER COURSES ENDS */
+TEACHER COURSES ENDS */
 
 /* HTML CLASS */
 
@@ -567,7 +567,6 @@ article {
 
 .class-info table {
   width: 100%;
-  border: 1px solid black;
 }
 
 .class-info table tr {
@@ -579,12 +578,11 @@ article {
   flex-direction: column;
 }
 
-.class-info ul {
+.class-info ul, .class-info li, .class-info table {
   border: 1px solid black;
 }
 
 .class-info li {
-  border: 1px solid black;
   list-style-type: none;
   align-items: center;
 }
@@ -622,14 +620,12 @@ article {
   align-items: center;
 }
 
-.teach-news h2 {
+.teach-news h2, #date {
   margin-top: 2vh;
   margin-bottom: 1vh;
 }
 
 #date {
-  margin-top: 2vh;
-  margin-bottom: 1vh;
   height: 30px;
   text-align: center;
   font-size: 1.8vh;
@@ -667,16 +663,7 @@ article {
   background: #595959;
 }
 
-#newsPlaced {
-  display: none;
-  background: #759e2e;
-  color: white;
-  text-align: center;
-  -webkit-animation: fadeIn 0.5s;
-  padding: 1.5vh;
-}
-
-#provPlaced {
+#newsPlaced, #provPlaced {
   display: none;
   background: #759e2e;
   color: white;
@@ -711,11 +698,7 @@ input.heading {
   justify-content: center;
 }
 
-.submission h1 {
-  margin-bottom: 1vh;
-}
-
-.submission h2 {
+.submission h1, h2 {
   margin-bottom: 1vh;
 }
 
@@ -735,6 +718,15 @@ input.heading {
 
 .submission .not-in {
   color: red;
+}
+
+@media screen and (max-width: 1000px) {
+  .submission table th:nth-child(2) {
+    display: none;
+  }
+  .submission table td:nth-child(2) {
+    display: none;
+  }
 }
 
 /*Stu Dentson SUBMISSION */
