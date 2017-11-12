@@ -170,75 +170,48 @@ h3{
     border-radius: 0.5rem;
     color: #fff;
 }
-
-@media screen and (max-width: 1000px){
+.hamburger-btn {
+    display: none;
+    position: absolute;
+    height: 3vh;
+    width: 3vh;
+    right: 3vh;
+    line-height: 3vh;
+    font-size: 3vh;
+    bottom: 3vh;
+    text-align: center;
+    padding: 1vh;
+    background-color: whitesmoke;
+    border-radius: 0.9rem;
+    color: #000;
+}
+#main-nav-toggle {
+    display: none;
+}
+@media screen and (max-width: 860px){
     header, .columns{
         display: flex;
         flex-direction: column;
         position: relative;
     }
-
-    #nav {
-      display: flex;
+    .hamburger-btn {
+        background-color: #3faecc;
+        display: inline-block;
+        cursor: pointer;
     }
-
-    #nav ul li.listBtn a {
-      padding: 0.5rem;
-      border-radius: 0.5rem;
-    }
-
-    #nav ul li a:hover {
-      background: #759e2e;
-    }
-
-    #nav ul {
+    #nav #main-nav-toggle + ul {
         display: none;
+        position: absolute;
+        top: 100%;
+        background-color: white;
+        right: 0;
+        z-index: 1;
     }
-
-    #nav a.nav-btn {
-        display: block;
-    }
-
-    #nav ul li.listBtn a, #nav ul li.listBtn a:hover {
-        color: #000;
-    }
-
-    #nav ul.shown {
+    #nav #main-nav-toggle:checked + ul {
         display: block;
         width: 100%;
-        padding: 0;
-    }
-
-    #nav ul li, #nav ul li:hover {
-        background-color: transparent;
-        width: 100%;
-        margin: 0.5rem;
         text-align: center;
-
     }
-    
-    #nav a.icon {
-        float: right;
-        display: block;
-  }
-
-}
-
-
-@media screen and (max-width: 1000px) {
-  #nav.responsive {
-    position: relative;
-  }
-  #nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  #nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 
 .triangle {

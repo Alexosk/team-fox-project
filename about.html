@@ -2,103 +2,99 @@
 <html lang="en">
 
 <head>
-    <title>Foxy Learning</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript"></script>
+  <title>Foxy Learning</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"></script>
 </head>
 
 <body>
-    <header>
-        <div id=logo>
-            <a href="index.html">
+  <header>
+    <div id=logo>
+      <a href="index.html">
                 <img src="./images/foxy-logo.png" width="100" alt="A picture of a fox">
             </a>
-            <a href="index.html">
-                <h1>Foxy Learning</h1>
-            </a>
-        </div>
-        <div id="nav">
-          <a class="nav-btn" href="javascript:void(0);" onclick="dropdownnav()">&#9776;</a>
-          <ul id="navigation-ul" class="">
-            <li class="listBtn"><a href="about.html">Om Foxy</a></li>
-            <li class="listBtn"><a href="price.html">Priser</a></li>
-            <li class="listBtn"><a href="why-us.html">Varför Oss?</a></li>
-            <li><a href="#" id="login">Logga in</a>
-                <div class="triangle"></div>
-                  <div class="login-form">
-                    <form action="student.html" onsubmit="return login()" method="post" name="login-form">
-                        <div><input type="text" placeholder="username" name="username" autofocus /></div>
-                        <div><input type="password" placeholder="password" name="password"  /></div>
-                        <div><input type="submit" value="Logga in"  /></div>
-                            <!--<div>
+      <a href="index.html">
+        <h1>Foxy Learning</h1>
+      </a>
+    </div>
+    <div id="nav">
+      <label class="hamburger-btn" for="main-nav-toggle">&#9776;</label>
+      <input type="checkbox" id="main-nav-toggle">
+
+      <ul>
+        <li class="listBtn"><a href="about.html">Om Foxy</a></li>
+        <li class="listBtn"><a href="price.html">Priser</a></li>
+        <li class="listBtn"><a href="why-us.html">Varför Oss?</a></li>
+        <li><a href="#" id="login">Logga in</a>
+          <div class="triangle"></div>
+          <div class="login-form">
+            <form action="student.html" onsubmit="return login()" method="post" name="login-form">
+              <div><input type="text" placeholder="username" name="username" autofocus /></div>
+              <div><input type="password" placeholder="password" name="password" /></div>
+              <div><input type="submit" value="Logga in" /></div>
+              <!--<div>
                                 <a href="#" style="text-decoration:none;position:relative;top:20px;font-size:14px;color:#ddfcff;">Lost Your Password?</a>
                             </div>-->
-                            <div id="errorMessageDiv"></div>
-                        </form>
-                    </div>
-              </li>
-          </ul>
-        </div>
-    </header>
-    <div id="content">
-
-        <div class="columns">
-            <div class="column">
-                <h1>Om Foxy</h1>
-                <br>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                    dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                    sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                    magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                    suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
-                    qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                    voluptas nulla pariatur?</p>
-            </div>
-            <div class="column">
-                <img src="./images/foxy-logo1.png" width="400" alt="a picture of a fox">
-            </div><!--Column end-->
-        </div><!--ColumnS end-->
-
-        <div class="line"></div>
-        <div class="space"></div>
-
-        <div class="columns">
-            <div class="column">
-                <h1>Om Foxy</h1>
-                <br>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                    dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                    sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                    magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                    suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
-                    qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                    voluptas nulla pariatur?</p>
-            </div>
-            <div class="column">
-                <img src="./images/price-pic3(old).png" width="400" alt="a picture of price tags">
-            </div><!--Column end-->
-        </div><!--ColumnS end-->
-
-
-        <div class="space"></div>
-
+              <div id="errorMessageDiv"></div>
+            </form>
+          </div>
+        </li>
+      </ul>
     </div>
-    <footer>
-        <h4>&#169;Team Fox 2017</h4>
-        <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
-    </footer>
-    <script src="./script/app.js"></script>
-    <script src="./script/drop.js"></script>
-    <script src="./script/media.js"></script>
+  </header>
+  <div id="content">
+
+    <div class="columns">
+      <div class="column">
+        <h1>Om Foxy</h1>
+        <br>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+          quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+          qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+      </div>
+      <div class="column">
+        <img src="./images/foxy-logo1.png" width="400" alt="a picture of a fox">
+      </div>
+      <!--Column end-->
+    </div>
+    <!--ColumnS end-->
+
+    <div class="line"></div>
+    <div class="space"></div>
+
+    <div class="columns">
+      <div class="column">
+        <h1>Om Foxy</h1>
+        <br>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+          quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+          qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+      </div>
+      <div class="column">
+        <img src="./images/price-pic3(old).png" width="400" alt="a picture of price tags">
+      </div>
+      <!--Column end-->
+    </div>
+    <!--ColumnS end-->
+
+
+    <div class="space"></div>
+
+  </div>
+  <footer>
+    <h4>&#169;Team Fox 2017</h4>
+    <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
+  </footer>
+  <script src="./script/app.js"></script>
+  <script src="./script/drop.js"></script>
+  <script src="./script/media.js"></script>
 </body>
 
 </html>

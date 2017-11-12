@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="../css/student.css">
   <link rel="shortcut icon" href="../images/la.png">
   <script type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
 </head>
 
 <body>
@@ -21,6 +23,9 @@
       </div>
     </a>
     <div id="navContainer1">
+      <label class="hamburger-btn" for="main-nav-toggle">&#9776;</label>
+      <input type="checkbox" id="main-nav-toggle">
+      
       <ul>
         <li class="dropdown">
           <!--<a href="teacher-courses.html">Mina kurser</a>-->
@@ -72,7 +77,48 @@
         <br>
         <h3>Utvärderingar för Javascript 101 2015-2016</h3>
         <br><br>
-        <img src="../images/stats.png">
+
+        <canvas id="myChart" width="100%"></canvas>
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 7, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+
         <br>
         <div class="line"></div>
         <br>
@@ -119,15 +165,7 @@
       <span>Aram</span>
     </p>
   </footer>
-  <script src="../script/app.js"></script>
-  <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
-  <script type="text/javascript">
-    //<![CDATA[
-    bkLib.onDomLoaded(function () {
-      nicEditors.allTextAreas()
-    });
-    //]]>
-  </script>
+
 </body>
 
 </html>

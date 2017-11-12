@@ -97,6 +97,56 @@ header ul {
   color: white;
 }
 
+/*HAMBURGER!! */
+
+.hamburger-btn {
+  display: none;
+  position: absolute;
+  height: 3vh;
+  width: 3vh;
+  right: 3vh;
+  line-height: 3vh;
+  font-size: 3vh;
+  bottom: 3vh;
+  text-align: center;
+  padding: 1vh;
+  background-color: whitesmoke;
+  border-radius: 0.9rem;
+  color: #000;
+}
+
+#main-nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger-btn {
+    display: inline-block;
+    cursor: pointer;
+    bottom: 90%;
+    right: 10;
+  }
+  #navContainer1 #main-nav-toggle+ul {
+    display: none;
+    position: absolute;
+    background-color: #562E84;
+    top: 15%;
+    bottom: 90%;
+    font-size: 4vh;
+  }
+  #navContainer1 #main-nav-toggle:checked+ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+    bottom: 90%;
+  }
+  .dropdown a {
+    font-size: 4vh;
+  }
+}
+
+/*HAMBURGER ENDS */
+
 @media screen and (max-width: 1000px) {
   header {
     position: static;

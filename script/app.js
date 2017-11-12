@@ -136,13 +136,3 @@ window.onclick = function(event) {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
