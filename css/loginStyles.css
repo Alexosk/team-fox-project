@@ -89,11 +89,10 @@ header ul {
 }
 
 #htmlHeading a {
-  color: white;
   font-size: 150%;
 }
 
-#highLightHeading a {
+#highLightHeading a, #htmlHeading a {
   color: white;
 }
 
@@ -246,7 +245,7 @@ footer span {
     flex-direction: column;
     position: relative;
   }
-  .columns img {
+  .columns img, #content {
     width: 100%;
   }
   #nav ul {
@@ -255,7 +254,6 @@ footer span {
   #content {
     margin-top: 1em;
     padding: 0;
-    width: 100%;
     justify-content: center;
   }
   .column {
@@ -349,6 +347,249 @@ input[type="submit"]:hover {
   padding-top: 5px;
   font-size: 14px;
 }
+/* STUDENT.HTML */
+
+.boxes {
+  background-color: #fff;
+  margin: 1em;
+  border: 0 solid #562e84;
+  border-radius: 0px;
+  /*flex: 1;*/
+  box-shadow: 1px 1px 2px #aaa;
+  border-radius: 0;
+  padding: 0.75rem;
+}
+
+.box {
+  flex-direction: column;
+}
+
+.hiddenbox {
+  flex-direction: row;
+}
+
+.box, .hiddenbox {
+  display: flex;
+}
+
+#attendancebox2 {
+  display: block;
+}
+
+#attendancebox3, #hidden {
+  display: none;
+}
+
+.box, .attendancebox, #attendancebox2, #attendancebox3 {
+  flex: 1;
+}
+
+.attendancebox, #attendancebox2, #attendancebox3, #hidden, .boxtext {
+  margin: 0.5em;
+}
+
+@media screen and (max-width: 1000px) {
+  .hiddenbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .box:first-child {
+    order: 1;
+  }
+}
+
+.divider {
+  background-color: #ccc;
+  height: 1px;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+
+/*Alex code*/
+
+.assignments ul li {
+  line-height: 3vh;
+}
+
+.assignments a {
+  color: black;
+  text-decoration: underline;
+  justify-content: flex-end;
+}
+
+.week-food ul li {
+  padding: 1vh;
+  line-height: 3vh;
+}
+
+.boxes h4 {
+  margin-top: 2vh;
+  font-size: 2.4vh;
+}
+
+.assignments a:hover {
+  color: blue;
+}
+
+.assignments a, .assignments ul, .week-food ul {
+  display: flex;
+}
+
+.assignments ul, .week-food ul {
+  flex-direction: column;
+  padding: 0;
+}
+
+.assignments ul li, .assignments a, .week-food ul li {
+  margin: 1vh;
+}
+
+.assignments ul li, .week-food ul li {
+  border: 1px solid #000;
+  background-color: #fff;
+  box-shadow: 0 0 4px #000;
+}
+
+/* Alex code ends */
+
+.boxtext h3 {
+  text-align: left;
+}
+
+/* Calendar */
+
+ul {
+  list-style-type: none;
+}
+
+/* Month header */
+
+.month {
+  width: 100%;
+  background: #999;
+  text-align: center;
+}
+
+/* Month list */
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: #000;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+
+.month .prev {
+  float: left;
+}
+
+/* Next button */
+
+.month .next {
+  float: right;
+}
+
+.month .prev, .month .next {
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+
+.weekdays {
+  background-color: #ddd;
+}
+
+/* Days (1-31) */
+
+.days {
+  background: #eee;
+}
+
+.weekdays, .days {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.days li {
+  list-style-type: none;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.weekdays li, .days li {
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  color: #000;
+}
+
+/* Highlight the "current" day */
+
+.active {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.attendancebox ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Smiley-survey */
+
+#smileySurvey, #smileySurvey ul, #surveys, #weeklyAlert {
+  display: flex;
+}
+
+#smileySurvey .boxes {
+  padding: 0.5em 1em 0 1em;
+  width: 100%;
+}
+
+#smileySurvey .boxes, #weeklyAlert .boxes {
+  border: 2px solid red;
+}
+
+#smileySurvey ul {
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 0.5em;
+}
+
+#smileySurvey li {
+  font-size: 200%;
+}
+
+#smileySurvey h3, h6 {
+  text-align: center;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+#surveys {
+  justify-content: space-between;
+}
+
+#weeklyAlert .boxes {
+  justify-content: center;
+}
+
+#weeklyAlert a:visited {
+  color: black;
+}
+
+#smileySurveyTeacher li {
+  font-size: 18px;
+}
 
 /*JAVASCRIPT*/
 
@@ -429,9 +670,7 @@ footer h4 {
 }
 
 .container h1 {
-  margin-left: 2vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin: 2vh 0 2vh 2vh;
 }
 
 .question {
@@ -441,7 +680,6 @@ footer h4 {
 }
 
 .question ul {
-  margin-top: 2vh;
   padding: 0;
   display: flex;
   list-style-type: none;
@@ -451,17 +689,17 @@ footer h4 {
   margin-right: 2vh;
 }
 
-.question textarea {
+.question textarea, .question ul, input[type="radio"] {
   margin-top: 2vh;
+  margin-right: 2vh;
+}
+
+.question textarea {
   height: 10vh;
   width: 60%;
   border: 1px solid #000;
   resize: none;
   font-size: 2vh;
-}
-
-input[type="radio"] {
-  margin-right: 2vh;
 }
 
 @media screen and (max-width: 1000px) {
@@ -495,8 +733,7 @@ input[type="radio"] {
 }
 
 .upload {
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  margin: 1vh 0 1vh 0;
 }
 
 .upload__dragndrop, .upload__uploading, .upload__success, .upload__error {
@@ -511,17 +748,19 @@ input[type="radio"] {
 
 /* Teacher.html */
 
+main-news, article {
+  display: flex;
+}
+
 main-news {
   height: 70vh;
   flex: 1;
-  display: flex;
 }
 
 article {
   overflow-y: scroll;
   padding: 2em;
   flex: 2;
-  display: flex;
 }
 
 /* TEACHER COURSES
@@ -590,7 +829,6 @@ TEACHER COURSES ENDS */
 .class-info button {
   margin-top: 1vh;
   height: 4vh;
-  align-self: flex-end;
   font-size: 2vh;
 }
 
@@ -598,7 +836,7 @@ TEACHER COURSES ENDS */
   background-color: lightgrey;
 }
 
-.assignment-btn {
+.assignment-btn, .class-info button {
   align-self: flex-end;
 }
 
@@ -620,9 +858,8 @@ TEACHER COURSES ENDS */
   align-items: center;
 }
 
-.teach-news h2, #date {
-  margin-top: 2vh;
-  margin-bottom: 1vh;
+.teach-news h2, #date, .teach-news h4 {
+  margin: 2vh 0 1vh 0;
 }
 
 #date {
@@ -633,17 +870,14 @@ TEACHER COURSES ENDS */
 
 .teach-news h4 {
   align-self: flex-start;
-  margin-top: 2vh;
-  margin-bottom: 1vh;
 }
 
-.teach-news h5 {
+.teach-news h5, .teach-news textarea {
   font-size: 2vh;
 }
 
 .teach-news textarea {
   resize: none;
-  font-size: 2vh;
   height: 250px;
   width: 300px;
 }
@@ -741,7 +975,6 @@ input.heading {
 }
 
 .teacher-feedback {
-  display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -787,21 +1020,20 @@ input.heading {
 
 .attnColor {
   background: #cc0000;
-  color: white;
-  text-align: center;
 }
 
 .attnColor2 {
   background: #759e2e;
+}
+
+.attnColor, .attnColor2, #attendenceSaved {
   color: white;
   text-align: center;
 }
 
 #attendenceSaved {
   display: none;
-  color: white;
   background: #759e2e;
-  text-align: center;
   -webkit-animation: fadeIn 0.5s;
   padding: 5px 0 5px 0;
 }
