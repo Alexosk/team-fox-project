@@ -69,7 +69,7 @@
           <fieldset class="publishDate">
           <legend>Startdatum</legend>
           <h5>
-          <input class="input-date" type="date" name="publishDate">
+          <input type="datetime-local" name="publishDate">
           </h5>
           </fieldset>
           <br>
@@ -78,7 +78,7 @@
           <fieldset class="publishDate">
           <legend>Deadline</legend>
           <h5>
-          <input class="input-date" type="date" name="publishDate">
+          <input type="datetime-local" name="publishDate">
           </h5>
           </fieldset>
           <br>
@@ -87,7 +87,7 @@
 
           <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
 
-          <div class="input-date">
+          <div>
           <br>
             <input type="submit" name="submit" value="Lägg till" onclick="newsFunction('newsPlaced')" id="submit-news">
           </div>
@@ -103,18 +103,9 @@
           <h2>Skapa prov</h2>
           <br>
           <fieldset class="publishDate">
-          <legend>Startdatum</legend>
+          <legend>Startdatum och provtid</legend>
           <h5>
-          <input class="input-date" type="date" name="publishDate">
-          </h5>
-          </fieldset>
-          <br>
-
-
-          <fieldset class="publishDate">
-          <legend>Provtid</legend>
-          <h5>
-          <input class="input-date" type="date" name="publishDate">
+          <input type="datetime-local" name="publishDate">
           </h5>
           </fieldset>
           <br>
@@ -123,7 +114,7 @@
 
           <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
 
-          <div class="input-date">
+          <div>
           <br>
             <input type="submit" name="submit" value="Lägg till" onclick="provFunction('provPlaced')" id="submit-news">
           </div>
