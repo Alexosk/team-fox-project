@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>YHLA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
+  <link rel="shortcut icon" href="../images/la.png">
+  <script type="text/javascript"></script>
+
+
+<style type="text/css">
+
+input[type=checkbox]:checked + #poop{
+  display: none; 
+} 
+
+</style>
+
+
+
+
+</head>
+
+<body>
+  <header>
+    <a href="teacher.html">
+      <div id=logo>
+        <h1>YH</h1>
+        <img src="../images/la.png" width="30" alt="YHLA">
+        <h1>A</h1>
+      </div>
+    </a>
+    <div id="navContainer1">
+      <ul>
+        <li id="htmlHeading">
+          <a href="html-class.html">HTML (fe17)</a>
+        </li>
+        <li>
+          <a href="../teacher/groups.html">Gruppindelning</a>
+        </li>
+        <li id="highLightHeading">
+          <a href="submission.html">Inlämningar</a>
+        </li>
+        <li>
+          <a href="assignments-teacher.html">Uppgifter</a>
+        </li>
+      </ul>
+    </div>
+    <div id="navContainer2">
+      <ul>
+        <li>
+          <a href="teacher.html">
+            <img src="../images/kobe.png" width="55">
+          </a>
+        </li>
+        <li id="user">
+          <a href="teacher.html">Tea Chairson</a>
+        </li>
+        <li id="logOut">
+          <a href="../index.html">Logga ut</a>
+        </li>
+      </ul>
+    </div>
+    </ul>
+  </header>
+
+<div id="content">
+    <div class="columns">
+      <div class="armida-project">
+        <div class="column">
+          <div class="grade-check">
+            <h1>Skapa konto</h1>
+            <br>
+            <div class="line"></div>
+            <br>
+
+            <input class="box-grade" type="checkbox" name="myCheckbox"/> - Elev
+            <input class="box-grade" type="checkbox" name="myCheckbox"/> - Lärare
+            <input class="box-grade" id="adminBox" type="checkbox" name="myCheckbox"/> - Admin
+            
+            <br><br>
+            <div class="grade-check">
+              <div id="courseAndClasses">
+                <label for="courses" >Kurs - </label>
+                <select>
+                  <option>--------</option>
+                  <option>Front-End</option>
+                  <option>Back-End</option>
+                  <option>Python</option>
+                  <option>MatLab</option>
+                </select>
+
+                <label for="courses">Klass - </label>
+                <select>
+                  <option>--------</option>
+                  <option>Front-End</option>
+                  <option>Back-End</option>
+                  <option>Python</option>
+                  <option>MatLab</option>
+                </select>
+              </div>   
+            </div>
+
+          </div>
+          <br>
+          <div class="line"></div>
+          <br>
+          <div class="feedback">
+              <h3> Ange Namn: </h3>
+              <br>
+              <input type="text" placeholder="Skriv förnamn här">
+              <input type="text" placeholder="Skriv Efternamn här">
+              <br><br>
+              <h3> Ange Kontaktinformation: </h3>
+              <br>
+              <input type="text" placeholder="Skriv E-postadress här">
+              <input type="text" placeholder="Skriv Telefonnummer här">
+          </div>
+
+          <br>
+
+          <h3> Lägg upp profilbild: </h3>
+          <br>
+          <div class="hand-in">
+            <form class="upload" method="post" action="" enctype="multipart/form-data">
+              <input class="upload__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+            </form>
+          </div>
+
+          <br>
+
+          <div class="columns">
+            <!--submitFunction finns i randomNumber.js-->
+            <br>
+            <button id="submitBtn" onclick="submitFunction('attendenceSaved')">Spara</button>
+          </div><!--Columns END-->
+          <div id="columns">
+            <br>
+            <div id="attendenceSaved">Konto Skapat!</div>
+          </div><!--Columns END-->
+        </div><!--Column END-->
+      </div><!--armida-project END-->
+    </div><!--ColumnS END-->
+  </div>
+
+  <footer>
+    <h4>&#169;Team Fox 2017</h4>
+    <p>Alexandra, Rikard, Paulina, Leo, Benjamin,
+      <span>Aram</span>
+    </p>
+  </footer>
+  <script src="../script/randomNumber.js"></script>
+  <script src="../script/app.js"></script>
+</body>
+
+</html>

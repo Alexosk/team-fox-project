@@ -721,9 +721,8 @@ footer h4 {
 .hand-in {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   background-color: lightgrey;
-  padding-top: 5px;
 }
 
 .upload {
@@ -1136,4 +1135,12 @@ input.heading {
 
 .show {
   display: block;
+}
+.armida-project, .teacher-feedback {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 4px #aaa;
+  border: 1px solid #fff;
+  padding: 3vh;
 }

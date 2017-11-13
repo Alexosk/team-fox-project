@@ -11,21 +11,7 @@ function submitFunction(attendenceTaken){
     else
       e.style.display = "block";
 }
-/****Dessa funktioner används inte än ****/
-/**** WORK IN PROGRESS****/
-$(function(){
-	$('#submitBtn').click(function(){
-		var status = $('#attnCheckbox').prop(':checked');
-		alert(status);
-	});
-});
 
-$(function () {
-    $("ul li input:checkbox").on("change", function () {
-        var lenghtOfUnchecked = $('tr td input:checkbox:not(:checked)').length;
-        alert(lenghtOfUnchecked);
-    });
-});
 
 /*Visar tabellen i prevAttendence*/
 function showAttnTable(table){
@@ -50,3 +36,17 @@ function provFunction(provPlaced){
     else
       e.style.display = "block";
 }
+
+
+
+/*******Används för Admin-checkboxen*******/
+var checkbox = document.getElementById("adminBox");
+var c = document.getElementById("courseAndClasses");
+
+checkbox.addEventListener( 'change', function(event) {
+    if(this.checked) {
+        c.style.display = "none"; // Checkbox is checked..
+    }else{
+      c.style.display = "block"; // Checkbox is unchecked..
+    }
+});
