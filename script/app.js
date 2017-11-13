@@ -11,6 +11,11 @@ var login = function () {
         setTimeout(redirectToTeacher, 1500);
         return false;
     }
+    else if ((username == "admin" && password == "123")){
+      printMessageToDOM("black", "Redirecting.....");
+      setTimeout(redirectToAdmin, 1500);
+      return false;
+    }
     else if (username == "" || password == "") {
         printMessageToDOM("red", "User name or password cannot be blank");
         return false;
@@ -33,6 +38,9 @@ function redirectToStudent() {
 
 function redirectToTeacher() {
     window.location = "teacher/teacher.html";
+}
+function redirectToAdmin() {
+    window.location = "admin/admin.html";
 }
 
 /* Student.html */
