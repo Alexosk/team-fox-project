@@ -181,9 +181,7 @@ h3{
     bottom: 3vh;
     text-align: center;
     padding: 1vh;
-    background-color: whitesmoke;
     border-radius: 0.9rem;
-    color: #000;
 }
 #main-nav-toggle {
     display: none;
@@ -195,7 +193,6 @@ h3{
         position: relative;
     }
     .hamburger-btn {
-        background-color: #3faecc;
         display: inline-block;
         cursor: pointer;
     }
