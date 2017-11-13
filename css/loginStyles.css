@@ -766,34 +766,6 @@ article {
   flex: 2;
 }
 
-/* TEACHER COURSES
-
-.teacher-courses {
-  padding: 1vh;
-  justify-content: flex-start;
-}
-
-.teacher-courses ul {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-}
-
-.teacher-courses ul li {
-  padding: 1vh;
-  background-color: #fff;
-  box-shadow: 0 0 4px #aaa;
-  border: 1px solid #fff;
-}
-
-.teacher-courses a:visited {
-  color: black;
-}
-
-TEACHER COURSES ENDS */
-
 /* HTML CLASS */
 
 .class-info, .teach-news, .class-student, article {
