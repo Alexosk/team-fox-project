@@ -866,8 +866,11 @@ TEACHER COURSES ENDS */
   align-self: flex-start;
 }
 
-.teach-news h5, .teach-news textarea {
+.teach-news textarea {
   font-size: 2vh;
+}
+.teach-news h5 {
+  font-sixe: 0.2vh;
 }
 
 .teach-news textarea {
@@ -876,8 +879,9 @@ TEACHER COURSES ENDS */
   width: 300px;
 }
 
-.input-news {
-  margin-bottom: 2vh;
+.input-date {
+  margin-top: 1vh;
+  border: 2px solid black;
 }
 
 #submit-news {
