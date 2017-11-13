@@ -40,6 +40,7 @@ function provFunction(provPlaced){
 
 
 /*******Används för Admin-checkboxen*******/
+/*
 var checkbox = document.getElementById("adminBox");
 var c = document.getElementById("courseAndClasses");
 
@@ -50,3 +51,17 @@ checkbox.addEventListener( 'change', function(event) {
       c.style.display = "block"; // Checkbox is unchecked..
     }
 });
+
+
+document.getElementById("adminBox").onchange = function() {displayStuff()};
+
+function displayStuff() {
+    var x = document.getElementById("courseAndClasses");
+    x.value = x.style.display = "block";
+}
+*/
+
+
+
+
+
