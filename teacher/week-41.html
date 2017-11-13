@@ -9,7 +9,6 @@
   <link rel="shortcut icon" href="../images/la.png">
   <script type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-
 </head>
 
 <body>
@@ -23,7 +22,8 @@
     </a>
     <div id="navContainer1">
       <label class="hamburger-btn" for="main-nav-toggle"><img src="../images/hamburger.png" width="30" alt="YHLA"></label>
-           <input type="checkbox" id="main-nav-toggle">
+      <input type="checkbox" id="main-nav-toggle">
+
       <ul>
         <li class="dropdown">
           <!--<a href="teacher-courses.html">Mina kurser</a>-->
@@ -39,7 +39,7 @@
         <li>
           <a href="attendance.html">Ta närvaro</a>
         </li>
-        <li>
+        <li id="highLightHeading">
           <a href="survey-teacher.html">Veckoreflektioner</a>
         </li>
         <li>
@@ -71,18 +71,19 @@
   <div id="content">
     <div class="box">
       <div class="boxes">
-        <h2>Kursutvärderingar</h2>
+        <h2>Veckoreflektioner vecka 41</h2>
         <br>
-        <h3>Utvärderingar för Javascript 101 2015-2016</h3>
+        <h3>Klass: FE-17</h3>
+
         <br><br>
 
-        <canvas id="myChart"></canvas>
+        <canvas id="weeklyChart"></canvas>
 
         <br>
         <div class="line"></div>
         <br>
         <div class="box">
-          <div class="boxes">Feedback
+          <div class="boxes"><strong>4. Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</strong>
             <br><br>
             <div class="line"></div>
             <br><br>
@@ -93,7 +94,7 @@
 
           <br><br>
 
-          <div class="boxes">Feedback
+          <div class="boxes"><strong>5. Vad har varit bra?</strong>
             <br><br>
             <div class="line"></div>
             <br><br>
@@ -104,7 +105,7 @@
 
           <br><br>
 
-          <div class="boxes">Feedback
+          <div class="boxes"><strong>6. Förslag på förbättringar?</strong>
             <br><br>
             <div class="line"></div>
             <br><br>
@@ -117,14 +118,13 @@
     </div>
   </div>
 
-
   <footer>
     <h4>&#169;Team Fox 2017</h4>
     <p>Alexandra, Rikard, Paulina, Leo, Benjamin,
       <span>Aram</span>
     </p>
   </footer>
-<script src="../script/myChart.js"></script>
+<script src="../script/weeklyChart.js"></script>
 </body>
 
 </html>

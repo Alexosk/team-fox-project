@@ -715,7 +715,17 @@ footer h4 {
 }
 
 /*EVALUATION.HTML ENDS!*/
-
+/*Survey-teacher*/
+.weekly-classes {
+  display: flex;
+}
+.weekly-classes li {
+  margin: 3vh;
+  font-size: 3vh;
+}
+.weekly-classes li:hover {
+  opacity: 0.6;
+}
 /* PROJECT.HTML */
 
 .hand-in {
