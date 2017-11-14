@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>YHLA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
+  <link rel="shortcut icon" href="../images/la.png">
+  <script type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+    <a href="teacher.html">
+      <div id=logo>
+        <h1>YH</h1>
+        <img src="../images/la.png" width="30" alt="YHLA">
+        <h1>A</h1>
+      </div>
+    </a>
+    <div id="navContainer1">
+      <label class="hamburger-btn" for="main-nav-toggle"><img src="../images/hamburger.png" width="30" alt="YHLA"></label>
+      <input type="checkbox" id="main-nav-toggle">
+
+      <ul>
+        <li id="htmlHeading">
+          <a href="../teacher/html-class.html">HTML (fe17)</a>
+        </li>
+        <li>
+          <a href="../teacher/groups.html">Gruppindelning</a>
+        </li>
+        <li>
+          <a href="submission.html">Inlämningar</a>
+        </li>
+        <li>
+          <a href="assignments-teacher.html">Uppgifter</a>
+        </li>
+      </ul>
+    </div>
+    <div id="navContainer2">
+      <ul>
+        <li>
+          <a href="teacher.html">
+            <img src="../images/kobe.png" width="55">
+          </a>
+        </li>
+        <li id="user">
+          <a href="teacher.html">Tea Chairson</a>
+        </li>
+        <li id="logOut">
+          <a href="../index.html">Logga ut</a>
+        </li>
+      </ul>
+    </div>
+    </ul>
+  </header>
+
+  <div id="content">
+
+    <div class="column">
+      <div class="class-info" style="text-align: center;"><!--#2Lazy2UpdateTheCSS-->
+        <h1> Skapa nyheter </h1>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <div class="teach-news">
+          <h2>Lägg till nyheter</h2>
+          <div class="line"></div>
+          <br>
+          <span><strong>Välj nyhetens mottagare</strong></span>
+          <div class="column">
+            Lärare - <input type="checkbox" name="">
+            Elever - <input type="checkbox" name="">
+          </div>
+          <br>
+
+          <fieldset class="publishDate">
+          <legend>Publiseringsdatum</legend>
+          <input class="input-date" type="date" name="publishDate" 
+          style="width: 270px;">
+          </fieldset>
+          <br>
+
+          <input type="text" name="heading" class="heading" placeholder="Skriv din rubrik här">
+          <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
+
+          <div class="input-news">
+            <input type="submit" name="submit" value="Lägg till" onclick="newsFunction('newsPlaced')" id="submit-news">
+          </div>
+          <br>
+          <div id="newsPlaced">Nyhet tillagd i nyhetsflödet!</div>
+
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="class-info">
+          <h2>Alla nyheter: </h2>
+          <div class="line"></div>
+          <br> 
+          <select>
+            <option>Visa alla nyheter</option>
+            <option>Visa lärarnas nyheter</option>
+            <option>Visa elevernas nyheter</option>
+            <option>Visa fe17's nyheter</option>
+            <option>Visa fe16's nyheter</option>
+            <option>Visa målare17's nyheter</option>
+          </select>
+          <br>
+
+          <main-news>
+            <article>
+              <div class="news">
+
+                <h5>
+              <em> Torsdag 2017.10.19 </em>
+            </h5>
+                <h3> Inlämning av Project 1 på måndag </h3>
+                </br>
+                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+
+
+                  </br>
+                  </br>
+                  </br>
+
+                  <h5>
+                <em> Tisdag 2017.10.17 </em>
+              </h5>
+                  <h3> Svar på Gruppindelning kommer på måndag </h3>
+                  </br>
+                  <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                    </p>
+
+                    </br>
+                    </br>
+                    </br>
+
+                    <h5>
+                  <em> Måndag 2017.10.16 </em>
+                </h5>
+                    <h3> Information gällande Project 1 och 2 </h3>
+                    </br>
+                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                      </p>
+
+              </div>
+            </article>
+          </main-news>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <footer>
+      <h4>&#169;Team Fox 2017</h4>
+      <p>Alexandra, Rikard, Paulina, Leo, Benjamin,
+        <span>Aram</span>
+      </p>
+    </footer>
+  <script src="../script/checkBoxColor.js"></script>
+  <script src="../script/randomNumber.js"></script>
+</body>
+
+</html>
