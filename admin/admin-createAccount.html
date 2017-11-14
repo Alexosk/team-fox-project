@@ -13,8 +13,8 @@
 <style type="text/css">
 
 input[type=checkbox]:checked + #poop{
-  display: none; 
-} 
+  display: none;
+}
 
 </style>
 
@@ -25,7 +25,7 @@ input[type=checkbox]:checked + #poop{
 
 <body>
   <header>
-    <a href="teacher.html">
+    <a href="admin.html">
       <div id=logo>
         <h1>YH</h1>
         <img src="../images/la.png" width="30" alt="YHLA">
@@ -33,38 +33,43 @@ input[type=checkbox]:checked + #poop{
       </div>
     </a>
     <div id="navContainer1">
+      <label class="hamburger-btn" for="main-nav-toggle"><img src="../images/hamburger.png" width="30" alt="YHLA"></label>
+      <input type="checkbox" id="main-nav-toggle">
       <ul>
-        <li id="htmlHeading">
-          <a href="html-class.html">HTML (fe17)</a>
+        <li>
+          <a href="admin-news.html">Lägg till Nyheter</a>
         </li>
         <li>
-          <a href="../teacher/groups.html">Gruppindelning</a>
-        </li>
-        <li id="highLightHeading">
-          <a href="submission.html">Inlämningar</a>
+          <a href="admin-survey.html">Göra ny enkät</a>
         </li>
         <li>
-          <a href="assignments-teacher.html">Uppgifter</a>
+          <a href="admin-createAccount.html"> Lägg till nytt konto</a>
+        </li>
+        <li>
+          <a href="admin-evaluation.html">Göra ny kursutvärdering</a>
+        </li>
+        <li>
+          <a href="#">---</a>
         </li>
       </ul>
     </div>
     <div id="navContainer2">
       <ul>
         <li>
-          <a href="teacher.html">
-            <img src="../images/kobe.png" width="55">
+          <a href="admin.html">
+            <img src="../images/herbert-admin.png" width="55">
           </a>
         </li>
         <li id="user">
-          <a href="teacher.html">Tea Chairson</a>
+          <a href="admin.html">Ad Mino</a>
         </li>
         <li id="logOut">
           <a href="../index.html">Logga ut</a>
         </li>
       </ul>
     </div>
-    </ul>
   </header>
+
 
 <div id="content">
     <div class="columns">
@@ -79,7 +84,7 @@ input[type=checkbox]:checked + #poop{
             <input class="box-grade" type="radio" name="myCheckbox"/> - Elev
             <input class="box-grade" type="radio" name="myCheckbox"/> - Lärare
             <input class="box-grade" id="adminBox" type="radio" name="myCheckbox"/> - Admin
-            
+
             <br><br>
             <div class="grade-check">
               <div id="courseAndClasses">
@@ -100,7 +105,7 @@ input[type=checkbox]:checked + #poop{
                   <option>Python</option>
                   <option>MatLab</option>
                 </select>
-              </div>   
+              </div>
             </div>
 
           </div>

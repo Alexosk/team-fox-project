@@ -715,7 +715,9 @@ footer h4 {
 }
 
 /*EVALUATION.HTML ENDS!*/
+
 /*Survey-teacher*/
+
 .weekly-classes {
   display: flex;
 }
@@ -792,7 +794,7 @@ article {
   flex-direction: column;
 }
 
-.class-info ul, .class-info li, .class-info table {
+.class-info ul, .class-info li, .class-info table, .paragraph {
   border: 1px solid black;
 }
 
@@ -860,7 +862,7 @@ article {
   width: 300px;
 }
 
-.input-date {
+.input-date, {
   margin-top: 1vh;
   border: 2px solid black;
 }

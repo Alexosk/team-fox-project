@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <title>YHLA</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
+  <link rel="stylesheet" type="text/css" href="../css/student.css">
   <link rel="shortcut icon" href="../images/la.png">
   <script type="text/javascript"></script>
 </head>
 
 <body>
   <header>
-    <a href="teacher.html">
+    <a href="admin.html">
       <div id=logo>
         <h1>YH</h1>
         <img src="../images/la.png" width="30" alt="YHLA">
@@ -22,38 +26,39 @@
     <div id="navContainer1">
       <label class="hamburger-btn" for="main-nav-toggle"><img src="../images/hamburger.png" width="30" alt="YHLA"></label>
       <input type="checkbox" id="main-nav-toggle">
-
       <ul>
-        <li id="htmlHeading">
-          <a href="../teacher/html-class.html">HTML (fe17)</a>
+        <li>
+          <a href="admin-news.html">Lägg till Nyheter</a>
         </li>
         <li>
-          <a href="../teacher/groups.html">Gruppindelning</a>
+          <a href="admin-survey.html">Göra ny enkät</a>
         </li>
         <li>
-          <a href="submission.html">Inlämningar</a>
+          <a href="admin-createAccount.html"> Lägg till nytt konto</a>
         </li>
         <li>
-          <a href="assignments-teacher.html">Uppgifter</a>
+          <a href="admin-evaluation.html">Göra ny kursutvärdering</a>
+        </li>
+        <li>
+          <a href="#">---</a>
         </li>
       </ul>
     </div>
     <div id="navContainer2">
       <ul>
         <li>
-          <a href="teacher.html">
-            <img src="../images/kobe.png" width="55">
+          <a href="admin.html">
+            <img src="../images/herbert-admin.png" width="55">
           </a>
         </li>
         <li id="user">
-          <a href="teacher.html">Tea Chairson</a>
+          <a href="admin.html">Ad Mino</a>
         </li>
         <li id="logOut">
           <a href="../index.html">Logga ut</a>
         </li>
       </ul>
     </div>
-    </ul>
   </header>
 
   <div id="content">
@@ -81,7 +86,7 @@
 
           <fieldset class="publishDate">
           <legend>Publiseringsdatum</legend>
-          <input class="input-date" type="date" name="publishDate" 
+          <input class="input-date" type="date" name="publishDate"
           style="width: 270px;">
           </fieldset>
           <br>
@@ -103,7 +108,7 @@
         <br>
           <h2 style="text-align: center;">Alla nyheter </h2>
           <div class="line"></div>
-          <br> 
+          <br>
           <select>
             <option>Visa alla nyheter</option>
             <option>Visa lärarnas nyheter</option>
@@ -167,7 +172,7 @@
 
   <footer>
       <h4>&#169;Team Fox 2017</h4>
-      <p>Alexandra, Rikard, Paulina, Leo, Benjamin,
+      <p>Alexandra, Rikard, Paulina, Leo, <span>Benjamin</span>,
         <span>Aram</span>
       </p>
     </footer>
