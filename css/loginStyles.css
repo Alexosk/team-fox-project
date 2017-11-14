@@ -1126,3 +1126,13 @@ input.heading {
   border: 1px solid #fff;
   padding: 3vh;
 }
+
+#container span {
+  background-color:#b3b3b3;
+  padding:3px;
+}
+#instructions{
+  border: 1px solid #b30000;
+  padding: 15px 0 15px 30px;
+  width: 500px;
+}
