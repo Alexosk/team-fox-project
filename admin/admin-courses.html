@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <title>YHLA</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
-  <link rel="stylesheet" type="text/css" href="../css/student.css">
   <link rel="shortcut icon" href="../images/la.png">
   <script type="text/javascript"></script>
 </head>
@@ -60,8 +62,79 @@
       </ul>
     </div>
   </header>
+  <div id="content">
 
-<div id="content"> </div>
+
+    <div class="columns">
+
+      <div class="column">
+        <div class="teach-news">
+
+          <h1> Lärare </h1>
+          <h2>Skapa kurs</h2>
+
+          <br>
+          <div class="line"></div>
+          <br>
+          <div class="feedback">
+            <h3> Ange Kurs Namn: </h3>
+            <br>
+            <input type="text" placeholder="Skriv kursnamn här">
+            <textarea type="text" placeholder="Skriv kurs information här"></textarea>
+            <br><br>
+            <h3> Ange Lärarens information: </h3>
+            <br>
+            <input type="text" placeholder="Skriv Förnamn här">
+            <input type="text" placeholder="Skriv Efternamn här">
+            <input type="text" placeholder="Skriv E-postadress här">
+            <input type="text" placeholder="Skriv Telefonnummer här">
+          </div>
+          <div>
+            <br>
+            <input type="submit" name="submit" value="Lägg till" onclick="newsFunction('newsPlaced')" id="submit-news">
+          </div>
+
+          <div id="newsPlaced">Ny kurs skapat!</div>
+
+        </div>
+      </div>
+      <div class="column">
+
+        <div class="teach-news">
+
+          <h1> Studenter </h1>
+          <h2>Skapa kurs</h2>
+
+          <br>
+          <div class="line"></div>
+          <br>
+          <div class="feedback">
+            <h3> Ange Kurs Namn: </h3>
+            <br>
+            <input type="text" placeholder="Skriv kursnamn här">
+            <textarea type="text" placeholder="Skriv kurs information här"></textarea>
+            <br><br>
+            <h3> Ange student information: </h3>
+            <br>
+            <input type="text" placeholder="Skriv Förnamn här">
+            <input type="text" placeholder="Skriv Efternamn här">
+            <input type="text" placeholder="Skriv E-postadress här">
+            <input type="text" placeholder="Skriv Telefonnummer här">
+          </div>
+
+          <div>
+            <br>
+            <input type="submit" name="submit" value="Lägg till" onclick="provFunction('provPlaced')" id="submit-news">
+          </div>
+
+          <div id="provPlaced">Ny kurs skapad!</div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 
   <footer>
     <h4>&#169;Team Fox 2017</h4>
@@ -69,7 +142,8 @@
       <span>Aram</span>
     </p>
   </footer>
-
+  <script src="../script/checkBoxColor.js"></script>
+  <script src="../script/randomNumber.js"></script>
 </body>
 
 </html>
