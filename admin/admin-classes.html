@@ -29,8 +29,12 @@
         <li>
           <a href="admin-createAccount.html">Konton</a>
         </li>
-        <li>
-          <a href="admin-evaluations.html">Utvärderingar</a>
+        <li class="dropdown">
+          <button onclick="myDropdown()" class="dropBtn"><a href="#">Utvärderingar</a></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="admin-survey.html">Veckoreflekteringar</a>
+            <a href="admin-evaluation.html">Kursutvärderingar</a>
+          </div>
         </li>
         <li>
           <a href="admin-educations.html"> Utbildningar</a>
@@ -53,10 +57,90 @@
       </ul>
     </div>
   </header>
-  <div id="content">
 
+  <div id="content">
+    <div class="columns">
+
+      <div class="column">
+
+
+        <h2> FE-17 Studenter </h2>
+        <main-news>
+
+          <article>
+
+            <div class="news">
+
+            </div>
+
+          </article>
+
+        </main-news>
+        <button><a href="#">Lägg till studenter</a></button>
+
+      </div>
+
+      <div class="column">
+
+
+        <h2> FE-17 Kurser </h2>
+        <main-news>
+
+          <article>
+
+            <div class="news">
+              <ul>
+                <li> <a href="#">HTML</a> </li>
+                <li><a href="evaluation-teacher.html">Javascript</a></li>
+                <li><a href="#">Back-End</a></li>
+                <li><a href="#">CSS</a></li>
+
+              </ul>
+
+
+
+
+            </div>
+
+
+          </article>
+
+        </main-news>
+        <button><a href="#">Lägg till studenter</a></button>
+
+      </div>
+
+      <div class="column">
+
+
+        <h2> FE-17 Something </h2>
+        <main-news>
+
+          <article>
+
+            <div class="news">
+
+
+
+
+            </div>
+
+
+          </article>
+
+        </main-news>
+        <button><a href="#">Lägg till studenter</a></button>
+
+      </div>
+
+    </div>
 
   </div>
+
+
+
+
+
   <footer>
     <h4>&#169;Team Fox 2017</h4>
     <p>Alexandra, Rikard, Paulina, Leo, <span>Benjamin</span>,
@@ -64,6 +148,8 @@
     </p>
   </footer>
   <script src="../script/student-list.js"></script>
+  <script src="../script/app.js"></script>
+  <script src="../script/smileySurvey.js"></script>
 </body>
 
 </html>

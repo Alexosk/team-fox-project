@@ -41,8 +41,12 @@
           <li>
             <a href="admin-createAccount.html">Konton</a>
           </li>
-          <li>
-            <a href="admin-evaluations.html">Utvärderingar</a>
+          <li class="dropdown">
+            <button onclick="myDropdown()" class="dropBtn"><a href="#">Utvärderingar</a></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="admin-survey.html">Veckoreflekteringar</a>
+              <a href="admin-evaluation.html">Kursutvärderingar</a>
+            </div>
           </li>
           <li>
             <a href="admin-educations.html"> Utbildningar</a>
@@ -68,7 +72,7 @@
 
   <div id="content">
     <div class="container">
-      <h1> Veckoreflektering </h1>
+      <h1> Veckoreflekteringsfrågor </h1>
 
       <div class="line"></div>
       <br>
@@ -160,5 +164,7 @@
   <script src="../script/changeSurvey.js"></script>
   <script src="../script/randomNumber.js"></script>
   <script src="../script/evaluateForm.js"></script>
+  <script src="../script/app.js"></script>
+  <script src="../script/smileySurvey.js"></script>
 </body>
 </html>

@@ -36,9 +36,9 @@ let students = [
 ];
 
 window.addEventListener('load', function(){
-let content = document.getElementById('content');
+let news = document.getElementsByClassName('news');
 let ul = document.createElement('ul');
-content.appendChild(ul);
+news[0].appendChild(ul);
 
 for (var i = 0; i < students.length; i++) {
   let li = document.createElement('li');

@@ -30,8 +30,12 @@
         <li>
           <a href="admin-createAccount.html">Konton</a>
         </li>
-        <li>
-          <a href="admin-evaluations.html">Utvärderingar</a>
+        <li class="dropdown">
+          <button onclick="myDropdown()" class="dropBtn"><a href="#">Utvärderingar</a></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="admin-survey.html">Veckoreflekteringar</a>
+            <a href="admin-evaluation.html">Kursutvärderingar</a>
+          </div>
         </li>
         <li>
           <a href="admin-educations.html"> Utbildningar</a>
@@ -65,6 +69,8 @@
     </footer>
   <script src="../script/checkBoxColor.js"></script>
   <script src="../script/randomNumber.js"></script>
+  <script src="../script/app.js"></script>
+  <script src="../script/smileySurvey.js"></script>
 </body>
 
 </html>
