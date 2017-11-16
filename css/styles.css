@@ -186,7 +186,7 @@ h3{
 #main-nav-toggle {
     display: none;
 }
-@media screen and (max-width: 860px){
+@media screen and (max-width: 1000px){
     header, .columns{
         display: flex;
         flex-direction: column;
