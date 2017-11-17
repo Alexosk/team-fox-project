@@ -1179,6 +1179,10 @@ input.heading {
 .add-student {
   display: flex;
   flex-direction: column;
+  align-content: center;
+}
+.add-student div {
+  align-self: center;
 }
 .add-student button {
   width: 20vh;
