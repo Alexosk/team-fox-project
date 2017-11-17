@@ -9,6 +9,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
+  <link rel="stylesheet" type="text/css" href="../css/student.css">
   <link rel="shortcut icon" href="../images/la.png">
   <script type="text/javascript"></script>
 </head>
@@ -33,7 +34,7 @@
           <button onclick="myDropdown()" class="dropBtn"><a href="#">Utvärderingar</a></button>
           <div id="myDropdown" class="dropdown-content">
             <a href="admin-survey.html">Veckoreflekteringar</a>
-          <a href="admin-evaluation.html">Kursutvärderingar</a>
+            <a href="admin-evaluation.html">Kursutvärderingar</a>
           </div>
         </li>
         <li>
@@ -57,29 +58,55 @@
       </ul>
     </div>
   </header>
+
   <div id="content">
-    <div class="box">
-      <div class="boxes">
+    <div class="columns">
+      <div class="armida-project">
+        <div class="column">
+          <div class="grade-check">
+            <h1>Välj Klasser</h1>
+            <br>
+            <div class="line"></div>
+          <div class="feedback">
+            <ul id="admin-educations-list">
+              <li><a href="admin-frontend-classes.html"><strong>FE-13</strong></a></li>
+              <li><a href="#"><strong>FE-14</strong></a></li>
+              <li><a href="#"><strong>FE-15</strong></a></li>
+              <li><a href="#"><strong>FE-16</strong></a></li>
+              <li><a href="admin-classes.html"><strong>FE-17</strong></a></li>
 
-        <h2>Skapade Klasser - Frontend Utvecklare</h2>
-        <br>
-        <div class="weekly-classes">
+            </ul>
+            <br><br>
+            <!--
+            <a href="admin-courses.html"><input type="submit" name="submit" value="Skapa ny utbildning"></a>
+            -->
+          </div>
 
-          <ul>
-            <li><a href="#">FE-13</a></li>
-            <li><a href="#">FE-14</a></li>
-            <li><a href="#">FE-15</a></li>
-            <li><a href="admin-frontend-classes.html">FE-16</a></li>
-            <li><a href="admin-classes.html">FE-17</a></li>
-            <a href="#"><input type="submit" name="submit" value="Skapa ny klass"></a>
 
-          </ul>
+            <!--POP-UP-->
+            <button id="myBtn" class="modalBtn"><a href="#">Ändra Klasser</a></button>
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="add-student">
+                  <div>
+                    <h2> Skapade Kurser </h2>
+                    <input type="text" placeholder="Namn">
+                    <button><a href="#">Lägg till</a></button>
+                    <button><a href="#">Skapa fler </a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--POP-UP END-->
 
-        </div>
-      </div>
+
+          <br>
+        </div><!--Column END-->
+      </div><!--armida-project END-->
+    </div><!--ColumnS END-->
     </div>
-  </div>
-
 
   </div>
 
@@ -89,6 +116,7 @@
       <span>Aram</span>
     </p>
   </footer>
+  <script src="../script/student-list.js"></script>
   <script src="../script/checkBoxColor.js"></script>
   <script src="../script/randomNumber.js"></script>
   <script src="../script/app.js"></script>

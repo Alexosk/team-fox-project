@@ -27,7 +27,7 @@
       <input type="checkbox" id="main-nav-toggle">
       <ul>
         <li id="htmlHeading">
-          <a href="../teacher/html-class.html">FE-17</a>
+          <a href="../admin/admin-classes.html">FE-17</a>
         </li>
         <li>
           <a href="admin-createAccount.html">Konton</a>
@@ -69,8 +69,9 @@
           <div class="admin-class">
 
             <h2> FE-17 Studenter </h2>
-
-            <div class="student-list"> </div>
+            <div class="line"></div>
+            <br>
+            <div class="student-list"> <strong></strong></div>
 
             <button id="myBtn"><a href="#">Ändra studentlista</a></button>
             <div id="myModal" class="modal">
@@ -79,18 +80,20 @@
               <div class="modal-content">
                 <span class="close">&times;</span>
 
-                <div class="add-student">
+                <div>
                   <div>
-                <h2> Student Namn </h2>
-                <input type="text" placeholder="Studentens namn">
-                <input type="text" placeholder="E-post adress">
-                <button><a href="#">Spara</a></button>
-                <button><a href="#">Lägg till </a></button>
-              </div>
 
-              </div>
-              </div>
+                    <h2> Student Namn </h2>
 
+                    <input type="text" placeholder="Studentens namn">
+                    <input type="text" placeholder="E-post adress">
+
+                    <button><a href="#">Spara</a></button>
+                    <button><a href="#">Lägg till </a></button>
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -98,30 +101,26 @@
         <div class="column">
           <div class="admin-class">
             <h2> FE-17 Kurser </h2>
-
+            <div class="line"></div>
+            <br>
             <div class="student-list">
-              <ul>
-                <li> <a href="#">HTML</a> </li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Back-End</a></li>
-                <li><a href="#">CSS</a></li>
+              <ul id="admin-educations-list">
+
+                <li> <a href="#"><strong>HTML</strong></a> </li>
+                <li><a href="#"><strong>Javascript</strong></a></li>
+                <li><a href="#"><strong>Back-End</strong></a></li>
+                <li><a href="#"><strong>CSS</strong></a></li>
 
               </ul>
 
             </div>
             <button><a href="#">Ändra kurslista</a></button>
 
-
-
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-
-
 
   <footer>
     <h4>&#169;Team Fox 2017</h4>

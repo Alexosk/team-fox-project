@@ -1157,9 +1157,16 @@ input.heading {
 }
 
 .admin-class button {
-  background-color: lightgrey;
+  background-color: #759e2e;
   height: 5vh;
   font-size: 2vh;
+
+}
+.admin-class button a {
+  color: white;
+}
+.admin-class button:hover {
+  background-color: green;
 }
 
 .admin-class-columns {
@@ -1176,18 +1183,8 @@ input.heading {
   margin-top: 1vh;
   margin-bottom: 2vh;
 }
-.add-student {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-.add-student div {
-  align-self: center;
-}
-.add-student button {
-  width: 20vh;
-  height: 5vh;
-}
+
+
 
 /* The Modal (background) */
 .modal {
@@ -1249,13 +1246,3 @@ input.heading {
 .modalBtn:hover{
   background-color: green;
 }
-
-
-
-
-
-
-
-
-
-
