@@ -1226,3 +1226,36 @@ input.heading {
     text-decoration: none;
     cursor: pointer;
 }
+
+#admin-educations-list li{
+  padding-top: 20px;
+}
+#admin-educations-list a{
+  color: #333333;
+}
+#admin-educations-list a:hover{
+  color: gray;
+}
+
+.modalBtn{
+  background-color: #759e2e;
+  height: 30px;
+  width: 250px;
+  font-size: 15px;
+}
+.modalBtn a{
+  color: white;
+}
+.modalBtn:hover{
+  background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
