@@ -70,9 +70,23 @@
 
             <h2> FE-17 Studenter </h2>
 
-            <div class="student-list">  </div>
+            <div class="student-list"> </div>
 
-            <button><a href="#">Lägg till studenter</a></button>
+            <button id="myBtn"><a href="#">Ändra studentlista</a></button>
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="add-student">
+                <h2> Student Namn </h2>
+                <input type="text" placeholder="Studentens namn">
+                <input type="text" placeholder="E-post adress">
+                <button><a href="#">Lägg till fler studenter</a></button>
+              </div>
+              </div>
+
+            </div>
           </div>
         </div>
 
@@ -83,14 +97,16 @@
             <div class="student-list">
               <ul>
                 <li> <a href="#">HTML</a> </li>
-                <li><a href="evaluation-teacher.html">Javascript</a></li>
+                <li><a href="#">Javascript</a></li>
                 <li><a href="#">Back-End</a></li>
                 <li><a href="#">CSS</a></li>
 
               </ul>
 
             </div>
-            <button><a href="#">Lägg till kurser</a></button>
+            <button><a href="#">Ändra kurslista</a></button>
+
+
           </div>
         </div>
       </div>
