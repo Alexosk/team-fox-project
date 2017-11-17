@@ -135,7 +135,6 @@ header ul {
     text-align: center;
     bottom: 90%;
   }
-
 }
 
 /*HAMBURGER ENDS */
@@ -341,6 +340,7 @@ input[type="submit"]:hover {
   padding-top: 5px;
   font-size: 14px;
 }
+
 /* STUDENT.HTML */
 
 .boxes {
@@ -721,13 +721,16 @@ footer h4 {
 .weekly-classes {
   display: flex;
 }
+
 .weekly-classes li {
   margin: 3vh;
   font-size: 3vh;
 }
+
 .weekly-classes li:hover {
   opacity: 0.6;
 }
+
 /* PROJECT.HTML */
 
 .hand-in {
@@ -852,6 +855,7 @@ article {
 .teach-news textarea {
   font-size: 2vh;
 }
+
 .teach-news h5 {
   font-sixe: 0.2vh;
 }
@@ -1081,36 +1085,38 @@ input.heading {
 .show {
   display: block;
 }
+
 /*****DROPDOWN STUFF*****/
+
 .dropBtn {
-    background-color: #562E84;
-    color: #FDB722;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+  background-color: #562E84;
+  color: #FDB722;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
 .dropdown {
-    background-color: #562E84;
-    position: relative;
-    display: inline-block;
+  background-color: #562E84;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #562E84;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #562E84;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
 .dropdown a:hover {
@@ -1120,7 +1126,8 @@ input.heading {
 .show {
   display: block;
 }
-.armida-project, .teacher-feedback {
+
+.armida-project, .teacher-feedback, .admin-class {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -1130,18 +1137,46 @@ input.heading {
 }
 
 #container span {
-  background-color:#b3b3b3;
-  padding:3px;
+  background-color: #b3b3b3;
+  padding: 3px;
 }
-#instructions{
+
+#instructions {
   border: 1px solid #b30000;
   padding: 15px 0 15px 30px;
   width: 500px;
 }
-#submitBtn{
+
+#submitBtn {
   font-family: Helvetica, sans-serif;
 }
 
+.admin-class {
+  display: flex;
+  flex-direction: column;
+  width: 30vh;
+  align-self: center;
+}
 
+.admin-class button {
+  background-color: lightgrey;
+  border-radius: 5vh;
+  height: 5vh;
+  font-size: 2vh;
+}
 
+.admin-class-columns {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap-reverse;
+}
 
+.student-list {
+  overflow-y: scroll;
+  height: 40vh;
+}
+
+.student-list li {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}

@@ -31,14 +31,14 @@ let students = [
     'Örjan Östling',
     'Örn Ärlig',
     'Östen Åberg',
-    'Stu Dentson'
+    'Stu Dentson',
 
 ];
 
 window.addEventListener('load', function(){
-let news = document.getElementsByClassName('news');
+let studentList = document.getElementsByClassName('student-list');
 let ul = document.createElement('ul');
-news[0].appendChild(ul);
+studentList[0].appendChild(ul);
 
 for (var i = 0; i < students.length; i++) {
   let li = document.createElement('li');
