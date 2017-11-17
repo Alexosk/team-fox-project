@@ -1152,8 +1152,7 @@ input.heading {
 }
 
 .admin-class {
-
-  width: 30vh;
+  width: 40vh;
 }
 
 .admin-class button {
@@ -1171,7 +1170,7 @@ input.heading {
 
 .admin-class-columns {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
 
 .student-list {
@@ -1183,6 +1182,7 @@ input.heading {
   margin-top: 1vh;
   margin-bottom: 2vh;
 }
+
 
 
 
