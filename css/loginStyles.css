@@ -1149,6 +1149,7 @@ input.heading {
 
 #submitBtn {
   font-family: Helvetica, sans-serif;
+  font-size: 2vh;
 }
 
 .admin-class {
@@ -1182,7 +1183,19 @@ input.heading {
   margin-top: 1vh;
   margin-bottom: 2vh;
 }
-
+.popup-student a {
+  color: white;
+  font-size: 2vh;
+}
+.popup-student button {
+  color: white;
+  background-color: #759e2e;
+  width: 20vh;
+  height: 4vh;
+}
+.popup-student button:hover {
+  background-color: green;
+}
 
 
 
