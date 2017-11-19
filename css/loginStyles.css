@@ -884,7 +884,8 @@ article {
 
 #newsPlaced, #provPlaced {
   display: none;
-  background: #759e2e;
+  background: red;
+  opacity: 0.7;
   color: white;
   text-align: center;
   -webkit-animation: fadeIn 0.5s;

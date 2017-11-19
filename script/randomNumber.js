@@ -29,6 +29,7 @@ function newsFunction(newsPlaced){
     else
       e.style.display = "block";
 }
+
 function provFunction(provPlaced){
     var e = document.getElementById(provPlaced);
     if(e.style.display == "block")
@@ -60,8 +61,3 @@ function displayStuff() {
     x.value = x.style.display = "block";
 }
 */
-
-
-
-
-
