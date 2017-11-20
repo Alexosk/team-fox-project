@@ -871,25 +871,25 @@ article {
   border: 2px solid black;
 }
 
-#submit-news {
-  background-color: #333333;
-  height: 30px;
-  width: 100px;
-  margin-top: 1vh;
+.submit-news {
+  background-color: #759e2e;
+  margin-top: 2vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
 }
 
-#submit-news:hover {
-  background: #595959;
+.submit-news:hover {
+  background: green;
 }
 
 #newsPlaced, #provPlaced {
   display: none;
-  background: red;
-  opacity: 0.7;
+  background: #6495ED;
   color: white;
   text-align: center;
   -webkit-animation: fadeIn 0.5s;
   padding: 1.5vh;
+  margin-top: 1vh;
 }
 
 .teach-news .heading {
@@ -1258,5 +1258,15 @@ input.heading {
   color: white;
 }
 .modalBtn:hover{
+  background-color: green;
+}
+.a-button {
+  background-color: #759e2e;
+  display: inline-block;
+  color: white;
+  padding: 1vh;
+  margin-top: 2vh;
+}
+.a-button:hover {
   background-color: green;
 }

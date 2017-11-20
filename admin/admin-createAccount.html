@@ -10,13 +10,11 @@
   <script type="text/javascript"></script>
 
 
-<style type="text/css">
-
-input[type=checkbox]:checked + #poop{
-  display: none;
-}
-
-</style>
+  <style type="text/css">
+    input[type=checkbox]:checked+#poop {
+      display: none;
+    }
+  </style>
 
 
 
@@ -69,7 +67,7 @@ input[type=checkbox]:checked + #poop{
   </header>
 
 
-<div id="content">
+  <div id="content">
     <div class="columns">
       <div class="armida-project">
         <div class="column">
@@ -79,14 +77,14 @@ input[type=checkbox]:checked + #poop{
             <div class="line"></div>
             <br>
 
-            <input class="box-grade" type="radio" name="myCheckbox"/> - Elev
-            <input class="box-grade" type="radio" name="myCheckbox"/> - Lärare
-            <input class="box-grade" id="adminBox" type="radio" name="myCheckbox"/> - Admin
+            <input class="box-grade" type="radio" name="myCheckbox" /> - Elev
+            <input class="box-grade" type="radio" name="myCheckbox" /> - Lärare
+            <input class="box-grade" id="adminBox" type="radio" name="myCheckbox" /> - Admin
 
             <br><br>
             <div class="grade-check">
               <div id="courseAndClasses">
-                <label for="courses" >Kurs - </label>
+                <label for="courses">Kurs - </label>
                 <select>
                   <option>--------</option>
                   <option>Front-End</option>
@@ -109,15 +107,15 @@ input[type=checkbox]:checked + #poop{
           <div class="line"></div>
           <br>
           <div class="feedback">
-              <h3> Ange Namn: </h3>
-              <br>
-              <input type="text" placeholder="Skriv förnamn här">
-              <input type="text" placeholder="Skriv Efternamn här">
-              <br><br>
-              <h3> Ange Kontaktinformation: </h3>
-              <br>
-              <input type="text" placeholder="Skriv E-postadress här">
-              <input type="text" placeholder="Skriv Telefonnummer här">
+            <h3> Ange Namn: </h3>
+            <br>
+            <input type="text" placeholder="Skriv förnamn här">
+            <input type="text" placeholder="Skriv Efternamn här">
+            <br><br>
+            <h3> Ange Kontaktinformation: </h3>
+            <br>
+            <input type="text" placeholder="Skriv E-postadress här">
+            <input type="text" placeholder="Skriv Telefonnummer här">
           </div>
 
           <br>
@@ -132,20 +130,22 @@ input[type=checkbox]:checked + #poop{
 
           <br>
 
-          <div class="columns">
-            <!--submitFunction finns i randomNumber.js-->
-            <br>
-            <div class="popup-student">
-            <button id="submitBtn" onclick="submitFunction('attendenceSaved')">Spara</button>
+          <div class="input-news">
+            <input type="submit" name="submit" value="Spara" onclick="newsFunction('newsPlaced')" class="submit-news">
+            <div id="newsPlaced">Feedback sparat!</div>
           </div>
-          </div><!--Columns END-->
+
           <div id="columns">
             <br>
             <div id="attendenceSaved">Konto Skapat!</div>
-          </div><!--Columns END-->
-        </div><!--Column END-->
-      </div><!--armida-project END-->
-    </div><!--ColumnS END-->
+          </div>
+          <!--Columns END-->
+        </div>
+        <!--Column END-->
+      </div>
+      <!--armida-project END-->
+    </div>
+    <!--ColumnS END-->
   </div>
 
   <footer>
@@ -155,7 +155,7 @@ input[type=checkbox]:checked + #poop{
     </p>
   </footer>
   <script src="../script/app.js"></script>
-    <script src="../script/randomNumber.js"></script>
+  <script src="../script/randomNumber.js"></script>
 </body>
 
 </html>
