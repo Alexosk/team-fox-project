@@ -66,13 +66,13 @@
             <div class="line"></div>
           <div class="feedback">
             <ul id="admin-educations-list">
-              <li><a href="admin-frontend-classes.html"><strong>Frontend Utvecklare</strong></a></li>
+<!--               <li><a href="admin-frontend-classes.html"><strong>Frontend Utvecklare</strong></a></li>
               <li><a href="#"><strong>Målare</strong></a></li>
               <li><a href="#"><strong>VVS Konsult</strong></a></li>
               <li><a href="#"><strong>Elektriker</strong></a></li>
               <li><a href="#"><strong>Backend Utvecklare</strong></a></li>
               <li><a href="#"><strong>Energispecialist</strong></a></li>
-              <li><a href="#"><strong>Bilmekaniker</strong></a></li>
+              <li><a href="#"><strong>Bilmekaniker</strong></a></li> -->
             </ul>
             <br><br>
             <!--
@@ -83,18 +83,21 @@
 
 
             <!--POP-UP-->
-            <button id="myBtn" class="modalBtn"><a href="#">Ändra Utbildningar</a></button>
+            <button id="myBtn" class="modalBtn"><a href="#">Redigera utbildningarna</a></button>
             <div id="myModal" class="modal">
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close">&times;</span>
                 <div>
                   <div class="popup-student">
-                    <h2> Utbildningens Namn </h2>
-                    <input type="text" placeholder="Namn">
-                    <button><a href="#">Lägg till</a></button>
-                    <button><a href="#">Skapa fler </a></button>
+                    <input id="educationName" type="text" placeholder="Namn">
+                    <button onclick="addEducation(document.getElementById('educationName').value)"><a href="#">Lägg till utbildning</a></button>
                   </div>
+                  <br>
+                  <div class="popup-student">
+                      <select id="educationNameRemove"></select>
+                      <button class="removeButton" onclick="removeEducation()" ><a href="#" >Ta bort utbildning</a></button>
+                    </div>
                 </div>
               </div>
             </div>
@@ -120,7 +123,7 @@
   </footer>
   <script src="../script/student-list.js"></script>
   <script src="../script/app.js"></script>
-    <script src="../script/randomNumber.js"></script>
+    <script src="../script/admin-educations.js"></script>
 </body>
 
 </html>

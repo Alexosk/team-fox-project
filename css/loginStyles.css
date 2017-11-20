@@ -1197,6 +1197,12 @@ input.heading {
 .popup-student button:hover {
   background-color: green;
 }
+.popup-student .removeButton {
+  background-color: crimson;  
+}
+.popup-student .removeButton:hover {
+  background-color: red;  
+}
 
 
 
