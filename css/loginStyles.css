@@ -1255,18 +1255,6 @@ input.heading {
   color: gray;
 }
 
-.modalBtn{
-  background-color: #759e2e;
-  height: 30px;
-  width: 250px;
-  font-size: 15px;
-}
-.modalBtn a{
-  color: white;
-}
-.modalBtn:hover{
-  background-color: green;
-}
 .a-button {
   background-color: #759e2e;
   display: inline-block;
