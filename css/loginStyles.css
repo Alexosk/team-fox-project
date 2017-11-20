@@ -122,7 +122,6 @@ header ul {
     display: inline-block;
     cursor: pointer;
     bottom: 90%;
-    right: 10;
   }
   #navContainer1 #main-nav-toggle+ul {
     display: none;
@@ -857,17 +856,13 @@ article {
   font-size: 2vh;
 }
 
-.teach-news h5 {
-  font-sixe: 0.2vh;
-}
-
 .teach-news textarea {
   resize: none;
   height: 250px;
   width: 300px;
 }
 
-.input-date, {
+.input-date {
   margin-top: 1vh;
   border: 2px solid black;
 }
