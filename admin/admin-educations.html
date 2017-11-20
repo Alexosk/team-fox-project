@@ -28,7 +28,7 @@
           <a href="admin-createAccount.html">Konton</a>
         </li>
         <li class="dropdown">
-          <button onclick="myDropdown()" class="dropBtn"><a href="#">Utvärderingar</a></button>
+          <button onclick="myDropdown()" class="dropBtn">Utvärderingar</button>
           <div id="myDropdown" class="dropdown-content">
             <a href="admin-survey.html">Veckoreflekteringar</a>
             <a href="admin-evaluation.html">Kursutvärderingar</a>
@@ -64,55 +64,58 @@
             <h1>Välj Utbildning</h1>
             <br>
             <div class="line"></div>
-          <div class="feedback">
-            <ul id="admin-educations-list">
-<!--               <li><a href="admin-frontend-classes.html"><strong>Frontend Utvecklare</strong></a></li>
+            <div class="feedback">
+              <ul id="admin-educations-list">
+                <!--               <li><a href="admin-frontend-classes.html"><strong>Frontend Utvecklare</strong></a></li>
               <li><a href="#"><strong>Målare</strong></a></li>
               <li><a href="#"><strong>VVS Konsult</strong></a></li>
               <li><a href="#"><strong>Elektriker</strong></a></li>
               <li><a href="#"><strong>Backend Utvecklare</strong></a></li>
               <li><a href="#"><strong>Energispecialist</strong></a></li>
               <li><a href="#"><strong>Bilmekaniker</strong></a></li> -->
-            </ul>
-            <br><br>
-            <!--
+              </ul>
+              <br><br>
+              <!--
             <a href="admin-courses.html"><input type="submit" name="submit" value="Skapa ny utbildning"></a>
             -->
-          </div>
+            </div>
 
 
 
             <!--POP-UP-->
-            <button id="myBtn" class="modalBtn"><a href="#">Redigera utbildningarna</a></button>
-            <div id="myModal" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <div>
-                  <div class="popup-student">
-                    <input id="educationName" type="text" placeholder="Namn">
-                    <button onclick="addEducation(document.getElementById('educationName').value)"><a href="#">Lägg till utbildning</a></button>
-                  </div>
-                  <br>
-                  <div class="popup-student">
-                      <select id="educationNameRemove"></select>
-                      <button class="removeButton" onclick="removeEducation()" ><a href="#" >Ta bort utbildning</a></button>
+            <div class="columns">
+              <a id="myBtn" class="a-button" class="modalBtn" href="#">Redigera utbildningarna</a>
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div>
+                    <div class="popup-student">
+                      <input id="educationName" type="text" placeholder="Namn">
+                      <a class="a-button" href="#" onclick="addEducation(document.getElementById('educationName').value)">Lägg till utbildning</a>
                     </div>
+                  </div>
+
+                  <br>
+
+                  <div class="popup-student">
+                    <select id="educationNameRemove"></select>
+                    <a href="#"  class="a-button" id="removeButton"  onclick="removeEducation()">Ta bort utbildning</a></button>
+                  </div>
                 </div>
               </div>
             </div>
             <!--POP-UP END-->
 
+            <br>
 
-
-
-
-          <br>
-        </div><!--Column END-->
-      </div><!--armida-project END-->
-    </div><!--ColumnS END-->
+          </div>
+          <!--Column END-->
+        </div>
+        <!--armida-project END-->
+      </div>
+      <!--ColumnS END-->
     </div>
-
   </div>
 
   <footer>
@@ -121,9 +124,11 @@
       <span>Aram</span>
     </p>
   </footer>
+
   <script src="../script/student-list.js"></script>
   <script src="../script/app.js"></script>
-    <script src="../script/admin-educations.js"></script>
+  <script src="../script/admin-educations.js"></script>
+  
 </body>
 
 </html>

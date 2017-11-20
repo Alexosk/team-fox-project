@@ -28,7 +28,7 @@
           <a href="admin-createAccount.html">Konton</a>
         </li>
         <li class="dropdown">
-          <button onclick="myDropdown()" class="dropBtn"><a href="#">Utvärderingar</a></button>
+          <button onclick="myDropdown()" class="dropBtn">Utvärderingar</button>
           <div id="myDropdown" class="dropdown-content">
             <a href="admin-survey.html">Veckoreflekteringar</a>
             <a href="admin-evaluation.html">Kursutvärderingar</a>
@@ -65,21 +65,23 @@
             <br>
             <div class="line"></div>
           <div class="feedback">
+
             <ul id="admin-educations-list">
               <li><a href="admin-frontend-classes.html"><strong>FE-13</strong></a></li>
               <li><a href="#"><strong>FE-14</strong></a></li>
               <li><a href="#"><strong>FE-15</strong></a></li>
               <li><a href="#"><strong>FE-16</strong></a></li>
               <li><a href="admin-classes.html"><strong>FE-17</strong></a></li>
-
             </ul>
+
             <br><br>
-        
+
           </div>
 
 
             <!--POP-UP-->
-            <button id="myBtn" class="modalBtn"><a href="#">Ändra Klasser</a></button>
+            <div class="columns">
+            <a id="myBtn" class="a-button" class="modalBtn" href="#">Ändra Klasser</a>
             <div id="myModal" class="modal">
               <!-- Modal content -->
               <div class="modal-content">
@@ -88,12 +90,13 @@
                   <div class="popup-student">
                     <h2> Skapade Kurser </h2>
                     <input type="text" placeholder="Namn">
-                    <button><a href="#">Lägg till</a></button>
-                    <button><a href="#">Skapa fler </a></button>
+                    <a class="a-button" href="#">Lägg till</a>
+                    <a class="a-button" href="#">Skapa fler </a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
             <!--POP-UP END-->
 
 

@@ -28,7 +28,7 @@
           <a href="admin-createAccount.html">Konton</a>
         </li>
         <li class="dropdown">
-          <button onclick="myDropdown()" class="dropBtn"><a href="#">Utvärderingar</a></button>
+          <button onclick="myDropdown()" class="dropBtn">Utvärderingar</button>
           <div id="myDropdown" class="dropdown-content">
             <a href="admin-survey.html">Veckoreflekteringar</a>
             <a href="admin-evaluation.html">Kursutvärderingar</a>
@@ -59,7 +59,7 @@
   <div id="content">
 
     <div class="column">
-      <div class="class-info" style="text-align: center;"><!--#2Lazy2UpdateTheCSS-->
+      <div class="class-info" style="text-align: center;">
         <h1> Skapa nyheter </h1>
       </div>
     </div>
@@ -72,29 +72,25 @@
           <br>
           <span><strong>Välj nyhetens mottagare</strong></span>
           <div class="column">
-            Lärare - <input type="radio" name="x" value="teacher">
-            Elever - <input type="radio" name="x" value="student">
-            Alla - <input type="radio" name="x" value="everyone">
+            Lärare - <input type="radio" name="x" value="teacher"> Elever - <input type="radio" name="x" value="student"> Alla - <input type="radio" name="x" value="everyone">
           </div>
           <div class="line"></div>
           <br>
 
 
           <fieldset class="publishDate">
-          <legend>Publiseringsdatum</legend>
-          <input class="input-date" type="date" name="publishDate"
-          style="width: 270px;">
+            <legend>Publiseringsdatum</legend>
+            <input class="input-date" type="date" name="publishDate" style="width: 270px;">
           </fieldset>
+
           <br>
 
           <input type="text" name="heading" class="heading" placeholder="Skriv din rubrik här">
           <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
+
           <br>
 
-          <div class="input-news">
-            <input type="submit" name="submit" value="Spara" onclick="newsFunction('newsPlaced')" class="submit-news">
-          </div>
-
+          <a class="a-button" onclick="newsFunction('newsPlaced')">Spara</a>
           <div id="newsPlaced">Nyhet tillagd i nyhetsflödet!</div>
 
         </div>
@@ -102,15 +98,20 @@
 
       <div class="column">
         <div class="class-info">
-        <br>
+
+          <br>
+
           <h2 style="text-align: center;">Alla nyheter </h2>
           <div class="line"></div>
+
           <br>
+
           <select>
             <option>Visa alla nyheter</option>
             <option>Visa lärarnas nyheter</option>
             <option>Visa elevernas nyheter</option>
           </select>
+
           <br>
 
           <main-news>
@@ -150,7 +151,7 @@
                     <br>
                     <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                       <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                        </p>
+                      </p>
 
 
               </div>
@@ -167,11 +168,12 @@
 
 
   <footer>
-      <h4>&#169;Team Fox 2017</h4>
-      <p>Alexandra, Rikard, Paulina, Leo, <span>Benjamin</span>,
-        <span>Aram</span>
-      </p>
-    </footer>
+    <h4>&#169;Team Fox 2017</h4>
+    <p>Alexandra, Rikard, Paulina, Leo, <span>Benjamin</span>,
+      <span>Aram</span>
+    </p>
+  </footer>
+  
   <script src="../script/app.js"></script>
   <script src="../script/randomNumber.js"></script>
 </body>

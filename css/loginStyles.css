@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  outline: none;
 }
 
 body {
@@ -1197,11 +1198,11 @@ input.heading {
 .popup-student button:hover {
   background-color: green;
 }
-.popup-student .removeButton {
-  background-color: crimson;  
+.popup-student #removeButton {
+  background-color: crimson;
 }
-.popup-student .removeButton:hover {
-  background-color: red;  
+.popup-student #removeButton:hover {
+  background-color: red;
 }
 
 
@@ -1272,6 +1273,8 @@ input.heading {
   color: white;
   padding: 1vh;
   margin-top: 2vh;
+  text-align: center;
+  box-shadow: 0 0 4px #000;
 }
 .a-button:hover {
   background-color: green;

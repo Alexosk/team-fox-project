@@ -30,7 +30,7 @@
           <a href="admin-createAccount.html">Konton</a>
         </li>
         <li class="dropdown">
-          <button onclick="myDropdown()" class="dropBtn"><a href="#">Utvärderingar</a></button>
+          <button onclick="myDropdown()" class="dropBtn">Utvärderingar</button>
           <div id="myDropdown" class="dropdown-content">
             <a href="admin-survey.html">Veckoreflekteringar</a>
             <a href="admin-evaluation.html">Kursutvärderingar</a>
@@ -70,7 +70,7 @@
           <br>
           <div class="student-list"> <strong></strong></div>
 
-          <button id="myBtn"><a href="#">Ändra studentlista</a></button>
+          <a class="a-button" id="myBtn" href="#">Ändra studentlista</a>
           <div id="myModal" class="modal">
 
             <!-- Modal content -->
@@ -85,8 +85,8 @@
                   <input type="text" placeholder="Studentens namn">
                   <input type="text" placeholder="E-post adress">
 
-                  <button onclick="newsFunction('newsPlaced')"><a href="#">Spara Ändringar</a></button>
-                  <button><a href="#">Lägg till Student</a></button>
+                  <a class="a-button" id="myBtn" onclick="newsFunction('newsPlaced')"href="#">Spara Ändringar</a>
+                  <a class="a-button" href="#">Lägg till Student</a>
                   <div id="newsPlaced">Sparad!</div>
 
 
@@ -114,7 +114,7 @@
             </ul>
 
           </div>
-          <button id="myBtn2"><a href="#">Ändra kurslistan</a></button>
+          <a class="a-button" id="myBtn2" onclick="newsFunction('newsPlaced')"href="#">Ändra kurslistan</a></button>
           <div id="myModal2" class="modal">
 
             <!-- Modal content -->
@@ -123,20 +123,15 @@
 
               <div>
                 <div class="popup-student">
-
                   <h2>Kursens namn</h2>
-
                   <input type="text" placeholder="Kursens namn">
-
-                  <button><a href="#">Spara Ändringar</a></button>
-                  <button><a href="#">Lägg till Kurs</a></button>
-
+                  <a class="a-button" href="#">Spara Ändringar</a>
+                  <a class="a-button" href="#">Lägg till Kurs</a>
                 </div>
               </div>
+
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
