@@ -12,7 +12,6 @@ function submitFunction(attendenceTaken){
       e.style.display = "block";
 }
 
-
 /*Visar tabellen i prevAttendence*/
 function showAttnTable(table){
     var f = document.getElementById(table);

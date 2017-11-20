@@ -1,7 +1,7 @@
 new Chart(document.getElementById("weekChart"), {
   type: 'line',
   data: {
-    labels: ["Måndag","Tisdag","Onsdag","Torsdag","Fredag"],
+    labels: ["MÃ¥ndag","Tisdag","Onsdag","Torsdag","Fredag"],
     datasets: [{
         data: [20,26,14,20,33],
         label: "Glad",
@@ -27,4 +27,3 @@ new Chart(document.getElementById("weekChart"), {
     }
   }
 });
-
