@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
-  <link rel="shortcut icon" href="../images/la.png" alt="shortcun icon">
+  <link rel="shortcut icon" href="../images/la.png">
   <script type="text/javascript"></script>
 </head>
 
@@ -42,7 +42,7 @@
       <ul>
         <li>
           <a href="teacher.html">
-            <img src="../images/kobe.png" width="55">
+            <img src="../images/kobe.png" width="55" alt="Profile-picture">
           </a>
         </li>
         <li id="user">
@@ -53,33 +53,25 @@
         </li>
       </ul>
     </div>
-    </ul>
   </header>
-<div id="content">
 
-
+  <div id="content">
     <div class="columns">
-
       <div class="column">
         <div class="teach-news">
 
           <h2>Skapa uppgift</h2>
           <br>
-          <!--<h5> Publisera på: <input id="date" type="date"></h5>-->
           <fieldset class="publishDate">
-          <legend>Startdatum</legend>
-          <h5>
-          <input type="datetime-local" name="publishDate">
-          </h5>
+            <legend>Startdatum</legend>
+            <input type="datetime-local" name="publishDate">
           </fieldset>
           <br>
 
 
           <fieldset class="publishDate">
-          <legend>Deadline</legend>
-          <h5>
-          <input type="datetime-local" name="publishDate">
-          </h5>
+            <legend>Deadline</legend>
+            <input type="datetime-local" name="publishDate">
           </fieldset>
           <br>
 
@@ -88,7 +80,7 @@
           <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
 
           <div>
-          <br>
+            <br>
             <input type="submit" name="submit" value="Lägg till" onclick="newsFunction('newsPlaced')" id="submit-news">
           </div>
 
@@ -98,31 +90,27 @@
       </div>
       <div class="column">
 
-      <div class="teach-news">
+        <div class="teach-news">
 
           <h2>Skapa prov</h2>
           <br>
           <fieldset class="publishDate">
-          <legend>Startdatum och provtid</legend>
-          <h5>
-          <input type="datetime-local" name="publishDate">
-          </h5>
+            <legend>Startdatum och provtid</legend>
+            <input type="datetime-local" name="publishDate">
           </fieldset>
           <br>
 
           <input type="text" name="heading" class="heading" placeholder="Skriv din rubrik här">
-
           <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
 
           <div>
-          <br>
+            <br>
             <input type="submit" name="submit" value="Lägg till" onclick="provFunction('provPlaced')" id="submit-news">
           </div>
 
           <div id="provPlaced">Prov publicerad!</div>
 
         </div>
-
       </div>
     </div>
   </div>
@@ -139,7 +127,7 @@
   <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
   <script type="text/javascript">
     //<![CDATA[
-    bkLib.onDomLoaded(function () {
+    bkLib.onDomLoaded(function() {
       nicEditors.allTextAreas()
     });
     //]]>

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
   <link rel="stylesheet" type="text/css" href="../css/student.css">
-  <link rel="shortcut icon" href="../images/la.png" alt="shortcun icon">
+  <link rel="shortcut icon" href="../images/la.png">
   <script type="text/javascript"></script>
 </head>
 
@@ -22,11 +22,10 @@
     </a>
     <div id="navContainer1">
       <label class="hamburger-btn" for="main-nav-toggle"><img src="../images/hamburger.png" width="30" alt="YHLA"></label>
-           <input type="checkbox" id="main-nav-toggle">
+      <input type="checkbox" id="main-nav-toggle">
       <ul>
         <li class="dropdown">
-          <!--<a href="teacher-courses.html">Mina kurser</a>-->
-          <button onclick="myDropdown()" class="dropBtn"><a href="#">Mina Kurser</a></button>
+          <button onclick="myDropdown()" class="dropBtn">Mina Kurser</button>
           <div id="myDropdown" class="dropdown-content">
             <a href="html-class.html">HTML <br> (FE-17)</a>
             <a href="#">HTML <br> <strong style="color: lightgrey">(FE-16)</strong></a>
@@ -53,7 +52,7 @@
       <ul>
         <li>
           <a href="teacher.html">
-            <img src="../images/kobe.png" width="55">
+            <img src="../images/kobe.png" width="55" alt="profile-picture">
           </a>
         </li>
         <li id="user">
@@ -103,9 +102,7 @@
               <li>1</li>
               <li>2</li>
               <li>3</li>
-              <li id="activeday">
-                <span class="active" onclick="hiddenFunction()">4</span>
-              </li>
+              <li>4</li>
               <li>5</li>
               <li>6</li>
               <li>7</li>
@@ -135,57 +132,32 @@
               <li>31</li>
             </ul>
             <div class="divider"></div>
-            <div id="hidden">
-              <div class="hiddenbox">
-                <div class="attendancebox">
-                  <ul>
-                    <li>
-                      <p>09.00-12.00
-                        <br>Sal 115
-                        <br>Javascript</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="attendancebox">
-                  <h5>Närvaro</h5>
-                  <form name="attendace-form">
-                    <input type="text" name="code" placeholder="Lektionens kod" autofocus>
-                    <input type="submit" value="Anmäl närvaro" onclick="attended()">
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
-
-      <div class="boxes">
-        <h6>
+        <div class="boxes">
+          <h6>
           Dagsutvärderingar summering
         </h6>
-        <ul id="smileySurveyTeacher">
-          <li>
-            &#128553;&nbsp;<span>(344)</span>
-          </li>
-          <li>
-            &#128528;&nbsp;<span>(364)</span>
-          </li>
-          <li>
-            &#128512;&nbsp;<span>(44)</span>
-          </li>
-        </ul>
-      </div>
-
+          <ul id="smileySurveyTeacher">
+            <li>
+              &#128553;&nbsp;<span>(344)</span>
+            </li>
+            <li>
+              &#128528;&nbsp;<span>(364)</span>
+            </li>
+            <li>
+              &#128512;&nbsp;<span>(44)</span>
+            </li>
+          </ul>
+        </div>
 
         <div class="boxes">
           <div class="boxtext">
-            <h3></h3>
             <div class="divider"></div>
             <div class="assignments">
-              <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque
-                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                  eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                  rem aperiam, eaque
+              <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                 </p>
 
             </div>
@@ -198,7 +170,7 @@
           <div class="boxtext">
             <h3>Nyheter</h3>
             <div class="divider"></div>
-            <!--<marquee width="auto" height="200" behavior="scroll" scrolldelay="200" loop="infinite" direction="up">-->
+
             <main-news>
               <article>
                 <div class="news">
@@ -206,64 +178,56 @@
                     <em> Torsdag 2017.10.19 </em>
                   </h5>
                   <h3> Skolan är stängd första veckan i November </h3>
-                  </br>
-                  <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                    eaque
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                      totam rem aperiam, eaque
+                  <br>
+                  <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                     </p>
 
-                    </br>
-                    </br>
-                    </br>
+                    <br>
+                    <br>
+                    <br>
 
                     <h5>
                       <em> Tisdag 2017.10.17 </em>
                     </h5>
                     <h3> Öppen dag på Torsdag </h3>
-                    </br>
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque
-                      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque
+                    <br>
+                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                       </p>
 
-                      </br>
-                      </br>
-                      </br>
+                      <br>
+                      <br>
+                      <br>
 
                       <h5>
                         <em> Måndag 2017.10.16 </em>
                       </h5>
                       <h3> Ta med lunch på Onsdag </h3>
-                      </br>
-                      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque
-                        <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                          rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                          laudantium, totam rem aperiam, eaque </p>
+                      <br>
+                      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                        <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                          eaque </p>
+
+                        <br>
+                        <br>
+                        <br>
 
                 </div>
               </article>
             </main-news>
-            <!--</marquee>-->
-
             <div class="divider"></div>
-
           </div>
         </div>
       </div>
-
     </div>
   </div>
   <footer>
-      <h4>&#169;Team Fox 2017</h4>
-      <p>Alexandra, Rikard, Paulina, Leo, <span>Benjamin</span>,
-        <span>Aram</span>
-      </p>
-    </footer>
+    <h4>&#169;Team Fox 2017</h4>
+    <p>Alexandra, Rikard, Paulina, Leo, <span>Benjamin</span>,
+      <span>Aram</span>
+    </p>
+  </footer>
   <script src="../script/app.js"></script>
   <script src="../script/smileySurvey.js"></script>
 </body>
