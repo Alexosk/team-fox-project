@@ -54,14 +54,6 @@
 
   <div id="content">
 
-    <div class="columns">
-
-
-
-
-    </div>
-
-
     <div class="boxes">
       <div class="boxtext">
         <h3>Uppgift 1</h3>
@@ -92,23 +84,20 @@
 
         </div>
 
-
         <div class="space"></div>
-
-        <div class="hand-in">
-
-          <form class="upload" method="post" action="" enctype="multipart/form-data">
-            <div class="upload__input">
-              <input class="upload__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
-              <label for="file"></label>
-              <button class="upload__button" type="submit">Upload</button>
-            </div>
-            <div class="upload__uploading">Uploading&hellip;</div>
-            <div class="upload__success">Done!</div>
-            <div class="upload__error">Error! <span></span>.</div>
-          </form>
-
+        <div class="columns">
+          <div class="hand-in">
+            <form class="upload" method="post" enctype="multipart/form-data">
+              <input class="upload" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+            </form>
+          </div>
         </div>
+
+        <div class="columns">
+          <a class="a-button" onclick="newsFunction('newsPlaced')">Skicka in</a>
+        </div>
+        <div id="newsPlaced">Inlämning Mottagen!</div>
+
 
       </div>
     </div>
@@ -119,6 +108,7 @@
     <p>Alexandra, Rikard, Paulina, Leo, Benjamin, Aram</p>
   </footer>
   <script src="./script/app.js"></script>
+  <script src="./script/randomNumber.js"></script>
 </body>
 
 </html>

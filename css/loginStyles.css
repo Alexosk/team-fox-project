@@ -736,7 +736,7 @@ footer h4 {
 .hand-in {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   background-color: lightgrey;
 }
 
@@ -1256,6 +1256,7 @@ input.heading {
   color: white;
   padding: 1vh;
   margin-top: 2vh;
+  margin-bottom: 2vh;
   text-align: center;
   box-shadow: 0 0 4px #000;
 }
