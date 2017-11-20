@@ -391,19 +391,13 @@
 
           <div class="columns">
             <!--submitFunction finns i randomNumber.js-->
-            <button id="submitBtn" onclick="submitFunction('attendenceTaken')">Submit</button>
+            <div class="input-news">
+              <input type="submit" name="submit" value="Spara" onclick="newsFunction('newsPlaced')" class="submit-news">
+              <div id="provPlaced">Närvaro tagen!</div>
+            </div>
           </div>
-          <!--Columns END-->
-          <div id="columns">
-            <br>
-            <div id="attendenceTaken">Närvaro tagen!</div>
-          </div>
-          <!--Columns END-->
         </div>
-        <!--Column end-->
       </div>
-      <!--ColumnS end-->
-
 
       <h2>Äldre Närvaro</h2>
       <div class="line"></div>
@@ -471,7 +465,7 @@
             </select>
 
             <label for="year_start">År</label>
-            <select id="year_start" name="year_start">
+            <select id="year_start1" name="year_start">
             <option>2017</option>
             <option>2018</option>
             <option>2019</option>
@@ -1095,23 +1089,18 @@
           <div class="columns">
             <!--submitFunction finns i randomNumber.js-->
             <br>
-            <button id="submitBtn" onclick="submitFunction('attendenceSaved')">Spara</button>
+            <div class="input-news">
+              <input type="submit" name="submit" value="Spara" onclick="newsFunction('newsPlaced')" class="submit-news">
+              <div id="newsPlaced">Närvaro sparat!</div>
+            </div>
           </div>
-          <!--Columns END-->
-          <div id="columns">
-            <br>
-            <div id="attendenceSaved">Närvaro sparad!</div>
-          </div>
-          <!--Columns END-->
         </div>
-        <!--Column end-->
       </div>
-      <!--ColumnS end-->
-
     </div>
-    <!--Container END-->
   </div>
+
   <div class="space"></div>
+
   <footer>
     <h4>&#169;Team Fox 2017</h4>
     <p>Alexandra, Rikard, Paulina, Leo, <span>Benjamin</span>,
