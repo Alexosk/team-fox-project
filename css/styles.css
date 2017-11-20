@@ -192,6 +192,9 @@ h3{
         flex-direction: column;
         position: relative;
     }
+        .columns img {
+         width:100%;
+    }
     .hamburger-btn {
         display: inline-block;
         cursor: pointer;
