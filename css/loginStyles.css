@@ -1183,12 +1183,11 @@ input.heading {
 
 #removeButton {
   background-color: crimson;
+  margin-left: 1vh;
 }
 #removeButton:hover {
   background-color: red;
 }
-
-
 
 /* The Modal (background) */
 .modal {
