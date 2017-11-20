@@ -175,10 +175,10 @@ h3{
     position: absolute;
     height: 3vh;
     width: 3vh;
-    right: 3vh;
+    right: 5vh;
     line-height: 3vh;
     font-size: 3vh;
-    bottom: 3vh;
+    bottom: 4vh;
     text-align: center;
     padding: 1vh;
     border-radius: 0.9rem;
@@ -211,6 +211,9 @@ h3{
         display: block;
         width: 100%;
         text-align: center;
+    }
+    #logo h1 {
+      font-size: 3vh;
     }
 }
 
