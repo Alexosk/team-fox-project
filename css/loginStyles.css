@@ -298,7 +298,7 @@ footer span {
   letter-spacing: -0.05em;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], #educationNameRemove {
   width: 195px;
   height: 30px;
   padding-left: 5px;
