@@ -1180,23 +1180,11 @@ input.heading {
   margin-top: 1vh;
   margin-bottom: 2vh;
 }
-.popup-student a {
-  color: white;
-  font-size: 2vh;
-}
-.popup-student button {
-  color: white;
-  background-color: #759e2e;
-  width: 20vh;
-  height: 4vh;
-}
-.popup-student button:hover {
-  background-color: green;
-}
-.popup-student #removeButton {
+
+#removeButton {
   background-color: crimson;
 }
-.popup-student #removeButton:hover {
+#removeButton:hover {
   background-color: red;
 }
 
@@ -1251,9 +1239,9 @@ input.heading {
 }
 
 .a-button {
-  background-color: #759e2e;
+  background-color: lightgrey;
   display: inline-block;
-  color: white;
+  color: black;
   padding: 1vh;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -1261,5 +1249,6 @@ input.heading {
   box-shadow: 0 0 4px #000;
 }
 .a-button:hover {
-  background-color: green;
+  background-color: grey;
+  color: white;
 }
