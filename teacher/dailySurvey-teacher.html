@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="../css/student.css">
   <link rel="shortcut icon" href="../images/la.png">
   <script type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
 
 <body>
@@ -69,20 +70,35 @@
   <div id="content">
     <div class="box">
       <div class="boxes">
-        <h2>
+		<h2>
           Dagsutvärderingar summering
         </h2>
         <ul id="smileySurveyTeacher">
           <li>
-            &#128553;&nbsp;(344)
+            &#128553;&nbsp;(Ledsen)
           </li>
           <li>
-            &#128528;&nbsp;(364)
+            &#128528;&nbsp;(Neutral)
           </li>
           <li>
-            &#128512;&nbsp;(44)
+            &#128512;&nbsp;(Glad)
           </li>
         </ul>
+        <br>
+        <fieldset>
+          <legend>Välj vecka</legend>
+          <select>
+            <option>Vecka 41</option>
+            <option>Vecka 42</option>
+            <option>Vecka 43</option>
+            <option>Vecka 44</option>
+          </select> -
+
+          <button>Submit</button>
+
+        </fieldset>
+
+        <canvas id="weekChart"></canvas>
       </div>
     </div>
   </div>
@@ -93,7 +109,7 @@
       </p>
     </footer>
   <script src="../script/app.js"></script>
-  <script src="../script/smileySurvey.js"></script>
+  <script src="../script/dailySurveyChart.js"></script>
 </body>
 
 </html>
