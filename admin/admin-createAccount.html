@@ -6,19 +6,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="../css/loginStyles.css">
-  <link rel="shortcut icon" href="../images/la.png" alt="shortcun icon">
+  <link rel="shortcut icon" href="../images/la.png">
   <script type="text/javascript"></script>
-
-
   <style type="text/css">
     input[type=checkbox]:checked+#poop {
       display: none;
     }
   </style>
-
-
-
-
 </head>
 
 <body>
@@ -84,7 +78,7 @@
             <br><br>
             <div class="grade-check">
               <div id="courseAndClasses">
-                <label for="courses">Kurs - </label>
+                <label>Kurs - </label>
                 <select>
                   <option>--------</option>
                   <option>Front-End</option>
@@ -93,7 +87,7 @@
                   <option>MatLab</option>
                 </select>
 
-                <label for="courses">Klass - </label>
+                <label>Klass - </label>
                 <select>
                   <option>--------</option>
                   <option>FE-17</option>
@@ -123,7 +117,7 @@
           <h3> Lägg upp profilbild: </h3>
           <br>
           <div class="hand-in">
-            <form class="upload" method="post" action="" enctype="multipart/form-data">
+            <form class="upload" method="post" enctype="multipart/form-data">
               <input class="upload__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
             </form>
           </div>
@@ -132,12 +126,11 @@
 
           <div class="input-news">
             <input type="submit" name="submit" value="Spara" onclick="newsFunction('newsPlaced')" class="submit-news">
-            <div id="newsPlaced">Feedback sparat!</div>
+            <div id="newsPlaced">Konto skapat!</div>
           </div>
 
           <div id="columns">
             <br>
-            <div id="attendenceSaved">Konto Skapat!</div>
           </div>
           <!--Columns END-->
         </div>
