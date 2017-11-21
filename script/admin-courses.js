@@ -7,10 +7,10 @@ let teachers = [
 
 let courseObjects = [
     { name: "HTML", teacher: "" },
-    { name: "JavaScript", teacher: "" },
+    { name: "JavaScript", teacher: "Kristian Kjeldsen" },
     { name: "Back-end", teacher: "" },
     { name: "CSS", teacher: "" },
-    { name: "Arbetsmetodik", teacher: "" }
+    { name: "Arbetsmetodik", teacher: "Tobias Landén" }
 ]
 
 let courseList = document.getElementById("admin-educations-list");
@@ -50,7 +50,7 @@ function printCourses() {
         let courseName = courseObjects[i].name;
         let teacherName = courseObjects[i].teacher;
         if (teacherName)
-        strong.innerHTML = `${courseName}, Lärare: ${teacherName} `;
+        strong.innerHTML = `${courseName}, ( ${teacherName} ) `;
         else
         strong.innerHTML = `${courseName}`;        
         a.appendChild(strong);
