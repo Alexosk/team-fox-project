@@ -953,6 +953,9 @@ input.heading {
   border: 1px solid #fff;
   padding: 3vh;
 }
+.admin-class {
+  align-items: center;
+}
 
 .teacher-feedback {
   flex-direction: row;
@@ -1126,8 +1129,8 @@ input.heading {
 }
 
 .student-list li {
-  margin-top: 1vh;
-  margin-bottom: 2vh;
+  margin: 1vh 1vh 3vh 1vh;
+  padding-right: 2vh;
 }
 
 #removeButton {
