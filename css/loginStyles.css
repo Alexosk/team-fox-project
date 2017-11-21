@@ -854,9 +854,6 @@ article {
 
 .teach-news textarea {
   font-size: 2vh;
-}
-
-.teach-news textarea {
   resize: none;
   height: 250px;
   width: 300px;
@@ -947,7 +944,8 @@ input.heading {
 
 /*Stu Dentson SUBMISSION */
 
-.studentson-project, .teacher-feedback {
+.studentson-project, .teacher-feedback,
+.armida-project, .admin-class {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -993,7 +991,9 @@ input.heading {
   flex-wrap: wrap;
 }
 
+/**
 #smileySurveyTeacher ul {}
+*/
 
 #smileySurveyTeacher li {
   font-size: 200%;
@@ -1039,7 +1039,7 @@ input.heading {
 }
 
 /*****DROPDOWN STUFF*****/
-
+/*
 .dropbtn {
   background-color: #562E84;
   color: #FDB722;
@@ -1081,7 +1081,7 @@ input.heading {
 
 .show {
   display: block;
-}
+}*/
 
 /*****DROPDOWN STUFF*****/
 
@@ -1109,6 +1109,7 @@ input.heading {
   z-index: 1;
 }
 
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -1124,6 +1125,7 @@ input.heading {
   display: block;
 }
 
+/***
 .armida-project, .teacher-feedback, .admin-class {
   display: flex;
   flex-direction: column;
@@ -1132,6 +1134,7 @@ input.heading {
   border: 1px solid #fff;
   padding: 3vh;
 }
+***/
 
 #container span {
   background-color: #b3b3b3;
