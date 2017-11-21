@@ -21,7 +21,9 @@
       </div>
     </a>
     <div id="navContainer1">
-      <label class="hamburger-btn" for="main-nav-toggle"><img src="../images/hamburger.png" width="30" alt="YHLA"></label>
+      <label class="hamburger-btn" for="main-nav-toggle">
+        <img src="../images/hamburger.png" width="30" alt="YHLA">
+      </label>
       <input type="checkbox" id="main-nav-toggle">
       <ul>
         <li>
@@ -64,60 +66,64 @@
             <h1>Välj Klasser</h1>
             <br>
             <div class="line"></div>
-          <div class="feedback">
+            <div class="feedback">
 
-            <ul id="admin-educations-list">
-              <li><a href="admin-frontend-classes.html"><strong>FE-13</strong></a></li>
-              <li><a href="#"><strong>FE-14</strong></a></li>
-              <li><a href="#"><strong>FE-15</strong></a></li>
-              <li><a href="#"><strong>FE-16</strong></a></li>
-              <li><a href="admin-classes.html"><strong>FE-17</strong></a></li>
-            </ul>
+              <ul id="admin-educations-list">
 
-            <br><br>
+              </ul>
 
-          </div>
+              <br>
+              <br>
+
+            </div>
 
 
             <!--POP-UP-->
             <div class="columns">
-            <a id="myBtn" class="a-button" href="#">Ändra Klasser</a>
-            <div id="myModal" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <div>
+              <a id="myBtn" class="a-button" href="#">Redigera klasserna</a>
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
                   <div>
-                    <h2> Skapade Kurser </h2>
-                    <input type="text" placeholder="Namn">
-                    <a class="a-button" href="#">Lägg till</a>
-                    <a class="a-button" href="#">Skapa fler </a>
+                    <div>
+                      <input id="educationName" type="text" placeholder="Namn">
+                      <a class="a-button" href="#" onclick="addClass(document.getElementById('educationName').value)">Lägg till klass</a>
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <div class="popup-student">
+                    <select id="educationNameRemove"></select>
+                    <a href="#" class="a-button" id="removeButton" onclick="removeClass()">Ta bort klass</a>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
             <!--POP-UP END-->
 
 
-          <br>
-        </div><!--Column END-->
-      </div><!--armida-project END-->
-    </div><!--ColumnS END-->
+            <br>
+          </div>
+          <!--Column END-->
+        </div>
+        <!--armida-project END-->
+      </div>
+      <!--ColumnS END-->
     </div>
 
   </div>
 
   <footer>
     <h4>&#169;Team Fox 2017</h4>
-    <p>Alexandra, Rikard, Paulina, Leo, <span>Benjamin</span>,
+    <p>Alexandra, Rikard, Paulina, Leo,
+      <span>Benjamin</span>,
       <span>Aram</span>
     </p>
   </footer>
   <script src="../script/student-list.js"></script>
-  <script src="../script/app.js"></script>
-    <script src="../script/randomNumber.js"></script>
-
+  <script src="../script/admin-classes.js"></script>
 </body>
 
 </html>
