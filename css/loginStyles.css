@@ -1126,11 +1126,22 @@ input.heading {
 .student-list {
   overflow-y: scroll;
   height: 40vh;
+  font-weight: bold;
 }
 
 .student-list li {
   margin: 1vh 1vh 3vh 1vh;
   padding-right: 2vh;
+}
+.student-list li:hover {
+  color: grey;
+}
+.student-list li::before {
+  content: "\2715  ";
+  color: red;
+  margin-right: 1vh;
+  pointer-events: all;
+  cursor: pointer;
 }
 
 #removeButton {
