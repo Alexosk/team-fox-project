@@ -20,7 +20,9 @@
       </div>
     </a>
     <div id="navContainer1">
-      <label class="hamburger-btn" for="main-nav-toggle"><img src="../images/hamburger.png" width="30" alt="YHLA"></label>
+      <label class="hamburger-btn" for="main-nav-toggle">
+        <img src="../images/hamburger.png" width="30" alt="YHLA">
+      </label>
       <input type="checkbox" id="main-nav-toggle">
       <ul>
         <li id="htmlHeading">
@@ -68,7 +70,9 @@
           <h1> FE-17 Studenter </h1>
           <div class="line"></div>
           <br>
-          <div class="student-list"> <strong></strong></div>
+          <div class="student-list">
+            <strong></strong>
+          </div>
 
           <a class="a-button" id="myBtn" href="#">Ändra studentlista</a>
           <div id="myModal" class="modal">
@@ -106,28 +110,39 @@
           <div class="student-list">
             <ul id="admin-educations-list">
 
-              <li> <a href="#"><strong>HTML</strong></a> </li>
+              <!--               <li> <a href="#"><strong>HTML</strong></a> </li>
               <li><a href="#"><strong>Javascript</strong></a></li>
               <li><a href="#"><strong>Back-End</strong></a></li>
-              <li><a href="#"><strong>CSS</strong></a></li>
+              <li><a href="#"><strong>CSS</strong></a></li> -->
 
             </ul>
 
           </div>
-          <a class="a-button" id="myBtn2" onclick="newsFunction('newsPlaced')" href="#">Ändra kurslistan</a>
+          <a class="a-button" id="myBtn2" onclick="newsFunction('newsPlaced')" href="#">Redigera kurserna</a>
           <div id="myModal2" class="modal">
 
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close">&times;</span>
-
               <div>
                 <div>
-                  <h2>Kursens namn</h2>
-                  <input type="text" placeholder="Kursens namn">
-                  <a class="a-button" href="#">Spara Ändringar</a>
-                  <a class="a-button" href="#">Lägg till Kurs</a>
+                  <input id="educationName" type="text" placeholder="Namn">
+                  <a class="a-button" href="#" onclick="addCourse(document.getElementById('educationName').value)">Lägg till kurs</a>
                 </div>
+              </div>
+
+              <br>
+              <div>
+                <select class="adminSelect" id="courseTeacher"></select>
+                <select class="adminSelect" id="teacherSelect"></select>
+                <a class="a-button" onclick="" href="#">Knyt lärare till kurs</a>
+              </div>
+
+              <br>
+
+              <div>
+                <select class="adminSelect" id="educationNameRemove"></select>
+                <a class="a-button" id="removeButton" onclick="removeCourse()" href="#">Ta bort kurs</a>
               </div>
 
             </div>
@@ -140,12 +155,14 @@
 
   <footer>
     <h4>&#169;Team Fox 2017</h4>
-    <p>Alexandra, Rikard, Paulina, Leo, <span>Benjamin</span>,
+    <p>Alexandra, Rikard, Paulina, Leo,
+      <span>Benjamin</span>,
       <span>Aram</span>
     </p>
   </footer>
   <script src="../script/student-list.js"></script>
   <script src="../script/student-list2.js"></script>
+  <script src="../script/admin-courses.js"></script>
 </body>
 
 </html>
