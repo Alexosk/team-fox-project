@@ -1132,6 +1132,9 @@ input.heading {
   border: 1px solid #fff;
   padding: 3vh;
 }
+.armida-project {
+  align-items: center;
+}
 
 #container span {
   background-color: #b3b3b3;
@@ -1166,14 +1169,10 @@ input.heading {
   background-color: green;
 }
 
-.admin-class-columns {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .student-list {
   overflow-y: scroll;
   height: 40vh;
+  align-self:
 }
 
 .student-list li {
@@ -1183,7 +1182,7 @@ input.heading {
 
 #removeButton {
   background-color: crimson;
-  margin-left: 3vh;
+  margin-left: 1vh;
   color: white;
 }
 #removeButton:hover {
@@ -1228,8 +1227,13 @@ input.heading {
     cursor: pointer;
 }
 
-#admin-educations-list li{
-  padding-top: 20px;
+#admin-educations-list {
+  padding-left: 0;
+  align-self: center;
+}
+#admin-educations-list li {
+  margin-top: 3vh;
+  margin-bottom: 5vh;
 }
 #admin-educations-list a{
   color: #333333;
@@ -1243,10 +1247,11 @@ input.heading {
   display: inline-block;
   color: black;
   padding: 1vh;
-  margin: 2vh 0 2vh 2vh;
+  margin: 2vh 0 2vh 0;
   text-align: center;
   box-shadow: 0 0 4px #000;
 }
+
 .a-button:hover {
   background-color: grey;
   color: white;
