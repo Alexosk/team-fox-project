@@ -686,6 +686,7 @@ footer h4 {
 .question textarea, .question ul, input[type="radio"] {
   margin-top: 2vh;
   margin-right: 2vh;
+  flex-wrap: wrap;
 }
 
 .question textarea {
@@ -944,8 +945,7 @@ input.heading {
 
 /*Stu Dentson SUBMISSION */
 
-.studentson-project, .teacher-feedback,
-.armida-project, .admin-class {
+.studentson-project, .teacher-feedback, .armida-project, .admin-class {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -1058,7 +1058,6 @@ input.heading {
   z-index: 1;
 }
 
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -1074,7 +1073,6 @@ input.heading {
   display: block;
 }
 
-<<<<<<< HEAD
 .armida-project, .teacher-feedback, .admin-class {
   display: flex;
   flex-direction: column;
@@ -1083,12 +1081,11 @@ input.heading {
   border: 1px solid #fff;
   padding: 3vh;
 }
+
 .armida-project {
   align-items: center;
 }
 
-=======
->>>>>>> d9b3c97180d35397bc8da8769f8f2cb9e19a433c
 #container span {
   background-color: #b3b3b3;
   padding: 3px;
@@ -1113,11 +1110,12 @@ input.heading {
   background-color: #759e2e;
   height: 5vh;
   font-size: 2vh;
-
 }
+
 .admin-class button a {
   color: white;
 }
+
 .admin-class button:hover {
   background-color: green;
 }
@@ -1125,7 +1123,6 @@ input.heading {
 .student-list {
   overflow-y: scroll;
   height: 40vh;
-  align-self:
 }
 
 .student-list li {
@@ -1138,60 +1135,76 @@ input.heading {
   margin-left: 1vh;
   color: white;
 }
+
 #removeButton:hover {
   background-color: red;
 }
 
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9999; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 9999;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
+
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
+
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #admin-educations-list {
   padding-left: 0;
   align-self: center;
 }
+
 #admin-educations-list li {
   margin-top: 3vh;
   margin-bottom: 5vh;
 }
-#admin-educations-list a{
+
+#admin-educations-list a {
   color: #333333;
 }
-#admin-educations-list a:hover{
+
+#admin-educations-list a:hover {
   color: gray;
 }
 
