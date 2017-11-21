@@ -1183,7 +1183,7 @@ input.heading {
 
 #removeButton {
   background-color: crimson;
-  margin-left: 1vh;
+  margin-left: 3vh;
   color: white;
 }
 #removeButton:hover {
