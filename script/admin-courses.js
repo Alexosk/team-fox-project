@@ -1,16 +1,16 @@
-let courses = [
-    "HTML",
-    "JavaScript",
-    "Back-end",
-    "CSS",
-    "Arbetsmetodik"
-]
-
 let teachers = [
     "Tea Chairson",
-    "Kristian Kjeldsen", 
+    "Kristian Kjeldsen",
     "Tobias Landén",
     "Tim Berners Lee"
+]
+
+let courseObjects = [
+    { name: "HTML", teacher: "" },
+    { name: "JavaScript", teacher: "" },
+    { name: "Back-end", teacher: "" },
+    { name: "CSS", teacher: "" },
+    { name: "Arbetsmetodik", teacher: "" }
 ]
 
 let courseList = document.getElementById("admin-educations-list");
@@ -24,13 +24,32 @@ window.addEventListener('load', function () {
     printTeachers();
 });
 
+function attachTeacherToCourse() {
+    let courseName = courseTeacher.options[courseTeacher.selectedIndex].text;
+    let teacherName = teacherSelect.options[teacherSelect.selectedIndex].text;
+    let courseObject = findCourseObject(courseName);
+    courseObject.teacher = teacherName;
+    courseList.innerHTML = "";
+    printCourses();
+    modal2.style.display = "none";
+}
+
+function findCourseObject(courseName) {
+    for (let i = 0; i < courseObjects.length; i++) {
+        if (courseObjects[i].name === courseName) {
+            return courseObjects[i];
+        }
+    }
+}
+
 function printCourses() {
-    for (var i = 0; i < courses.length; i++) {
+    for (let i = 0; i < courseObjects.length; i++) {
         let li = document.createElement('li');
-        let a = document.createElement('a');    
+        let a = document.createElement('a');
         let strong = document.createElement('strong');
-        let courseName = courses[i];
-        strong.innerHTML = courseName;
+        let courseName = courseObjects[i].name;
+        let teacherName = courseObjects[i].teacher;
+        strong.innerHTML = `${courseName} - ( ${teacherName} )`;
         a.appendChild(strong);
         li.appendChild(a);
         courseList.appendChild(li);
@@ -38,21 +57,22 @@ function printCourses() {
 }
 
 function printCoursesToModal() {
-    for (var i = 0; i < courses.length; i++) {
+    for (let i = 0; i < courseObjects.length; i++) {
         let option = document.createElement('option');
-        option.value = courses[i];
-        option.innerHTML = courses[i];
+        option.value = courseObjects[i].name;
+        option.innerHTML = courseObjects[i].name;
         courseNameRemove.appendChild(option);
         option = document.createElement('option');
-        option.value = courses[i];
-        option.innerHTML = courses[i];
+        option.value = courseObjects[i].name;
+        option.innerHTML = courseObjects[i].name;
         courseTeacher.appendChild(option);
     }
 }
 
 function addCourse(courseName) {
     if (courseName !== "") {
-        courses.push(courseName);
+        let course = { name : courseName, teacher: "" };
+        courseObjects.push(course);
         modal2.style.display = "none";
         clearCourses();
         clearModalTextBox();
@@ -75,17 +95,18 @@ function clearModalTextBox() {
 function removeCourse() {
     let c = document.getElementById("educationNameRemove");
     let courseToRemove = c.options[c.selectedIndex].text;
-    let index = courses.indexOf(courseToRemove);
-    courses.splice(index, 1);
-    modal2.style.display = "none";    
+    let courseObjectToRemove = findCourseObject(courseToRemove);
+    let index = courseObjects.indexOf(courseObjectToRemove);
+    courseObjects.splice(index, 1);
+    modal2.style.display = "none";
     clearCourses();
     clearModalTextBox();
     printCourses();
     printCoursesToModal();
-} 
+}
 
-function printTeachers () {
-    for (var i = 0; i < teachers.length; i++) {
+function printTeachers() {
+    for (let i = 0; i < teachers.length; i++) {
         let option = document.createElement('option');
         option.value = teachers[i];
         option.innerHTML = teachers[i];
