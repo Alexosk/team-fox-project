@@ -51,15 +51,7 @@
     @media screen and (max-width: 1000px){
         table tr td {
             font-size: 75%;
-        }/*
-        table th:nth-child(2),
-        table th:nth-child(4){
-            display: none;
         }
-        table td:nth-child(2),
-        table td:nth-child(4){
-            display: none;
-        }*/
     }
 
     .container {
