@@ -49,7 +49,10 @@ function printCourses() {
         let strong = document.createElement('strong');
         let courseName = courseObjects[i].name;
         let teacherName = courseObjects[i].teacher;
-        strong.innerHTML = `${courseName} - ( ${teacherName} )`;
+        if (teacherName)
+        strong.innerHTML = `${courseName}, Lärare: ${teacherName} `;
+        else
+        strong.innerHTML = `${courseName}`;        
         a.appendChild(strong);
         li.appendChild(a);
         courseList.appendChild(li);
