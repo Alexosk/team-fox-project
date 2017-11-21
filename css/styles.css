@@ -121,26 +121,14 @@ h3{
   background: -webkit-linear-gradient(left, rgba(136,193,234,1) 0%,rgba(162,200,229,0.48) 36%,rgba(162,200,229,0) 69%);
   margin-top: 5px;
 }
-.perk p{
-  margin-left: 10px;
-  color: black;
-}
-.perkLeft{
+.perkLeft, .perkRight{
   background: -webkit-linear-gradient(left, rgba(30,87,153,1) 6%,rgba(30,87,153,0.07) 93%,rgba(125,185,232,0) 100%);
   margin-top: 5px;
 }
-.perkLeft p{
+.perk p, .perkLeft p, .perkRight p{
   margin-left: 10px;
   color: black;
 }
-.perkRight{
-  background: -webkit-linear-gradient(left, rgba(30,87,153,1) 6%,rgba(30,87,153,0.07) 93%,rgba(125,185,232,0) 100%);
-  margin-top: 5px;
-}
-.perkRight p{
-  margin-left: 10px;
-}
-
 
 
 
@@ -294,16 +282,3 @@ input[type="submit"]:hover {
   font-size: 14px;
 }
 
-
-
-/*KANSKE KOMMER ANVÄNDA SENARE
-.readMore{
-    background-color: #72c3da;
-    float: right;
-    padding: 5px;
-    border-radius: 3px;
-}
-.readMore:hover{
-    background-color: #3faecc;
-}
-*/

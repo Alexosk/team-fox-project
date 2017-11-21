@@ -37,26 +37,3 @@ function provFunction(provPlaced){
       e.style.display = "block";
 }
 
-
-
-/*******Används för Admin-checkboxen*******/
-/*
-var checkbox = document.getElementById("adminBox");
-var c = document.getElementById("courseAndClasses");
-
-checkbox.addEventListener( 'change', function(event) {
-    if(this.checked) {
-        c.style.display = "none"; // Checkbox is checked..
-    }else{
-      c.style.display = "block"; // Checkbox is unchecked..
-    }
-});
-
-
-document.getElementById("adminBox").onchange = function() {displayStuff()};
-
-function displayStuff() {
-    var x = document.getElementById("courseAndClasses");
-    x.value = x.style.display = "block";
-}
-*/

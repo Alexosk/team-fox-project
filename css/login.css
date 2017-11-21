@@ -163,9 +163,6 @@ h2{
   input[type=submit]:hover {
     background: #43A047;
   }
-  body {
-    font-family: "Roboto", sans-serif;
-  }
   #errorMessageDiv {
     font-family: "Roboto", sans-serif;
     font-size: smaller;
