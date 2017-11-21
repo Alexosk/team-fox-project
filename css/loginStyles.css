@@ -1184,6 +1184,7 @@ input.heading {
 #removeButton {
   background-color: crimson;
   margin-left: 1vh;
+  color: white;
 }
 #removeButton:hover {
   background-color: red;
