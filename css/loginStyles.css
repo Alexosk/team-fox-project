@@ -348,7 +348,6 @@ input[type="submit"]:hover {
   margin: 1em;
   border: 0 solid #562e84;
   border-radius: 0px;
-  /*flex: 1;*/
   box-shadow: 1px 1px 2px #aaa;
   border-radius: 0;
   padding: 0.75rem;
@@ -434,7 +433,7 @@ input[type="submit"]:hover {
   padding: 0;
 }
 
-.assignments ul li, .assignments a, .week-food ul li {
+.assignments a {
   margin: 1vh;
 }
 
@@ -442,6 +441,7 @@ input[type="submit"]:hover {
   border: 1px solid #000;
   background-color: #fff;
   box-shadow: 0 0 4px #000;
+  margin: 1vh;
 }
 
 /* Alex code ends */
