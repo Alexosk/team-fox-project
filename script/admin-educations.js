@@ -56,7 +56,7 @@ function clearModalTextBox() {
     educationName.value = "";
 }
 
-function removeEducation(){
+function removeEducation() {
     let e = document.getElementById("educationNameRemove");
     let educationToRemove = e.options[e.selectedIndex].text;
     let index = educations.indexOf(educationToRemove);
