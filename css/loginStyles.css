@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Helvetica", "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;

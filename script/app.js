@@ -33,7 +33,7 @@ function printMessageToDOM(color, message) {
 }
 
 function redirectToStudent() {
-    window.location = "student.html";
+    window.location = "student/student.html";
 }
 
 function redirectToTeacher() {
