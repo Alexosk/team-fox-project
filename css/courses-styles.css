@@ -38,7 +38,8 @@
         color: black;
     }
     td a:hover{
-        color: red;
+        color: purple;
+        font-weight: bold;
     }
     td{
         color: black;
