@@ -2,7 +2,7 @@
     margin: 0;
 }
 body {
-    font-family: "Helvetica";
+    font-family: "Helvetica", sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -80,7 +80,7 @@ a{
 }
 
 h2{
-    font-style: 'Geneva';
+
     font-size: 70px;
     border-bottom: solid #3faecc 1px;
     border-bottom-width: 2px;
@@ -164,6 +164,5 @@ h2{
     background: #43A047;
   }
   #errorMessageDiv {
-    font-family: "Roboto", sans-serif;
-    font-size: smaller;
+    font-family: "Helvetica", sans-serif;
   }

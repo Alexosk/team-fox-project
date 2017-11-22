@@ -117,7 +117,7 @@ header ul {
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 660px) {
   .hamburger-btn {
     display: inline-block;
     cursor: pointer;
@@ -1090,7 +1090,8 @@ input.heading {
 }
 
 #container span {
-  background-color: #b3b3b3;
+  border: 1px solid black;
+  background-color: lightgrey;
   padding: 3px;
 }
 
@@ -1136,6 +1137,14 @@ input.heading {
 .student-list li:hover {
   color: grey;
 }
+/*.deleteIcon {
+  background-image: url("../images/trash.png");
+  display: inline-block;
+  width: 5vh;
+  height: 5vh;
+  cursor: pointer;
+}*/
+
 .student-list li::before {
   content: "\2715  ";
   color: red;

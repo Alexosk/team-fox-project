@@ -276,9 +276,8 @@ input[type="submit"]:hover {
 }
 
 #errorMessageDiv {
-  font-family: "Roboto", sans-serif;
-  font-size: smaller;
+  font-family: "Helvetica", sans-serif;
   padding-top: 5px;
-  font-size: 14px;
+  font-size: 2.5vh;
+  font-weight: normal;
 }
-

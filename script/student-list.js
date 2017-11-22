@@ -42,7 +42,7 @@ studentList[0].appendChild(ul);
 
 for (var i = 0; i < students.length; i++) {
   let li = document.createElement('li');
-  li.innerHTML = students[i];
+  li.innerHTML = "<span class='deleteIcon'>&nbsp;</span>"+students[i];
   ul.appendChild(li);
 }
 });

@@ -21,7 +21,7 @@ var login = function () {
         return false;
     }
     else {
-        setTimeout(printMessageToDOM, 1500, "red", "Invalid user name or password\n Try username: student password: 123");
+        setTimeout(printMessageToDOM, 1500, "red", "Invalid user name or password");
         printMessageToDOM("black", "Checking DB.....");
         return false;
     }
