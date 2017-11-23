@@ -1273,3 +1273,14 @@ h2{
   margin-bottom:1em;
   margin-top:1em;
 }
+.selectBtn {
+  outline: 0;
+  overflow: hidden;
+  height: 4vh;
+  width: 15vh;
+  font-size: 2vh;
+  background: white;
+  color: black;
+  border: 1px solid #000;
+
+}
