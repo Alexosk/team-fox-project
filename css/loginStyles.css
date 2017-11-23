@@ -1283,5 +1283,7 @@ h2{
   background: white;
   color: black;
   border: 1px solid #000;
-
+}
+.admin.selectBtn {
+  width: 20vh;
 }
