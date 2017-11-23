@@ -63,7 +63,9 @@
         <h2>Alla Studenter</h2>
         <div class="line"></div>
         <div id="allStudents"></div>
-        <a class="a-button" id="studentsButton" onclick="showStudents()">Visa Studenter</a>
+        <div class="page-buttons">
+          <a class="a-button" id="studentsButton" onclick="showStudents()">Visa Studenter</a>
+        </div>
       </div>
       <div class="boxes">
         <h2>Skapa Grupper</h2>
@@ -98,11 +100,14 @@
                                     <option value="20">20</option>
                                 </select>
               </li>
-              <li>
-                <a class="a-button" onclick="createGroups()">Generera grupper</a>
-              </li>
             </ul>
+
           </fieldset>
+
+          <div class="page-buttons">
+          <a class="a-button" onclick="createGroups()">Generera grupper</a>
+        </div>
+
         </form>
         <div id="calculatedGroups"></div>
         <div id="groupDivContainer"></div>

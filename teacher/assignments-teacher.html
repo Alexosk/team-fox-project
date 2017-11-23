@@ -79,8 +79,11 @@
 
           <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
 
-          <a class="a-button" onclick="newsFunction('newsPlaced')">Lägg till</a>
-          <div id="newsPlaced">Uppgift Publicerad!</div>
+          <div class="page-buttons">
+            <a class="a-button" onclick="newsFunction('newsPlaced')">Lägg till</a>
+            <div id="newsPlaced">Uppgift Publicerad!</div>
+          </div>
+
 
         </div>
       </div>
@@ -91,7 +94,12 @@
           <h2>Skapa prov</h2>
           <br>
           <fieldset class="publishDate">
-            <legend>Startdatum och provtid</legend>
+            <legend>Startdatum</legend>
+            <input type="datetime-local" name="publishDate">
+          </fieldset>
+          <br>
+          <fieldset class="publishDate">
+            <legend>Provtid</legend>
             <input type="datetime-local" name="publishDate">
           </fieldset>
           <br>

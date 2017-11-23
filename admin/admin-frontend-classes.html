@@ -78,7 +78,9 @@
 
             <!--POP-UP-->
             <div class="columns">
-              <a id="myBtn" class="a-button" href="#">Redigera klasserna</a>
+              <div class="page-buttons">
+              <a id="myBtn" class="a-button" href="#">Redigera</a>
+            </div>
               <div id="myModal" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -92,7 +94,11 @@
 
                   <div class="popup-student">
                     <select id="educationNameRemove"></select>
-                    <a href="#" class="a-button" id="removeButton" onclick="removeClass()">Ta bort klass</a>
+
+                    <div class="page-buttons">
+                    <a  class="a-button" id="removeButton" href="#" onclick="removeClass()">Ta bort klass</a>
+                  </div>
+
                   </div>
                 </div>
               </div>

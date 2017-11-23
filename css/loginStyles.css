@@ -1087,6 +1087,7 @@ input.heading {
 
 .armida-project {
   align-items: center;
+  padding: 7vh;
 }
 
 #container span {
@@ -1155,8 +1156,8 @@ input.heading {
 
 #removeButton {
   background-color: crimson;
-  margin-left: 1vh;
-  color: white;
+  margin-left: 3vh;
+  color: lightgrey;
 }
 
 #removeButton:hover {
@@ -1231,20 +1232,25 @@ input.heading {
   color: gray;
 }
 
+.page-buttons {
+  display: inline-flex;
+  float: right;
+  justify-content: flex-end;
+}
 .a-button {
-  background-color: lightgrey;
-  display: inline-block;
-  color: black;
+  background-color: #2b88a1;
+  color: white;
   padding: 1vh;
-  margin: 2vh 0 2vh 0;
+  margin: 3vh 2vh 2vh 2vh;
   text-align: center;
   box-shadow: 0 0 4px #000;
+  align-items: flex-end;
 }
-
 .a-button:hover {
-  background-color: grey;
+  background-color: #206679;
   color: white;
 }
+
 .fileUpload {
     position: relative;
     overflow: hidden;
