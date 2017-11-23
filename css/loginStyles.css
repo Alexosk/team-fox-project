@@ -1287,3 +1287,17 @@ h2{
 .admin.selectBtn {
   width: 20vh;
 }
+
+/*****finns på teacher-submission-stuDentsion******/
+#hand-in{
+  margin-left: 20px;
+}
+#hand-in a:hover{
+  color: white;
+  transition: 0.3s;
+  border-radius: 5px;
+  padding:5px;
+  background-color: #562E84;
+}
+/*********************/
+
