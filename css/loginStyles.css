@@ -1245,6 +1245,7 @@ input.heading {
   text-align: center;
   box-shadow: 0 0 4px #000;
   align-items: flex-end;
+  outline: none;
 }
 .a-button:hover {
   background-color: #206679;
