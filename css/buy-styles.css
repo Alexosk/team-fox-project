@@ -65,6 +65,44 @@ a{
 .space {
     height: 5em;
 }
+.hamburger-btn {
+    display: none;
+    position: absolute;
+    height: 3vh;
+    width: 3vh;
+    right: 5vh;
+    line-height: 3vh;
+    font-size: 3vh;
+    bottom: 4vh;
+    text-align: center;
+    padding: 1vh;
+    border-radius: 0.9rem;
+}
+#main-nav-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 660px) {
+  .hamburger-btn {
+      display: inline-block;
+      cursor: pointer;
+  }
+  #nav #main-nav-toggle + ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: white;
+      right: 0;
+      z-index: 1;
+  }
+  #nav #main-nav-toggle:checked + ul {
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+}
+
+/*HAMBURGER ENDS */
 
 #login {
     font-weight: bold;
@@ -171,7 +209,3 @@ h2{
   input[type=submit]:hover {
     background: #43A047;
   }
-
-
-
-
