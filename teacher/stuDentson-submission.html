@@ -86,10 +86,15 @@
 
           <br>
           <div class="page-buttons">
-            <a class="a-button" onclick="provFunction('provPlaced')">Betygsätt</a>
-          
-            <div id="provPlaced">Uppgiften betygsatt!</div>
-        
+            <a id="myBtn" class="a-button" onclick="newsFunction('newsPlaced')">Lägg till</a>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1> Uppgiften är betygsatt!</h1>
+              </div>
+            </div>
+          </div>
+
           </div>
 
 
@@ -109,7 +114,7 @@
       <span>Aram</span>
     </p>
   </footer>
-  <script src="../script/randomNumber.js"></script>
+  <script src="../script/student-list.js"></script>
   <script src="../script/app.js"></script>
 
 </body>
