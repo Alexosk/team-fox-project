@@ -97,7 +97,7 @@
         <div class="page-buttons">
           <a class="a-button" href="assignments-teacher.html">Skapa ny</a>
         </div>
-        
+
       </div>
     </div>
 
@@ -118,12 +118,14 @@
           <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
 
           <div class="page-buttons">
-            <a class="a-button" onclick="newsFunction('newsPlaced')">Lägg till</a>
+            <a id="myBtn" class="a-button" onclick="newsFunction('newsPlaced')">Lägg till</a>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1> Din uppgift är sparad!</h1>
+              </div>
+            </div>
           </div>
-
-          <div id="newsPlaced">Nyhet tillagd i nyhetsflödet!</div>
-
-
         </div>
       </div>
 
@@ -187,7 +189,7 @@
     </p>
   </footer>
   <script src="../script/checkBoxColor.js"></script>
-  <script src="../script/randomNumber.js"></script>
+  <script src="../script/student-list.js"></script>
 </body>
 
 </html>

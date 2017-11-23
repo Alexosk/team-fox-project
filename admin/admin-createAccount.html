@@ -71,7 +71,7 @@
             <div class="line"></div>
             <br>
 
-            <input class="box-grade" type="radio" name="myCheckbox" /> - Elev
+            <input class="box-grade" type="radio" name="myCheckbox" /> - Student
             <input class="box-grade" type="radio" name="myCheckbox" /> - Lärare
             <input class="box-grade" id="adminBox" type="radio" name="myCheckbox" /> - Admin
 
@@ -123,13 +123,16 @@
           </div>
 
           <br>
-          <div class="page-buttons">
-            <a class="a-button" onclick="newsFunction('newsPlaced')">Spara</a>
-          </div>
           
-          <div id="newsPlaced">Konto Skapat!</div>
-
-
+          <div class="page-buttons">
+            <a id="myBtn" class="a-button">Lägg till</a>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1> Konto Skapat!</h1>
+              </div>
+            </div>
+          </div>
 
           <div id="columns">
             <br>
@@ -150,7 +153,7 @@
     </p>
   </footer>
   <script src="../script/app.js"></script>
-  <script src="../script/randomNumber.js"></script>
+  <script src="../script/student-list.js"></script>
 </body>
 
 </html>

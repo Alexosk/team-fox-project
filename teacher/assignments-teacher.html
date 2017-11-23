@@ -80,8 +80,13 @@
           <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
 
           <div class="page-buttons">
-            <a class="a-button" onclick="newsFunction('newsPlaced')">Lägg till</a>
-            <div id="newsPlaced">Uppgift Publicerad!</div>
+            <a id="myBtn" class="a-button" onclick="newsFunction('newsPlaced')">Lägg till</a>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1> Din uppgift är sparad!</h1>
+              </div>
+            </div>
           </div>
 
 
@@ -105,11 +110,18 @@
           <br>
 
           <input type="text" name="heading" class="heading" placeholder="Skriv din rubrik här">
-          <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
+          <textarea class="paragraph"></textarea>
 
-          <a class="a-button" onclick="provFunction('provPlaced')">Lägg till</a>
-          <div id="provPlaced">Prov Publicerad!</div>
+          <div class="page-buttons">
+            <a id="myBtn2" class="a-button">Lägg till</a>
+            <div id="myModal2" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1> Ditt prov är sparad! </h1>
 
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -121,7 +133,9 @@
       <span>Aram</span>
     </p>
   </footer>
-  <script src="./script/app.js"></script>
+  <script src="../script/app.js"></script>
+  <script src="../script/student-list.js"></script>
+  <script src="../script/student-list2.js"></script>
   <script src="../script/checkBoxColor.js"></script>
   <script src="../script/randomNumber.js"></script>
   <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>

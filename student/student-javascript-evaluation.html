@@ -297,7 +297,14 @@
         </div>
 
         <div class="page-buttons">
-          <a class="a-button" onclick="evaluation()" href="surveyok.html">Skicka in</a>
+          <a id="myBtn" class="a-button" onclick="evaluation()" href="#">Skicka in</a>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+                <h1> Din kursutvärdering är inskickat <br> <br> Tack för din medverkan! </h1>
+            </div>
+          </div>
         </div>
 
       </form>
@@ -311,6 +318,7 @@
   </footer>
 
   <script src="../script/evaluateForm.js"></script>
+  <script src="../script/student-list.js"></script>
 </body>
 
 </html>

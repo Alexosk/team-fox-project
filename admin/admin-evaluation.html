@@ -307,10 +307,14 @@
       </div>
 
       <div class="page-buttons">
-        <a class="a-button" onclick="newsFunction('newsPlaced')">Spara</a>
+        <a id="myBtn" class="a-button">Lägg till</a>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1> Kursutvärdering är upplagd!</h1>
+          </div>
+        </div>
       </div>
-      <div id="newsPlaced">Enkät uppdaterad!</div>
-
     </div>
   </div>
 
@@ -318,10 +322,12 @@
     <h4>&#169;Team Fox 2017</h4>
     <p>Alexandra, Rikard, Paulina, Leo, <span>Benjamin</span>, <span>Aram</span></p>
   </footer>
+
+  <script src="../script/student-list.js"></script>
   <script src="../script/changeSurvey.js"></script>
-  <script src="../script/randomNumber.js"></script>
   <script src="../script/evaluateForm.js"></script>
   <script src="../script/app.js"></script>
+
 </body>
 
 </html>

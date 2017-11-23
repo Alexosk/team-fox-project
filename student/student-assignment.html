@@ -99,15 +99,22 @@
         <div class="columns">
           <div class="column">
             <div class="page-buttons">
-              <a class="a-button" onclick="newsFunction('newsPlaced')">Skicka in</a>
+              <a id="myBtn" class="a-button" onclick="newsFunction('newsPlaced')">Skicka in</a>
             </div>
-            <div id="newsPlaced">Inlämning Mottagen!</div>
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                  <h1> Din uppgift är inskickat! </h1>
+              </div>
+            </div>
           </div>
         </div>
-
-
       </div>
+
+
     </div>
+  </div>
   </div>
 
   <footer>
@@ -116,6 +123,7 @@
   </footer>
   <script src="../script/app.js"></script>
   <script src="../script/randomNumber.js"></script>
+  <script src="../script/student-list.js"></script>
 </body>
 
 </html>
