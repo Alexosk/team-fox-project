@@ -742,6 +742,10 @@ article {
 .class-info table tr {
   text-align: left;
 }
+.class-info table th {
+  text-align: left;
+  font-size: 12px;
+}
 
 .class-info {
   display: flex;
