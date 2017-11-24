@@ -74,18 +74,17 @@
           <div class="line"></div>
           <br>
           <h3>
-              Generera Lektionskod  
+              Generera Lektionskod
           </h3>
           <!--DATE DROPDOWN-->
           <div class="flexContainer">
-            
+
           <input type="date">
 
             <select class="selectBtn">
-              <option>Front-End</option>
-              <option>Back-End</option>
-              <option>Python</option>
-              <option>MatLab</option>
+              <option>Front-End FE-16</option>
+              <option>Front-End FE-17</option>
+              <option>Back-End BE-17</option>
             </select>
 
             <a class="a-button" onclick="randomNumber()">Generera lektionskod</a>
@@ -95,14 +94,9 @@
 
           <div class="tables">
 
-            <br>
-            <br>
-
             <h3>Närvarande Elever</h3>
             <br>
             <div class="line"></div>
-
-            <br>
 
             <table id="table">
               <tr>
@@ -331,13 +325,10 @@
             </table>
           </div>
           <!--Tables end-->
-          <div class="columns">
-            <div class="column">
-              <div class="page-buttons">
+
+              <div class="flexContainer-flexEnd">
                 <a class="a-button" onclick="provFunction('provPlaced')">Spara</a>
               </div>
-            </div>
-          </div>
 
           <div id="provPlaced">Närvaro tagen!</div>
 
@@ -350,24 +341,23 @@
       <div class="columns">
         <div class="column">
           <!--DATE DROPDOWN-->
-          <fieldset class="date">
-            <legend>Välj datum och kurs</legend>
+          <h3>Välj datum och kurs</h3>
+          <div class="flexContainer">
 
-            <input type="week" id="week">
+            <input type="week">
 
             <select class="selectBtn">
-              <option>Front-End</option>
-              <option>Back-End</option>
-              <option>Python</option>
-              <option>MatLab</option>
-            </select> -
+              <option>Front-End FE-16</option>
+              <option>Front-End FE-17</option>
+              <option>Back-End BE-17</option>
+            </select>
 
-            <a class="a-button" id="showTableBtn" onclick="showAttnTable('tableLower')">Submit</a>
+            <a class="a-button" id="showTableBtn" onclick="showAttnTable('tableLower')">Visa&nbsp;veckans&nbsp;närvaro</a>
 
-          </fieldset>
-          <!--DATE DROPDOWN END-->
+          </div>
+
           <br>
-          <div class="tables">
+
 
             <h3>Klasslista</h3>
             <br>
@@ -960,17 +950,11 @@
                 </td>
               </tr>
             </table>
-          </div>
-          <!--Tables end-->
 
-          <br>
-          <div class="columns">
-            <div class="column">
-              <div class="page-buttons">
+            <div class="flexContainer-flexEnd">
                 <a class="a-button" onclick="newsFunction('newsPlaced')">Spara</a>
               </div>
-            </div>
-          </div>
+
 
           <div id="newsPlaced">Närvaro sparat!</div>
 

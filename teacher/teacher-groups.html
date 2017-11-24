@@ -64,10 +64,12 @@
         <h2>Skapa Grupper</h2>
         <div class="line"></div>
         <form id="groupsForm">
+
           <fieldset>
+
             <ul>
               <li>
-                Antal&nbsp;elever&nbsp;i&nbsp;varje&nbsp;grupp:
+                <h3 class="headingWithMargin">Antal&nbsp;elever&nbsp;i&nbsp;varje&nbsp;grupp:</h3>
               </li>
               <li>
                 <select class="selectBtn">
@@ -94,12 +96,11 @@
                                 </select>
               </li>
             </ul>
-
           </fieldset>
 
-          <div class="page-buttons">
-          <a class="a-button" onclick="createGroups()">Generera grupper</a>
-        </div>
+          <div class="flexContainer-flexEnd">
+            <a class="a-button" onclick="createGroups()">Generera grupper</a>
+          </div>
 
         </form>
         <div id="calculatedGroups"></div>
