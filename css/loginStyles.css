@@ -619,32 +619,9 @@ h6 {
   text-decoration: underline;
 }
 
-.line-black {
-  background-color: #ccc;
-  height: 1px;
-  width: 100%;
-  border-radius: 15px;
-}
-
 .finished {
   color: red;
   font-style: italic;
-}
-
-.java-table, th, td {
-  border: 1px solid #ddd;
-  border-collapse: collapse;
-  padding: 10px;
-  margin-bottom: 15px;
-  font-size: 15px;
-}
-
-.java-table th {
-  text-align: left;
-}
-
-.java-table tbody tr:nth-child(odd) {
-  background: #ddd;
 }
 
 div .slut {
