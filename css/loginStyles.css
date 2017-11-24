@@ -262,6 +262,9 @@ footer span {
   .java-table td:nth-child(2) {
     display: none;
   }
+  #modal-content-id{
+    width: 80%;
+  }
 }
 
 .triangle {
