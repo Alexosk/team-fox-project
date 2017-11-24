@@ -1093,10 +1093,13 @@ input.heading {
   padding: 7vh;
 }
 
-#container span {
+.border-box span {
+  display: inline-flex;
+  flex-wrap: wrap;
   border: 1px solid black;
   background-color: lightgrey;
-  padding: 3px;
+  padding: 1vh;
+  margin: 2vh;
 }
 
 #instructions {
