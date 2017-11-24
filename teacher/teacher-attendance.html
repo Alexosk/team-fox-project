@@ -73,22 +73,24 @@
           <h2>Närvaro</h2>
           <div class="line"></div>
           <br>
-
+          <h3>
+              Generera Lektionskod  
+          </h3>
           <!--DATE DROPDOWN-->
-          <fieldset class="date">
-            <legend>Generera Lektionskod </legend>
-          <input type="datetime-local">
+          <div class="flexContainer">
+            
+          <input type="date">
 
             <select class="selectBtn">
               <option>Front-End</option>
               <option>Back-End</option>
               <option>Python</option>
               <option>MatLab</option>
-            </select> -
+            </select>
 
-            <a class="a-button" onclick="randomNumber()">Generera lektion kod</a>
-            <span id="generateNum"></span>
-          </fieldset>
+            <a class="a-button" onclick="randomNumber()">Generera lektionskod</a>
+          </div>
+          <h2 id="generateNum"></h2>
           <!--DATE DROPDOWN END-->
 
           <div class="tables">
