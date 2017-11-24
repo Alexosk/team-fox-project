@@ -638,7 +638,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.question textarea {
+.question textarea, .question1 textarea{
   height: 10vh;
   width: 60%;
   border: 1px solid #000;
@@ -647,10 +647,10 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-  .question ul {
+  .question ul, .question1 ul{
     flex-direction: column;
   }
-  .question textarea {
+  .question textarea, .question1 textarea {
     width: 100%;
   }
   .class-info table tr td {
