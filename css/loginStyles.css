@@ -611,23 +611,28 @@ footer {
   margin: 2vh 0 2vh 2vh;
 }
 
+.question1 {
+  padding: 3vh;
+  margin: 0 25px;
+}
+
 .question {
   border-top: 1px solid #ccc;
   padding: 3vh;
   margin: 0 25px;
 }
 
-.question ul {
+.question ul, .question1 ul {
   padding: 0;
   display: flex;
   list-style-type: none;
 }
 
-.question ul li {
+.question ul li, .question1 ul li {
   margin-right: 2vh;
 }
 
-.question textarea, .question ul, input[type="radio"] {
+.question textarea, .question ul, .question1 ul, input[type="radio"] {
   margin-top: 2vh;
   margin-right: 2vh;
   flex-wrap: wrap;
