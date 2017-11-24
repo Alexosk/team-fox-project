@@ -66,44 +66,40 @@
       <div class="armida-project">
         <div class="column">
 
-            <h2>Välj Klasser</h2>
-            <div class="line"></div>
-            <div class="feedback">
+          <h2>Välj Klasser</h2>
+          <div class="line"></div>
+          <div class="feedback">
 
-              <ul id="admin-educations-list">
+            <ul id="admin-educations-list">
 
-              </ul>
+            </ul>
 
-            </div>
+          </div>
 
-            <!--POP-UP-->
-            <div class="columns">
-              <div class="page-buttons">
+          <!--POP-UP-->
+          <div class="columns">
+            <div class="page-buttons">
               <a id="myBtn" class="a-button" href="#">Redigera</a>
             </div>
-              <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="flexContainer-flexEnd">
                   <span class="close">&times;</span>
-                  <div>
-                    <div>
-                      <input id="educationName" type="text" placeholder="Namn">
-                      <a class="a-button" href="#" onclick="addClass(document.getElementById('educationName').value)">Lägg till klass</a>
-                    </div>
-                  </div>
-
-                  <div class="popup-student">
-                    <select id="educationNameRemove"></select>
-
-                    <div class="page-buttons">
-                    <a  class="a-button" id="removeButton" href="#" onclick="removeClass()">Ta bort klass</a>
-                  </div>
-
-                  </div>
+                </div>
+                <div class="flexContainer">
+                  <input id="educationName" type="text" placeholder="Namn">
+                  <a class="a-button" href="#" onclick="addClass(document.getElementById('educationName').value)">Lägg till klass</a>
+                  <div class="line"></div>
+                </div>
+                <div class="flexContainer">
+                  <select id="educationNameRemove"></select>
+                    <a class="a-button" id="removeButton" href="#" onclick="removeClass()">Ta bort klass</a>
                 </div>
               </div>
             </div>
-            <!--POP-UP END-->
+          </div>
+          <!--POP-UP END-->
 
           <!--Column END-->
         </div>

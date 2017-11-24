@@ -299,7 +299,7 @@ footer span {
 }
 
 input[type="text"], input[type="password"], #educationNameRemove, .adminSelect {
-  width: 50%;
+  /*width: 50%;*/
   /*height: 30px;*/
   padding-left: 5px;
   border: 0px;
@@ -1286,4 +1286,11 @@ h2 {
 }
 .headingWithMargin {
   margin: 1em 0 1em 0;
+  vertical-align: center;
+}
+.classWithBorder{
+  border: 1px solid black;
+}
+.classWithRightMargin{
+  margin-right: 1em;
 }

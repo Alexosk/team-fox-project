@@ -118,36 +118,26 @@
 
           <!-- Modal content -->
           <div class="modal-content">
-            <span class="close">&times;</span>
-            <div>
-              <div>
-                <input id="educationName" type="text" placeholder="Namn">
-                <a class="a-button" href="#" onclick="addCourse(document.getElementById('educationName').value)">Lägg till kurs</a>
-              </div>
+            <div class="flexContainer-flexEnd">
+              <span class="close">&times;</span>
             </div>
-
-            <br>
-            <div>
+            <div class="flexContainer">
+              <input id="educationName" type="text" placeholder="Namn">
+              <input type="date">
+              <input type="date">
+              <a class="a-button" href="#" onclick="addCourse(document.getElementById('educationName').value)">Lägg till kurs</a>
+              <div class="line"></div>
+            </div>
+            <div class="flexContainer">
               <select class="adminSelect" id="courseTeacher"></select>
               <select class="adminSelect" id="teacherSelect"></select>
               <a class="a-button" onclick="attachTeacherToCourse()" href="#">Knyt lärare till kurs</a>
+              <div class="line"></div>
             </div>
-
-            
-            <div>
-              <fieldset>
-              <legend>Välj start och slutdatum</legend>
-              <input type="datetime-local"> <input type="datetime-local">            
-              <legend></legend>
-              </fieldset>             
-            </div>
-            <br>
-
-            <div>
+            <div class="flexContainer">
               <select class="adminSelect" id="educationNameRemove"></select>
               <a class="a-button" id="removeButton" onclick="removeCourse()" href="#">Ta bort kurs</a>
             </div>
-
           </div>
         </div>
       </div>
