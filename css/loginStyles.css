@@ -591,48 +591,9 @@ h6 {
   font-size: 18px;
 }
 
-/*JAVASCRIPT*/
-
-.boxer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 1vh;
-  padding: 2vh;
-  background-color: #fff;
-  box-shadow: 0 0 4px #aaa;
-  border: 1px solid #fff;
-}
-
-.kurs {
-  font-size: 30px;
-}
-
-.course {
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-}
-
-.course:hover {
-  color: blue;
-  text-decoration: underline;
-}
-
-.finished {
-  color: red;
-  font-style: italic;
-}
-
-div .slut {
-  text-align: right;
-}
-
-footer h4 {
+footer {
   color: #FDB722;
 }
-
-/*JAVASCRIPT ENDS*/
 
 /*EVALUATION.HTML*/
 
