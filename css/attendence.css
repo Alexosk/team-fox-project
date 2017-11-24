@@ -29,6 +29,8 @@ a{
 }
 td a:hover{
     color: #562E84;
+    font-weight: bold;
+    font-size: 13.5px;
 }
 td{
     color: black;
