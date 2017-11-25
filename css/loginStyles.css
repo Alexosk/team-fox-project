@@ -253,15 +253,6 @@ footer span {
     margin: 1em;
     padding: 0;
   }
-  .java-table {
-    font-size: 80%;
-  }
-  .java-table th:nth-child(2) {
-    display: none;
-  }
-  .java-table td:nth-child(2) {
-    display: none;
-  }
   #modal-content-id{
     width: 80%;
   }
@@ -553,6 +544,13 @@ ul {
 
 #smileySurvey, #smileySurvey ul, #surveys, #weeklyAlert {
   display: flex;
+}
+#weeklyAlert {
+  width: 100%;
+  background-color: white;
+  border: 2px solid red;
+  padding: 1em;
+  margin-top: 1em;
 }
 
 #smileySurvey .boxes {
@@ -1106,21 +1104,6 @@ input.heading {
   color: grey;
 }
 
-/*.deleteIcon {
-  background-image: url("../images/trash.png");
-  display: inline-block;
-  width: 5vh;
-  height: 5vh;
-  cursor: pointer;
-}*/
-
-.student-list li::before {
-  content: "\2715  ";
-  color: red;
-  margin-right: 1vh;
-  cursor: pointer;
-}
-
 #removeButton {
   background-color: crimson;
   color: white;
@@ -1207,7 +1190,7 @@ input.heading {
   box-shadow: 0 0 4px #000;
   /*align-items: flex-end;*/
   outline: none;
-  margin: 1em 0 1em 0;
+  margin: 1em;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -1261,13 +1244,13 @@ h2 {
   align-items: center;
 }
 
-.flexContainer{
+.flexContainer-spaceBetween{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 1em 0 1em 0;
 }
-.flexContainer-space-around{
+.flexContainer-spaceAround{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -1282,6 +1265,7 @@ h2 {
 .flexContainer-flexEnd {
   display: flex;
   justify-content: flex-end;
+  margin: 1em 0 1em 0;
 }
 .headingWithMargin {
   margin: 1em 0 1em 0;
