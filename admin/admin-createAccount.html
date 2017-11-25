@@ -63,7 +63,7 @@
 
   <div id="content">
     <div class="columns">
-      <div class="armida-project">
+      <div class="boxes">
         <div class="column">
           <div class="grade-check">
             <h2>Skapa konto</h2>
@@ -76,11 +76,11 @@
               <input class="box-grade" id="adminBox" type="radio" name="myCheckbox"> -&nbsp;Admin
             </div>
 
-            <br><br>
+            <br>
 
-            <div class="grade-check">
-              <div id="courseAndClasses">
-                <label>Kurs - </label>
+            <div>
+              <div class="flexContainer-spaceBetween">
+                <div class="headingWithMargin">Kurs </div>
                 <select class="selectBtn">
                   <option>--------</option>
                   <option>Front-End</option>
@@ -88,9 +88,8 @@
                   <option>Python</option>
                   <option>MatLab</option>
                 </select>
-                <br>
-                <br>
-                <label>Klass - </label>
+
+                <div class="headingWithMargin">Klass </div>
                 <select class="selectBtn">
                   <option>--------</option>
                   <option>FE-17</option>
@@ -108,14 +107,12 @@
             <br>
             <input type="text" placeholder="Skriv förnamn här">
             <input type="text" placeholder="Skriv Efternamn här">
-            <br><br>
+
             <h2> Ange Kontaktinformation: </h2>
             <br>
             <input type="text" placeholder="Skriv E-postadress här">
             <input type="text" placeholder="Skriv Telefonnummer här">
           </div>
-
-          <br>
 
           <h2> Lägg upp profilbild: </h2>
           <br>
@@ -127,26 +124,28 @@
 
           <br>
 
-          <div class="page-buttons">
+          <div class="flexContainer-flexEnd">
             <a id="myBtn" class="a-button">Lägg till</a>
-            <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1> Konto Skapat!</h1>
-              </div>
+          </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1> Konto Skapat!</h1>
             </div>
           </div>
+
 
           <div id="columns">
             <br>
           </div>
-          <!--Columns END-->
+
         </div>
-        <!--Column END-->
+
       </div>
-      <!--armida-project END-->
+
     </div>
-    <!--ColumnS END-->
+
   </div>
 
   <footer>
