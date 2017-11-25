@@ -57,69 +57,73 @@
   </header>
 
   <div id="content">
-    <div class="column">
-      <div class="class-info">
-        <h2> Mina Examinationsmoment </h2>
-        <div class="line"></div>
-        <br>
-        <br>
+    <div class="columns">
+      <div class="column">
+        <div class="boxes">
 
-        <table>
-          <tr>
-            <th>Examinationsmoment</th>
-            <th>Poäng</th>
-            <th>Startdatum</th>
-            <th>Deadline</th>
-          </tr>
+          <h2> Mina Examinationsmoment </h2>
+          <div class="line"></div>
+          <br>
+          <br>
 
-          <tr>
-            <td><a href="teacher-project-submissions.html">Uppgift 1</a></td>
-            <td>10</td>
-            <td>2017-01-03</td>
-            <td>2017-01-10</td>
-          </tr>
+          <table>
+            <tr>
+              <th>Examinationsmoment</th>
+              <th>Poäng</th>
+              <th>Startdatum</th>
+              <th>Deadline</th>
+            </tr>
 
-          <tr>
-            <td><a href="#">Uppgift 2 </a></td>
-            <td>25</td>
-            <td>1984-09-09</td>
-            <td>2020-03-14</td>
-          </tr>
+            <tr>
+              <td><a href="teacher-project-submissions.html">Uppgift 1</a></td>
+              <td>10</td>
+              <td>2017-01-03</td>
+              <td>2017-01-10</td>
+            </tr>
 
-          <tr>
-            <td><a href="#"> Uppgift 3 </a></td>
-            <td>65</td>
-            <td>1984-09-09</td>
-            <td>2020-03-14</td>
-          </tr>
-        </table>
+            <tr>
+              <td><a href="#">Uppgift 2 </a></td>
+              <td>25</td>
+              <td>1984-09-09</td>
+              <td>2020-03-14</td>
+            </tr>
 
-        <div class="flexContainer-flexEnd">
-          <a class="a-button" href="teacher-assignments.html">Skapa ny</a>
+            <tr>
+              <td><a href="#"> Uppgift 3 </a></td>
+              <td>65</td>
+              <td>1984-09-09</td>
+              <td>2020-03-14</td>
+            </tr>
+          </table>
+
+          <div class="flexContainer-flexEnd">
+            <a class="a-button" href="teacher-assignments.html">Skapa ny</a>
+          </div>
         </div>
-
       </div>
     </div>
 
     <div class="columns">
       <div class="column">
-        <div class="teach-news">
+        <div class="boxes">
 
           <h2>Lägg till kursnyheter</h2>
+          <div class="line"></div>
           <br>
-          <fieldset class="publishDate">
-            <legend>Publiseringsdatum</legend>
+
+          <div class="flexContainer-spaceBetween">
+
             <input type="datetime-local" name="publishDate">
-          </fieldset>
 
-          <br>
+            <input type="text" name="heading" class="heading" placeholder="Skriv din rubrik här">
+            <textarea placeholder="Skriv din nyhet här"></textarea>
 
-          <input type="text" name="heading" class="heading" placeholder="Skriv din rubrik här">
-          <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
+          </div>
 
           <div class="flexContainer-flexEnd">
             <a id="myBtn" class="a-button">Lägg till</a>
           </div>
+
 
           <div id="myModal" class="modal">
             <div class="modal-content">
@@ -131,49 +135,61 @@
       </div>
 
       <div class="column">
-        <div class="class-info">
+        <div class="boxes">
           <h2>Alla kursnyheter: </h2>
+          <div class="line"></div>
           <br>
           <div class="main-news">
             <article>
               <div class="news">
 
                 <h5>
-              <em> Torsdag 2017.10.19 </em>
-            </h5>
-                <h3> Inlämning av Project 1 på måndag </h3>
-                <br>
-                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-
-                  <br>
-                  <br>
-                  <br>
-
-                  <h5>
-                <em> Tisdag 2017.10.17 </em>
-              </h5>
-                  <h3> Svar på Gruppindelning kommer på måndag </h3>
-                  <br>
-                  <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                    </p>
-
-                    <br>
-                    <br>
-                    <br>
-
-                    <h5>
-                  <em> Måndag 2017.10.16 </em>
+                  <em> Torsdag 2017.10.19 </em>
                 </h5>
-                    <h3> Information gällande Project 1 och 2 </h3>
-                    <br>
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                      </p>
 
-                      <br>
-                      <br>
-                      <br>
+                <br>
+
+                <h3> Inlämning av Project 1 på måndag </h3>
+
+                <br>
+
+                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque </p>
+
+                <br>
+                <div class="line"></div>
+                <br>
+
+                <h5>
+                    <em> Tisdag 2017.10.17 </em>
+                  </h5>
+
+                <br>
+
+                <h3> Svar på Gruppindelning kommer på måndag </h3>
+                <br>
+
+                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                </p>
+
+                <br>
+                <div class="line"></div>
+                <br>
+
+                <h5>
+                   Måndag 2017.10.16
+                </h5>
+
+                <br>
+
+                <h3> Information gällande Project 1 och 2 </h3>
+                <br>
+                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque. Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                </p>
+
+                <br>
+                <br>
+                <br>
 
               </div>
             </article>

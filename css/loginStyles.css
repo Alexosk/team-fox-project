@@ -547,6 +547,7 @@ ul {
   background-color: white;
   border: 2px solid red;
   margin-top: 1em;
+  justify-content: center;
 }
 #weeklyAlert h3 {
   padding: 1em;
@@ -792,13 +793,7 @@ article {
   flex-wrap: wrap;
 }
 
-.teach-news {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.teach-news h2, #date, .teach-news h4 {
+#date {
   margin: 2vh 0 1vh 0;
 }
 
@@ -806,17 +801,6 @@ article {
   height: 30px;
   text-align: center;
   font-size: 1.8vh;
-}
-
-.teach-news h4 {
-  align-self: flex-start;
-}
-
-.teach-news textarea {
-  font-size: 2vh;
-  resize: none;
-  height: 250px;
-  width: 300px;
 }
 
 .input-date {
@@ -851,11 +835,7 @@ article {
 }
 
 input.heading {
-  width: 298px;
-}
-
-.publishDate {
-  width: 278px;
+ padding: 0.5em;
 }
 
 /* HTML CLASS ENDS */
@@ -1157,14 +1137,8 @@ input.heading {
   cursor: pointer;
 }
 
-#admin-educations-list {
-  padding-left: 0;
-  align-self: center;
-}
-
 #admin-educations-list li {
-  margin-top: 3vh;
-  margin-bottom: 5vh;
+margin: 2.3em;
 }
 
 #admin-educations-list a {
@@ -1259,6 +1233,9 @@ h2 {
   justify-content: flex-end;
   margin: 1em 0 1em 0;
 }
+.justify-content-center {
+  justify-content: center;
+}
 .headingWithMargin {
   margin: 1em 0 1em 0;
   vertical-align: center;
@@ -1274,4 +1251,10 @@ h2 {
 }
 #width-50 {
   width: 50%;
+}
+textarea {
+  width: 100%;
+  height: 10em;
+  resize: none;
+  font-size: 1em;
 }

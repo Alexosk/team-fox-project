@@ -61,40 +61,38 @@
   </header>
 
   <div id="content">
-
     <div class="columns">
       <div class="column">
-
-        <div class="admin-class">
+        <div class="boxes">
 
           <h2> FE-17 Studenter </h2>
+
           <div class="line"></div>
           <br>
+
           <div class="student-list">
             <strong></strong>
           </div>
 
+          <div class="flexContainer-flexEnd margin-1em">
+            <a class="a-button" id="myBtn" href="#">Ändra studentlista</a>
+          </div>
 
-          <a class="a-button" id="myBtn" href="#">Ändra studentlista</a>
           <div id="myModal" class="modal">
-
-            <!-- Modal content -->
             <div class="modal-content">
               <span class="close">&times;</span>
 
-              <div>
-                <div>
+              <div class="flexContainer-spaceBetween">
+                <h2> Student Namn </h2>
+                <input class="heading" type="text" placeholder="Studentens namn">
+                <input class="heading" type="text" placeholder="E-post adress">
 
-                  <h2> Student Namn </h2>
 
-                  <input type="text" placeholder="Studentens namn">
-                  <input type="text" placeholder="E-post adress">
-
+                <div class="flexContainer-flexEnd">
                   <a class="a-button" onclick="newsFunction('newsPlaced')" href="#">Lägg till Student</a>
-                  <div id="newsPlaced">Sparad!</div>
-
-
                 </div>
+                <div id="newsPlaced">Sparad!</div>
+
               </div>
             </div>
           </div>
@@ -102,50 +100,51 @@
       </div>
 
       <div class="column">
-        <div class="admin-class">
+        <div class="boxes">
 
           <h2> FE-17 Kurser </h2>
+
           <div class="line"></div>
           <br>
 
-          <ul id="admin-educations-list">
+          <ul id="admin-educations-list"></ul>
 
-          </ul>
-          <div class="flexContainer-flexEnd">
+          <div class="flexContainer-flexEnd margin-1em">
             <a class="a-button" id="myBtn2" onclick="newsFunction('newsPlaced')" href="#">Redigera kurserna</a>
           </div>
-
         </div>
-        <div id="myModal2" class="modal">
 
-          <!-- Modal content -->
+        <div id="myModal2" class="modal">
           <div class="modal-content" id="modal-content-id">
+
             <div class="flexContainer-flexEnd">
               <span class="close">&times;</span>
             </div>
+
             <div class="flexContainer-spaceBetween">
-              <input id="educationName" type="text" placeholder="Namn">
+              <input class="heading" id="educationName" type="text" placeholder="Namn">
               <input type="date">
               <input type="date">
               <a class="a-button" href="#" onclick="addCourse(document.getElementById('educationName').value)">Lägg till kurs</a>
               <div class="line"></div>
             </div>
+
             <div class="flexContainer-spaceBetween">
               <select class="adminSelect" id="courseTeacher"></select>
               <select class="adminSelect" id="teacherSelect"></select>
               <a class="a-button" onclick="attachTeacherToCourse()" href="#">Knyt lärare till kurs</a>
               <div class="line"></div>
             </div>
+
             <div class="flexContainer-spaceBetween">
               <select class="adminSelect" id="educationNameRemove"></select>
               <a class="a-button" id="removeButton" onclick="removeCourse()" href="#">Ta bort kurs</a>
             </div>
+
           </div>
         </div>
       </div>
     </div>
-  </div>
-
   </div>
 
   <footer>
