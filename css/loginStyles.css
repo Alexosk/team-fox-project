@@ -93,7 +93,7 @@ header ul {
   font-size: 150%;
 }
 
-#highLightHeading a, #htmlHeading a {
+#highLightHeading a, #htmlHeading a, #highLightHeading {
   color: white;
 }
 
@@ -714,11 +714,11 @@ footer {
 
 /* Teacher.html */
 
-main-news, article {
+.main-news, article {
   display: flex;
 }
 
-main-news {
+.main-news {
   height: 70vh;
   flex: 1;
 }
