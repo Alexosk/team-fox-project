@@ -1192,10 +1192,10 @@ input.heading {
   box-shadow: 0 0 4px #000;
   /*align-items: flex-end;*/
   outline: none;
-  margin: 1em;
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin: 1em 0 1em 0;
 }
 
 .a-button:hover {
@@ -1278,4 +1278,7 @@ h2 {
 }
 .classWithRightMargin{
   margin-right: 1em;
+}
+.margin-1em {
+  margin: 0 1em 0 1em;
 }

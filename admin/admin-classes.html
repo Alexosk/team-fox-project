@@ -123,20 +123,20 @@
             <div class="flexContainer-flexEnd">
               <span class="close">&times;</span>
             </div>
-            <div class="flexContainer">
+            <div class="flexContainer-spaceBetween">
               <input id="educationName" type="text" placeholder="Namn">
               <input type="date">
               <input type="date">
               <a class="a-button" href="#" onclick="addCourse(document.getElementById('educationName').value)">Lägg till kurs</a>
               <div class="line"></div>
             </div>
-            <div class="flexContainer">
+            <div class="flexContainer-spaceBetween">
               <select class="adminSelect" id="courseTeacher"></select>
               <select class="adminSelect" id="teacherSelect"></select>
               <a class="a-button" onclick="attachTeacherToCourse()" href="#">Knyt lärare till kurs</a>
               <div class="line"></div>
             </div>
-            <div class="flexContainer">
+            <div class="flexContainer-spaceBetween">
               <select class="adminSelect" id="educationNameRemove"></select>
               <a class="a-button" id="removeButton" onclick="removeCourse()" href="#">Ta bort kurs</a>
             </div>
