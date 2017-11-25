@@ -329,7 +329,7 @@ input[type="submit"]:hover {
 input[type="datetime-local"], input[type="week"], input[type="time"], input[type="date"] {
   padding: 1vh;
   /*font-size: 2vh;*/
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   font-family: helvetica;
   /*margin-right: 2vh;*/
   margin: 1em 0 1em 0;
@@ -672,21 +672,6 @@ footer {
 
 /*EVALUATION.HTML ENDS!*/
 
-/*Survey-teacher*/
-
-.weekly-classes {
-  display: flex;
-}
-
-.weekly-classes li {
-  margin: 3vh;
-  font-size: 3vh;
-}
-
-.weekly-classes li:hover {
-  opacity: 0.6;
-}
-
 /* PROJECT.HTML */
 
 .hand-in {
@@ -698,16 +683,6 @@ footer {
 
 .upload {
   margin: 1vh 0 1vh 0;
-}
-
-.upload__dragndrop, .upload__uploading, .upload__success, .upload__error {
-  display: none;
-}
-
-#drop_zone {
-  border: 5px solid blue;
-  width: 200px;
-  height: 100px;
 }
 
 /* Teacher.html */
@@ -884,7 +859,7 @@ input.heading {
 
 /*Stu Dentson SUBMISSION */
 
-.studentson-project, .teacher-feedback, .armida-project, .admin-class {
+.teacher-feedback, .armida-project, .admin-class {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -1025,10 +1000,10 @@ input.heading {
   padding: 3vh;
 }
 
-.armida-project {
+/*.armida-project {
   align-items: center;
   padding: 7vh;
-}
+}*/
 
 .border-box span {
   display: inline-flex;
@@ -1050,7 +1025,7 @@ input.heading {
   font-size: 2vh;
 }
 
-.admin-class {
+/*.admin-class {
   width: 40vh;
 }
 
@@ -1066,7 +1041,7 @@ input.heading {
 
 .admin-class button:hover {
   background-color: green;
-}
+}*/
 
 .student-list {
   overflow-y: scroll;

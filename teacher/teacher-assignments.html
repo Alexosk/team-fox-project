@@ -58,26 +58,27 @@
   <div id="content">
     <div class="columns">
       <div class="column">
-        <div class="teach-news">
+        <div class="boxes">
 
           <h2>Skapa uppgift</h2>
+
+          <div class="line"></div>
           <br>
-          <fieldset class="publishDate">
-            <legend>Startdatum</legend>
-            <input type="datetime-local" name="publishDate">
-          </fieldset>
           <br>
 
+          <h3>Startdatum</h3>
+          <input type="datetime-local">
 
-          <fieldset class="publishDate">
-            <legend>Deadline</legend>
-            <input type="datetime-local" name="publishDate">
-          </fieldset>
+          <br>
+
+          <h3>Deadline</h3>
+          <input type="datetime-local">
+
           <br>
 
           <input type="text" name="heading" class="heading" placeholder="Skriv din rubrik här">
 
-          <textarea class="paragraph" placeholder="Skriv din nyhet här"></textarea>
+          <textarea></textarea>
 
           <div class="flexContainer-flexEnd">
             <a id="myBtn" class="a-button" onclick="newsFunction('newsPlaced')">Lägg till</a>
@@ -85,41 +86,47 @@
 
           <div id="myModal" class="modal">
             <div class="modal-content">
+
               <span class="close">&times;</span>
               <h1> Din uppgift är sparad!</h1>
             </div>
+
           </div>
         </div>
       </div>
-      <div class="column">
 
-        <div class="teach-news">
+      <div class="column">
+        <div class="boxes">
 
           <h2>Skapa prov</h2>
+
+          <div class="line"></div>
           <br>
-          <fieldset class="publishDate">
-            <legend>Startdatum</legend>
-            <input type="datetime-local" name="publishDate">
-          </fieldset>
           <br>
-          <fieldset class="publishDate">
-            <legend>Provtid</legend>
-            <input type="time" name="publishDate">
-          </fieldset>
+
+          <h3>Startdatum</h3>
+          <input type="datetime-local" name="publishDate">
+
+          <br>
+
+          <h3>Provtid</h3>
+          <input type="time" name="publishDate">
+
           <br>
 
           <input type="text" name="heading" class="heading" placeholder="Skriv din rubrik här">
-          <textarea class="paragraph"></textarea>
+          <textarea></textarea>
 
           <div class="flexContainer-flexEnd">
             <a id="myBtn2" class="a-button">Lägg till</a>
           </div>
+
           <div id="myModal2" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
               <h1> Ditt prov är sparad! </h1>
-
             </div>
+
           </div>
         </div>
       </div>
