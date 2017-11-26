@@ -135,6 +135,7 @@ header ul {
     text-align: center;
     bottom: 90%;
   }
+
 }
 
 /*HAMBURGER ENDS */
@@ -941,6 +942,10 @@ input.heading {
   border: none;
   cursor: pointer;
 }
+.dropBtn::after {
+  content: " \25BC ";
+  font-size: 1.5vh;
+}
 
 .dropdown {
   background-color: #562E84;
@@ -956,10 +961,11 @@ input.heading {
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-top: 1.3vh;
+  border-top: 1px solid #FDB722;
 }
 
 .dropdown-content a {
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
