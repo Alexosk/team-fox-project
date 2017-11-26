@@ -1,47 +1,29 @@
-var ctx = document.getElementById("weeklyChart");
-var myChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: ["Hur mycket tid har du lagt ner på studierna?", "Hur engagerad anser du själv att du är i dina studier?", "Hur uppläver du stämningen i klassen?"],
-        datasets: [{
-            label: '# of Votes',
-            data: [3, 5, 3, 0],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
+new Chart(document.getElementById("weekChart"), {
+  type: 'line',
+  data: {
+    labels: ["35","36","37","38","39","40","41"],
+    datasets: [{
+        data: [2,2,5,4,3,1,5],
+        label: "Hur upplever du tempot?",
+        borderColor: "#36a2eb",
+        fill: false
+      }, {
+        data: [4,4,3,3,5,3,5],
+        label: "Hur engagerad anser du själv att du är i dina studier?",
+        borderColor: "#ffce56",
+        fill: false
+      }, {
+        data: [3,1,4,5,3,2,4],
+        label: "Hur upplever du stämningen i klassen?",
+        borderColor: "#ff6384",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Veckoreflekteringar'
     }
+  }
 });

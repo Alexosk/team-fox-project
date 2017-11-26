@@ -946,6 +946,10 @@ input.heading {
   border: none;
   cursor: pointer;
 }
+.dropBtn::after {
+  content: " \25BC ";
+  font-size: 0.8em;
+}
 
 .dropdown {
   background-color: #562E84;
@@ -1202,6 +1206,10 @@ h2 {
 .justify-content-center {
   justify-content: center;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 .headingWithMargin {
   margin: 1em 0 1em 0;
   vertical-align: center;
@@ -1214,6 +1222,12 @@ h2 {
 }
 .margin-1em {
   margin: 0 1em 0 1em;
+}
+.margin-all-around {
+  margin: 1em;
+}
+.paddin-all-around {
+  padding: 1em;
 }
 #width-50 {
   width: 50%;
