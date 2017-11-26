@@ -63,7 +63,7 @@ function evaluation(mandatoryQuestionsArray) {
 }
 
 function evaluateWeeklyForm(){
-    if (evaluation(["x1","x2","x3","x4","x5"])){
+    if (evaluation(["x1","x2","x5"])){
         return true;
     };
     return false;
