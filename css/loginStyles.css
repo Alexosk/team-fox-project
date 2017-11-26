@@ -955,6 +955,7 @@ input.heading {
   background-color: #562E84;
   position: relative;
   display: inline-block;
+
 }
 
 .dropdown-content {
@@ -965,6 +966,8 @@ input.heading {
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-top: 0.7em;
+  border-top: 1px solid #FDB722;
 }
 
 .dropdown-content a {
