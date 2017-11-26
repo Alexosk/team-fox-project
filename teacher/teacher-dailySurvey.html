@@ -39,14 +39,13 @@
         <li>
           <a href="teacher-attendance.html">Ta&nbsp;närvaro</a>
         </li>
-        <li>
-          <a href="teacher-survey.html">Veckoreflektioner</a>
-        </li>
-        <li>
-          <a href="teacher-courses.html">Kursutvärderingar</a>
-        </li>
-        <li id="highLightHeading">
-          <a href="teacher-dailySurvey-classes.html">Dagsutvärderingar</a>
+        <li class="dropdown">
+          <button onclick="myDropdown2()" class="dropBtn">Utvärderingar</button>
+          <div id="myDropdown2" class="dropdown-content">
+            <a href="teacher-weeklySurvey.html">Veckoreflektioner</a>
+            <a href="teacher-javascript-evaluation.html">Kursutvärderingar</a>
+            <a href="teacher-dailySurvey.html">Dagsutvärderingar</a>
+          </div>
         </li>
       </ul>
     </div>
@@ -108,6 +107,7 @@
       </p>
     </footer>
   <script src="../script/app.js"></script>
+  <script src="../script/dropDown2.js"></script>
   <script src="../script/dailySurveyChart.js"></script>
 </body>
 
