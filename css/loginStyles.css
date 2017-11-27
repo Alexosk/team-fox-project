@@ -194,6 +194,7 @@ header ul {
   margin: 15vh auto 5vh auto;
   flex: 1;
 }
+
 #contentNarrow {
   width: 40%;
   margin: 15vh auto 5vh auto;
@@ -259,7 +260,7 @@ footer span {
     margin: 1em;
     padding: 0;
   }
-  #modal-content-id{
+  #modal-content-id {
     width: 80%;
   }
 }
@@ -323,6 +324,7 @@ input[type="datetime-local"], input[type="week"], input[type="time"], input[type
   margin: 1em 0 1em 0;
   font-size: 1em;
 }
+
 #errorMessageDiv {
   font-family: "Roboto", sans-serif;
   font-size: smaller;
@@ -530,6 +532,7 @@ ul {
 #smileySurvey, #smileySurvey ul, #surveys, #weeklyAlert {
   display: flex;
 }
+
 #weeklyAlert {
   width: 100%;
   background-color: white;
@@ -537,6 +540,7 @@ ul {
   margin-top: 1em;
   justify-content: center;
 }
+
 #weeklyAlert h3 {
   padding: 1em;
 }
@@ -631,7 +635,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.question textarea, .question1 textarea{
+.question textarea, .question1 textarea {
   height: 10vh;
   width: 60%;
   border: 1px solid #000;
@@ -640,7 +644,7 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-  .question ul, .question1 ul{
+  .question ul, .question1 ul {
     flex-direction: column;
   }
   .question textarea, .question1 textarea {
@@ -655,7 +659,6 @@ footer {
   .class-info table td:nth-child(2) {
     display: none;
   }
-
 }
 
 /*EVALUATION.HTML ENDS!*/
@@ -710,6 +713,7 @@ article {
 .class-info table tr {
   text-align: left;
 }
+
 .class-info table th {
   text-align: left;
   font-size: 12px;
@@ -798,7 +802,7 @@ article {
 }
 
 input.heading {
- padding: 0.5em;
+  padding: 0.5em;
 }
 
 /* HTML CLASS ENDS */
@@ -947,6 +951,7 @@ input.heading {
   border: none;
   cursor: pointer;
 }
+
 .dropBtn::after {
   content: " \25BC ";
   font-size: 0.8em;
@@ -956,7 +961,6 @@ input.heading {
   background-color: #562E84;
   position: relative;
   display: inline-block;
-
 }
 
 .dropdown-content {
@@ -1086,7 +1090,7 @@ input.heading {
   width: 50%;
 }
 
-.modal-content div{
+.modal-content div {
   margin: 1em;
   display: flex;
   flex-wrap: wrap;
@@ -1112,7 +1116,7 @@ input.heading {
 }
 
 #admin-educations-list li {
-margin: 2.3em;
+  margin: 2.3em;
 }
 
 #admin-educations-list a {
@@ -1184,67 +1188,80 @@ h2 {
   margin: 1em 0 1em 0;
 }
 
-.flexContainer-spaceBetween{
+.flexContainer-spaceBetween {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 1em 0 1em 0;
 }
-.flexContainer-spaceAround{
+
+.flexContainer-spaceAround {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 1em 0 1em 0;
 }
+
 .flexContainer-flexStart {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 1em 0 1em 0;
 }
+
 .flexContainer-flexEnd {
   display: flex;
   justify-content: flex-end;
   margin: 1em 0 1em 0;
 }
+
 .justify-content-center {
   justify-content: center;
 }
+
 .flex-column {
   display: flex;
   flex-direction: column;
 }
+
 .headingWithMargin {
   margin: 1em 0 1em 0;
   vertical-align: center;
 }
-.classWithBorder{
+
+.classWithBorder {
   border: 1px solid black;
 }
-.classWithRightMargin{
+
+.classWithRightMargin {
   margin-right: 1em;
 }
+
 .margin-1em {
   margin: 0 1em 0 1em;
 }
+
 .margin-all-around {
   margin: 1em;
 }
+
 .padding-all-around {
   padding: 1em;
 }
+
 #width-50 {
   width: 50%;
 }
+
 textarea {
   width: 100%;
   height: 10em;
   resize: none;
   font-size: 1em;
 }
-#contentNarrow{
 
-}
+#contentNarrow {}
+
 #generateNum {
   text-align: center;
   font-weight: bold;
