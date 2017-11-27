@@ -1,5 +1,5 @@
 # Team-fox-project
-This is a school project for making an interactive mockup of a LMS (Learning Management System). The system is meant for developing a better control over educations as well as better overview for both students and teachers. Only static HTML-pages are used with CSS and JavaScript to simulate a real system. No backend or database. 
+This is a school project for making an interactive mockup of a LMS (Learning Management System). The system is meant for developing a better control over educations as well as better overview for both students and teachers. Only static HTML-pages with CSS and JavaScript are used to simulate a real system. No backend, database or JavaScript-frameworks. 
 
 ## Getting Started
 Run index.html in a browser, preferably Chrome. 
@@ -14,15 +14,22 @@ node server.js
 
 ```
 
+## Built with
+- HTML5
+- CSS3
+- JavaScript
+- [ChartJS](http://www.chartjs.org)
+- Node.js
+
 ## Installing
 No installation needed.
 
 ## Authors 
-Alexandra
-Rikard
-Leo
-Paulina
+- Alexandra
+- Rikard
+- Leo
+- Paulina
 
 ### Drop-outs:
-Benjamin
-Aram
+- Benjamin
+- Aram
