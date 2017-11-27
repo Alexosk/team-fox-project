@@ -16,7 +16,7 @@ node server.js
 The server will now run on your local machine i.e. "10.7.2.117". 
 
 ## Basic design
-The page is based upon a <header>, <content> and <footer>. Media-queries and Flex-box are used to enable a responsive design for different screen sizes. The content area uses columns to dived content if necessary. 
+The page is based upon a "header", "content" and "footer" design. Media-queries and Flex-box are used to enable a responsive design for different screen sizes. The content area uses columns to dived content if necessary. 
 
 ## Built with
 - HTML5
