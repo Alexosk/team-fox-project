@@ -17,11 +17,11 @@ var login = function () {
       return false;
     }
     else if (username == "" || password == "") {
-        printMessageToDOM("red", "User name or password cannot be blank");
+        printMessageToDOM("red", "Användarnamn och lösenord kan inte vara tom");
         return false;
     }
     else {
-        setTimeout(printMessageToDOM, 1500, "red", "Invalid user name or password");
+        setTimeout(printMessageToDOM, 1500, "red", "Fel användarnamn eller lösenord");
         printMessageToDOM("black", "Checking DB.....");
         return false;
     }
