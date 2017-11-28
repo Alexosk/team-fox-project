@@ -68,7 +68,7 @@
 
           <table>
             <tr>
-              <th>Examinationsmoment</th>
+              <th style="word-wrap: break-word">Examinationsmoment</th>
               <th>Poäng</th>
               <th>Startdatum</th>
               <th>Deadline</th>
@@ -113,25 +113,21 @@
           <br>
 
           <div class="flexContainer-spaceBetween">
-
-            <input type="datetime-local">
-
+            <span><strong>Publiseringsdatum</strong></span>
+            <input type="datetime-local" placeholder="Välj Datum">
             <input type="text" name="heading" class="heading" placeholder="Skriv din rubrik här">
             <textarea placeholder="Skriv din nyhet här"></textarea>
-
           </div>
 
           <div class="flexContainer-flexEnd">
             <a id="myBtn" class="a-button">Lägg till</a>
           </div>
 
-
           <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
               <h1> Nyhet tillagd i nyhetsflödet!</h1>
             </div>
-
           </div>
         </div>
       </div>

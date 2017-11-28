@@ -652,13 +652,13 @@ footer {
   .question textarea, .question1 textarea {
     width: 100%;
   }
-  .class-info table tr td {
-    font-size: 80%;
+  .boxes table tr td {
+    font-size: 90%;
   }
-  .class-info table th:nth-child(2) {
+  .boxes table th:nth-child(2) {
     display: none;
   }
-  .class-info table td:nth-child(2) {
+  .boxes table td:nth-child(2) {
     display: none;
   }
 }
