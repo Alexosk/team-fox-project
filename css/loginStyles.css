@@ -518,6 +518,8 @@ ul {
 /* Highlight the "current" day */
 
 .active {
+  background-color: #562e84;
+  color: #fdb722;
   cursor: pointer;
   text-decoration: underline;
 }

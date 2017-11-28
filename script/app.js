@@ -50,12 +50,12 @@ function hiddenFunction(){
   let attend = document.getElementById("activeday");
     if (hide.style.display === "block") {
       hide.style.display = "none";
-      attend.style.background="#eee";
-      attend.style.color="#000";
+      /*attend.style.background="#eee";
+      attend.style.color="#000";*/
     }else {
       hide.style.display="block";
-      attend.style.background="#562e84";
-      attend.style.color="#fdb722";
+      /*attend.style.background="#562e84";
+      attend.style.color="#fdb722";*/
       attendancebox3.style.display = "none";
       attendancebox2.style.display = "block";
       document.getElementById("codeId").value ="";
