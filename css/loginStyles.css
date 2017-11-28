@@ -529,11 +529,11 @@ ul {
 
 /* Smiley-survey */
 
-#smileySurvey, #smileySurvey ul, #surveys, #weeklyAlert {
+#smileySurvey, #smileySurvey ul, #surveys, .weeklyAlert {
   display: flex;
 }
 
-#weeklyAlert {
+.weeklyAlert {
   width: 100%;
   background-color: white;
   border: 2px solid red;
@@ -541,7 +541,7 @@ ul {
   justify-content: center;
 }
 
-#weeklyAlert h3 {
+.weeklyAlert h3 {
   padding: 1em;
 }
 
@@ -550,7 +550,7 @@ ul {
   width: 100%;
 }
 
-#smileySurvey .boxes, #weeklyAlert .boxes {
+#smileySurvey .boxes, .weeklyAlert .boxes {
   border: 2px solid red;
 }
 
@@ -576,11 +576,11 @@ h6 {
   justify-content: space-between;
 }
 
-#weeklyAlert .boxes {
+.weeklyAlert .boxes {
   justify-content: center;
 }
 
-#weeklyAlert a:visited {
+.weeklyAlert a:visited {
   color: black;
 }
 
