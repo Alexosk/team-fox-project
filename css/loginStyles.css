@@ -102,16 +102,6 @@ header ul {
 
 .hamburger-btn {
   display: none;
-  height: 3vh;
-  width: 3vh;
-  right: 3vh;
-  line-height: 3vh;
-  font-size: 3vh;
-  bottom: 3vh;
-  text-align: center;
-  padding: 1vh;
-  border-radius: 0.9rem;
-  color: #000;
 }
 
 #main-nav-toggle {
@@ -120,21 +110,17 @@ header ul {
 
 @media screen and (max-width: 660px) {
   .hamburger-btn {
-    display: inline-block;
+    display: initial;
     cursor: pointer;
-    bottom: 90%;
   }
   #main-nav-toggle+ul {
     display: none;
     background-color: #562E84;
-    top: 15%;
-    bottom: 90%;
   }
   #main-nav-toggle:checked+ul {
-    display: block;
+    display: initial;
     width: 100%;
     text-align: center;
-    bottom: 90%;
   }
 }
 
