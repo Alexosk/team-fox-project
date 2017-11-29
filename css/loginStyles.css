@@ -124,13 +124,13 @@ header ul {
     cursor: pointer;
     bottom: 90%;
   }
-  #navContainer1 #main-nav-toggle+ul {
+  #main-nav-toggle+ul {
     display: none;
     background-color: #562E84;
     top: 15%;
     bottom: 90%;
   }
-  #navContainer1 #main-nav-toggle:checked+ul {
+  #main-nav-toggle:checked+ul {
     display: block;
     width: 100%;
     text-align: center;
@@ -1189,6 +1189,8 @@ h2 {
   color: black;
   margin: 1em 0 1em 0;
 }
+
+/* Generella CSS-klasser */
 
 .flexContainer-spaceBetween {
   display: flex;

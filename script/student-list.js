@@ -1,4 +1,5 @@
 let students = [
+    'Alex Osk',
     'Armida Abrahamsson',
     'Abbott Askman',
     'Belle Björling',
