@@ -118,7 +118,7 @@ header ul {
     background-color: #562E84;
   }
   #main-nav-toggle:checked+ul {
-    display: initial;
+    display: block;
     width: 100%;
     text-align: center;
   }
