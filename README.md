@@ -13,7 +13,7 @@ To run the server type the following at the command line:
 node server.js
 
 ```
-The server will now run on your local machine i.e. "10.7.2.117". 
+The server will now run on your local machine i.e. "http://10.7.2.117". 
 
 ## Basic design
 The page is based upon a "header", "content" and "footer" design. Media-queries and Flex-box are used to enable a responsive design for different screen sizes. The content area uses columns to dived content if necessary. 
@@ -33,7 +33,3 @@ No installation needed.
 - Rikard
 - Leo
 - Paulina
-
-### Drop-outs:
-- Benjamin
-- Aram
