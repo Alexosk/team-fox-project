@@ -1,7 +1,7 @@
 var login = function () {
     let username = document.forms["login-form"]["username"].value;
     let password = document.forms["login-form"]["password"].value;
-    if ((username == "username" && password == "password") || (username == "student" && password == "123")) {
+    if ((username == "username" && password == "password") || (username == "student" && password == "123") || (username == "studentson" && password == "123")) {
         printMessageToDOM("black", "Redirecting.....");
         setTimeout(redirectToStudent, 1500);
         return false;
